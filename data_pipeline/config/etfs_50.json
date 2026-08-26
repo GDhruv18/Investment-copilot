@@ -1,0 +1,61 @@
+{
+    "etfs": [
+        "NIFTYBEES.NS",
+        "JUNIORBEES.NS",
+        "BANKBEES.NS",
+        "ITBEES.NS",
+        "PSUBANK.NS",
+        "PHARMABEES.NS",
+        "CONSUMBEES.NS",
+        "AUTOBEES.NS",
+        "METAL.NS",
+        "CPSEETF.NS",
+
+        "SETFNIF50.NS",
+        "SETFNIFBK.NS",
+        "SETFNIFPSU.NS",
+        "SETFNIFIT.NS",
+        "SETFNIFSC.NS",
+        "SETFNIFEN.NS",
+        "SETFGOLD.NS",
+        "SETFSILVER.NS",
+        "SETFNN50.NS",
+        "SETFNIF100.NS",
+
+        "HDFCNIFTY.NS",
+        "HDFCSENSEX.NS",
+        "HDFCGOLD.NS",
+        "HDFCSILVER.NS",
+        "HDFCNEXT50.NS",
+
+        "ICICINIFTY.NS",
+        "ICICINXT50.NS",
+        "ICICIB22.NS",
+        "ICICIGOLD.NS",
+        "ICICISILVER.NS",
+
+        "SBINIFTY.NS",
+        "AXISNIFTY.NS",
+        "AXISTEC.NS",
+        "AXISGOLD.NS",
+        "AXISSILVER.NS",
+
+        "KOTAKNIFTY.NS",
+        "KOTAKSILVER.NS",
+        "KOTAKGOLD.NS",
+        "KOTAKPSUBK.NS",
+        "KOTAKIT.NS",
+
+        "GOLDBEES.NS",
+        "SILVERBEES.NS",
+        "LIQUIDBEES.NS",
+        "LIQUIDCASE.NS",
+        "MON100.NS",
+
+        "MOM100.NS",
+        "MID150BEES.NS",
+        "LOWVOL1.NS",
+        "ALPHA.NS",
+        "QUAL30IETF.NS"
+    ]
+}
