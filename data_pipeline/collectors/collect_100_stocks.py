@@ -33,7 +33,8 @@ for index, ticker in enumerate(stocks, start=1):
 
         data = yf.download(
             ticker,
-            period="5y",
+            start="2018-01-01",
+            end="2026-09-07",
             interval="1d",
             auto_adjust=False,
             progress=False
