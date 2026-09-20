@@ -1,104 +1,238 @@
-from pathlib import Path
+import os
 
 import pandas as pd
-import os
 import psycopg2
 from dotenv import load_dotenv
 
+
+# Load environment variables from .env
 load_dotenv()
 
+RAW_DIR = "data/raw/etfs"
 
-PROJECT_ROOT = Path(__file__).resolve().parents[2]
-
-ETF_FOLDER = PROJECT_ROOT / "data" / "raw" / "etfs"
-
-
-connection = psycopg2.connect(
-    host="localhost",
-    port=5432,
-    database="investment_copilot",
-    user="postgres",
-    password=os.getenv("DB_PASSWORD")
-)
-
-cursor = connection.cursor()
+DB_CONFIG = {
+    "dbname": os.getenv("DB_NAME"),
+    "user": os.getenv("DB_USER"),
+    "password": os.getenv("DB_PASSWORD"),
+    "host": os.getenv("DB_HOST", "localhost"),
+    "port": os.getenv("DB_PORT", "5432"),
+}
 
 
-files = list(ETF_FOLDER.glob("*.parquet"))
+def validate_db_config():
+    """Make sure required database credentials are available."""
 
-print(f"Found {len(files)} ETF files.")
+    required = [
+        "DB_NAME",
+        "DB_USER",
+        "DB_PASSWORD",
+    ]
+
+    missing = [
+        variable
+        for variable in required
+        if not os.getenv(variable)
+    ]
+
+    if missing:
+        raise RuntimeError(
+            f"Missing environment variables: {', '.join(missing)}"
+        )
 
 
-total_inserted = 0
+def normalize_columns(df):
+    """Normalize Yahoo Finance column structure."""
+
+    if isinstance(df.columns, pd.MultiIndex):
+        df.columns = df.columns.get_level_values(0)
+
+    df.columns = [
+        str(column).strip().lower().replace(" ", "_")
+        for column in df.columns
+    ]
+
+    return df
 
 
-for index, file in enumerate(files, start=1):
+def import_etf_file(cursor, filepath, ticker):
+    """Import one ETF Parquet file into PostgreSQL."""
 
-    ticker = file.stem.replace("_", ".")
+    print(f"Loading: {ticker}")
 
-    print(f"\n[{index}/{len(files)}] Importing {ticker}...")
+    df = pd.read_parquet(filepath)
+    df = normalize_columns(df)
+
+    # If date is stored as the index
+    if "date" not in df.columns:
+        df = df.reset_index()
+        df = normalize_columns(df)
+
+    required_columns = [
+        "date",
+        "open",
+        "high",
+        "low",
+        "close",
+        "adj_close",
+        "volume",
+    ]
+
+    missing = [
+        column
+        for column in required_columns
+        if column not in df.columns
+    ]
+
+    if missing:
+        print(f"  ERROR: Missing columns: {missing}")
+        return 0
+
+    # Convert date
+    df["date"] = pd.to_datetime(df["date"]).dt.date
+
+    # Remove rows with missing price values
+    df = df.dropna(
+        subset=[
+            "open",
+            "high",
+            "low",
+            "close",
+            "adj_close",
+        ]
+    )
+
+    # Remove duplicate dates
+    df = df.drop_duplicates(subset=["date"])
+
+    rows_imported = 0
+
+    for _, row in df.iterrows():
+
+        volume = (
+            int(row["volume"])
+            if pd.notna(row["volume"])
+            else None
+        )
+
+        cursor.execute(
+            """
+            INSERT INTO etf_prices
+            (
+                ticker,
+                date,
+                open,
+                high,
+                low,
+                close,
+                adj_close,
+                volume
+            )
+            VALUES (%s, %s, %s, %s, %s, %s, %s, %s)
+
+            ON CONFLICT (ticker, date)
+            DO UPDATE SET
+                open = EXCLUDED.open,
+                high = EXCLUDED.high,
+                low = EXCLUDED.low,
+                close = EXCLUDED.close,
+                adj_close = EXCLUDED.adj_close,
+                volume = EXCLUDED.volume;
+            """,
+            (
+                ticker,
+                row["date"],
+                float(row["open"]),
+                float(row["high"]),
+                float(row["low"]),
+                float(row["close"]),
+                float(row["adj_close"]),
+                volume,
+            ),
+        )
+
+        rows_imported += 1
+
+    print(f"  Imported: {rows_imported} rows")
+
+    return rows_imported
+
+
+def main():
+
+    validate_db_config()
+
+    print("=" * 70)
+    print("ETF HISTORY IMPORT")
+    print("=" * 70)
+
+    conn = psycopg2.connect(**DB_CONFIG)
+    cursor = conn.cursor()
+
+    total_rows = 0
+    total_files = 0
+
+    files = sorted(
+        file
+        for file in os.listdir(RAW_DIR)
+        if file.endswith(".parquet")
+    )
+
+    print(f"Parquet files found: {len(files)}")
+    print()
 
     try:
 
-        data = pd.read_parquet(file)
+        for filename in files:
 
-        # Handle Yahoo Finance multi-level columns
-        if isinstance(data.columns, pd.MultiIndex):
-            data.columns = data.columns.get_level_values(0)
-
-        data = data.reset_index()
-
-        for _, row in data.iterrows():
-
-            date = pd.to_datetime(row["Date"]).date()
-
-            open_price = row["Open"]
-            high_price = row["High"]
-            low_price = row["Low"]
-            close_price = row["Close"]
-            volume = row["Volume"]
-
-            if pd.isna(open_price) or pd.isna(close_price):
-                continue
-
-            cursor.execute(
-                """
-                INSERT INTO etf_prices
-                (ticker, date, open, high, low, close, volume)
-                VALUES (%s, %s, %s, %s, %s, %s, %s)
-                ON CONFLICT (ticker, date) DO NOTHING;
-                """,
-                (
-                    ticker,
-                    date,
-                    float(open_price),
-                    float(high_price),
-                    float(low_price),
-                    float(close_price),
-                    int(volume)
-                )
+            # Example:
+            # NIFTYBEES_NS.parquet → NIFTYBEES.NS
+            ticker = (
+                filename
+                .replace(".parquet", "")
+                .replace("_", ".")
             )
 
-            if cursor.rowcount > 0:
-                total_inserted += 1
+            filepath = os.path.join(
+                RAW_DIR,
+                filename
+            )
 
-        connection.commit()
+            rows = import_etf_file(
+                cursor,
+                filepath,
+                ticker
+            )
 
-        print(f"Imported {len(data)} rows.")
+            total_rows += rows
+            total_files += 1
+
+            # Commit after every file
+            conn.commit()
+
+        print()
+        print("=" * 70)
+        print("IMPORT COMPLETE")
+        print("=" * 70)
+        print(f"Files processed: {total_files}")
+        print(f"Rows processed:  {total_rows}")
 
     except Exception as error:
 
-        connection.rollback()
+        conn.rollback()
 
-        print(f"FAILED: {ticker}")
+        print()
+        print("=" * 70)
+        print("IMPORT FAILED")
+        print("=" * 70)
         print(error)
 
+        raise
 
-cursor.close()
-connection.close()
+    finally:
+
+        cursor.close()
+        conn.close()
 
 
-print("\n" + "=" * 50)
-print("ETF HISTORICAL IMPORT COMPLETED")
-print("=" * 50)
-print(f"New records inserted: {total_inserted}")
+if __name__ == "__main__":
+    main()
