@@ -1,4 +1,5 @@
 from pathlib import Path
+
 import pandas as pd
 
 
@@ -6,621 +7,401 @@ import pandas as pd
 # CONFIG
 # ============================================================
 
-RAW_TARGET_FILE = Path(
-    "data/targets/etf_forward_outcomes.parquet"
-)
-
-CLEAN_TARGET_FILE = Path(
+TARGET_FILE = Path(
     "data/targets/etf_forward_outcomes_clean.parquet"
 )
 
-AUDIT_OUTPUT_FILE = Path(
-    "data_pipeline/audits/clean_etf_target_extremes.csv"
-)
-
-EXTREME_ROWS = 20
+EXPECTED_ETF_COUNT = 41
 
 
 # ============================================================
-# LOAD RAW TARGET
+# HELPERS
 # ============================================================
 
-def load_raw_target():
+def print_distribution(series, name):
+    series = series.dropna()
 
-    if not RAW_TARGET_FILE.exists():
-        raise FileNotFoundError(
-            f"RAW target file not found:\n{RAW_TARGET_FILE}"
-        )
+    print(f"\n{name}")
+    print("-" * 70)
 
-    df = pd.read_parquet(RAW_TARGET_FILE)
+    print(f"Count:              {len(series):,}")
+    print(f"Mean:               {series.mean():.6f}")
+    print(f"Std:                {series.std():.6f}")
+    print(f"Min:                {series.min():.6f}")
 
-    required = {
-        "ticker",
-        "observation_date",
-        "observation_price",
-        "future_date_6m",
-        "future_price_6m",
-        "forward_return_6m",
-        "future_date_1y",
-        "future_price_1y",
-        "forward_return_1y",
+    percentiles = {
+        "1%": 0.01,
+        "5%": 0.05,
+        "10%": 0.10,
+        "25%": 0.25,
+        "Median": 0.50,
+        "75%": 0.75,
+        "90%": 0.90,
+        "95%": 0.95,
+        "99%": 0.99,
     }
 
-    missing = required - set(df.columns)
-
-    if missing:
-        raise ValueError(
-            "RAW target file is missing columns: "
-            f"{sorted(missing)}"
+    for label, q in percentiles.items():
+        print(
+            f"{label:<20}"
+            f"{series.quantile(q):.6f}"
         )
 
-    # Normalize into the same schema used by the clean target.
-    raw = pd.DataFrame()
+    print(f"Max:                {series.max():.6f}")
 
-    raw["Ticker"] = df["ticker"]
-    raw["Date"] = pd.to_datetime(
-        df["observation_date"],
-        errors="coerce"
-    )
-
-    raw["Adj Close"] = pd.to_numeric(
-        df["observation_price"],
-        errors="coerce"
-    )
-
-    raw["future_date_6m"] = pd.to_datetime(
-        df["future_date_6m"],
-        errors="coerce"
-    )
-
-    raw["future_adj_close_6m"] = pd.to_numeric(
-        df["future_price_6m"],
-        errors="coerce"
-    )
-
-    raw["forward_return_6m"] = pd.to_numeric(
-        df["forward_return_6m"],
-        errors="coerce"
-    )
-
-    raw["future_date_1y"] = pd.to_datetime(
-        df["future_date_1y"],
-        errors="coerce"
-    )
-
-    raw["future_adj_close_1y"] = pd.to_numeric(
-        df["future_price_1y"],
-        errors="coerce"
-    )
-
-    raw["forward_return_1y"] = pd.to_numeric(
-        df["forward_return_1y"],
-        errors="coerce"
-    )
-
-    return raw
-
-
-# ============================================================
-# LOAD CLEAN TARGET
-# ============================================================
-
-def load_clean_target():
-
-    if not CLEAN_TARGET_FILE.exists():
-        raise FileNotFoundError(
-            f"CLEAN target file not found:\n{CLEAN_TARGET_FILE}"
-        )
-
-    df = pd.read_parquet(CLEAN_TARGET_FILE)
-
-    required = {
-        "Ticker",
-        "Date",
-        "Adj Close",
-        "future_date_6m",
-        "future_adj_close_6m",
-        "forward_return_6m",
-        "future_date_1y",
-        "future_adj_close_1y",
-        "forward_return_1y",
-    }
-
-    missing = required - set(df.columns)
-
-    if missing:
-        raise ValueError(
-            "CLEAN target file is missing columns: "
-            f"{sorted(missing)}"
-        )
-
-    clean = df.copy()
-
-    clean["Date"] = pd.to_datetime(
-        clean["Date"],
-        errors="coerce"
-    )
-
-    clean["future_date_6m"] = pd.to_datetime(
-        clean["future_date_6m"],
-        errors="coerce"
-    )
-
-    clean["future_date_1y"] = pd.to_datetime(
-        clean["future_date_1y"],
-        errors="coerce"
-    )
-
-    return clean
-
-
-# ============================================================
-# DISTRIBUTION
-# ============================================================
-
-def print_distribution(
-    df,
-    return_column,
-    title
-):
-
-    values = df[return_column].dropna()
-
-    print("\n" + "=" * 70)
-    print(title)
-    print("=" * 70)
-
-    print(f"Valid observations: {len(values):,}")
+    print("\nExtreme counts:")
     print(
-        f"Missing:           "
-        f"{df[return_column].isna().sum():,}"
+        f"> +100%:            {(series > 1.0).sum():,}"
     )
-
-    if values.empty:
-        return
-
-    q = values.quantile(
-        [
-            0.01,
-            0.05,
-            0.10,
-            0.25,
-            0.50,
-            0.75,
-            0.90,
-            0.95,
-            0.99,
-        ]
+    print(
+        f"> +200%:            {(series > 2.0).sum():,}"
     )
-
-    print(f"Mean:              {values.mean():.6f}")
-    print(f"Std:               {values.std():.6f}")
-    print(f"Min:               {values.min():.6f}")
-    print(f"1%:                {q.loc[0.01]:.6f}")
-    print(f"5%:                {q.loc[0.05]:.6f}")
-    print(f"10%:               {q.loc[0.10]:.6f}")
-    print(f"25%:               {q.loc[0.25]:.6f}")
-    print(f"Median:            {q.loc[0.50]:.6f}")
-    print(f"75%:               {q.loc[0.75]:.6f}")
-    print(f"90%:               {q.loc[0.90]:.6f}")
-    print(f"95%:               {q.loc[0.95]:.6f}")
-    print(f"99%:               {q.loc[0.99]:.6f}")
-    print(f"Max:               {values.max():.6f}")
-
-    print("\nExtreme-return counts:")
-
-    checks = [
-        ("> +100%", values > 1.0),
-        ("> +200%", values > 2.0),
-        ("> +500%", values > 5.0),
-        ("> +1000%", values > 10.0),
-        ("< -25%", values < -0.25),
-        ("< -50%", values < -0.50),
-        ("< -75%", values < -0.75),
-        ("< -90%", values < -0.90),
-    ]
-
-    for label, condition in checks:
-        print(f"{label:<12} {condition.sum():,}")
-
-
-# ============================================================
-# EXTREMES
-# ============================================================
-
-def print_extremes(
-    df,
-    return_column,
-    horizon
-):
-
-    future_date_column = (
-        "future_date_6m"
-        if horizon == "6M"
-        else "future_date_1y"
+    print(
+        f"> +500%:            {(series > 5.0).sum():,}"
     )
-
-    future_price_column = (
-        "future_adj_close_6m"
-        if horizon == "6M"
-        else "future_adj_close_1y"
+    print(
+        f"> +1000%:           {(series > 10.0).sum():,}"
     )
-
-    print("\n" + "=" * 70)
-    print(f"TOP {EXTREME_ROWS} {horizon} RETURNS")
-    print("=" * 70)
-
-    columns = [
-        "Ticker",
-        "Date",
-        "Adj Close",
-        future_date_column,
-        future_price_column,
-        return_column,
-    ]
-
-    top = (
-        df.dropna(subset=[return_column])
-        .nlargest(
-            EXTREME_ROWS,
-            return_column
-        )[columns]
-    )
-
-    print(top.to_string(index=False))
-
-    print("\n" + "=" * 70)
-    print(f"BOTTOM {EXTREME_ROWS} {horizon} RETURNS")
-    print("=" * 70)
-
-    bottom = (
-        df.dropna(subset=[return_column])
-        .nsmallest(
-            EXTREME_ROWS,
-            return_column
-        )[columns]
-    )
-
-    print(bottom.to_string(index=False))
-
-
-# ============================================================
-# RAW VS CLEAN COMPARISON
-# ============================================================
-
-def compare_distributions(
-    raw,
-    clean,
-    return_column,
-    horizon
-):
-
-    raw_values = raw[return_column].dropna()
-    clean_values = clean[return_column].dropna()
-
-    metrics = [
-        "Valid",
-        "Mean",
-        "Std",
-        "Min",
-        "1%",
-        "5%",
-        "10%",
-        "25%",
-        "Median",
-        "75%",
-        "90%",
-        "95%",
-        "99%",
-        "Max",
-    ]
-
-    def calculate(values):
-
-        return [
-            len(values),
-            values.mean(),
-            values.std(),
-            values.min(),
-            values.quantile(0.01),
-            values.quantile(0.05),
-            values.quantile(0.10),
-            values.quantile(0.25),
-            values.quantile(0.50),
-            values.quantile(0.75),
-            values.quantile(0.90),
-            values.quantile(0.95),
-            values.quantile(0.99),
-            values.max(),
-        ]
-
-    comparison = pd.DataFrame(
-        {
-            "Metric": metrics,
-            "Raw": calculate(raw_values),
-            "Clean": calculate(clean_values),
-        }
-    )
-
-    print("\n" + "=" * 70)
-    print(f"RAW vs CLEAN — {horizon}")
-    print("=" * 70)
 
     print(
-        comparison.to_string(
-            index=False,
-            float_format=lambda x: f"{x:.6f}"
-        )
+        f"< -25%:             {(series < -0.25).sum():,}"
+    )
+    print(
+        f"< -50%:             {(series < -0.50).sum():,}"
+    )
+    print(
+        f"< -75%:             {(series < -0.75).sum():,}"
+    )
+    print(
+        f"< -90%:             {(series < -0.90).sum():,}"
     )
 
 
-# ============================================================
-# EXTREME AUDIT FILE
-# ============================================================
+def print_extremes(df, column, name, ascending=False, n=15):
+    print(f"\n{name}")
+    print("-" * 70)
 
-def build_extreme_audit(clean):
+    cols = [
+        "Ticker",
+        "Date",
+        column,
+    ]
 
-    frames = []
+    available_cols = [
+        col for col in cols
+        if col in df.columns
+    ]
 
-    for horizon, return_column in [
-        ("6M", "forward_return_6m"),
-        ("1Y", "forward_return_1y"),
-    ]:
-
-        subset = clean.dropna(
-            subset=[return_column]
-        ).copy()
-
-        extreme = subset[
-            (subset[return_column] > 1.0)
-            | (subset[return_column] < -0.50)
-        ].copy()
-
-        if extreme.empty:
-            continue
-
-        extreme["Horizon"] = horizon
-
-        extreme = extreme[
-            [
-                "Horizon",
-                "Ticker",
-                "Date",
-                "Adj Close",
-                return_column,
-            ]
-        ].rename(
-            columns={
-                return_column: "Forward_Return"
-            }
-        )
-
-        frames.append(extreme)
-
-    if not frames:
-
-        return pd.DataFrame(
-            columns=[
-                "Horizon",
-                "Ticker",
-                "Date",
-                "Adj Close",
-                "Forward_Return",
-            ]
-        )
-
-    result = pd.concat(
-        frames,
-        ignore_index=True
-    )
-
-    return result.sort_values(
-        ["Horizon", "Forward_Return"],
-        ascending=[True, False]
-    )
-
-
-# ============================================================
-# TICKER EXTREME COUNTS
-# ============================================================
-
-def print_ticker_extremes(
-    clean,
-    return_column,
-    horizon
-):
-
-    print("\n" + "=" * 70)
-    print(f"CLEAN ETF EXTREME COUNTS BY TICKER — {horizon}")
-    print("=" * 70)
-
-    summary = (
-        clean
-        .dropna(subset=[return_column])
-        .groupby("Ticker")[return_column]
-        .agg(
-            observations="count",
-            maximum="max",
-            minimum="min",
-            over_100_pct=lambda x: (x > 1.0).sum(),
-            over_200_pct=lambda x: (x > 2.0).sum(),
-            over_500_pct=lambda x: (x > 5.0).sum(),
-            under_minus_50_pct=lambda x: (x < -0.50).sum(),
-        )
+    output = (
+        df.dropna(subset=[column])
         .sort_values(
-            "maximum",
-            ascending=False
+            column,
+            ascending=ascending
         )
+        .head(n)
     )
 
     print(
-        summary.head(15).to_string()
+        output[available_cols].to_string(
+            index=False
+        )
     )
 
 
 # ============================================================
-# MAIN
+# MAIN AUDIT
 # ============================================================
 
 def main():
 
     print("=" * 70)
-    print("CLEAN ETF FORWARD OUTCOME AUDIT")
+    print("FINAL CLEAN ETF FORWARD OUTCOME AUDIT")
     print("=" * 70)
 
     # --------------------------------------------------------
     # Load
     # --------------------------------------------------------
 
-    print("\nLoading raw ETF targets...")
+    if not TARGET_FILE.exists():
+        raise FileNotFoundError(
+            f"Target file not found:\n{TARGET_FILE}"
+        )
 
-    raw = load_raw_target()
+    df = pd.read_parquet(TARGET_FILE)
 
+    print("\nDATASET")
+    print("-" * 70)
+
+    print(f"File:               {TARGET_FILE}")
+    print(f"Rows:               {len(df):,}")
     print(
-        f"Raw rows:      {len(raw):,}"
+        f"Tickers:            "
+        f"{df['Ticker'].nunique():,}"
     )
 
     print(
-        f"Raw tickers:   {raw['Ticker'].nunique():,}"
-    )
-
-    print("\nLoading clean ETF targets...")
-
-    clean = load_clean_target()
-
-    print(
-        f"Clean rows:    {len(clean):,}"
-    )
-
-    print(
-        f"Clean tickers: {clean['Ticker'].nunique():,}"
+        f"Date range:         "
+        f"{df['Date'].min().date()} → "
+        f"{df['Date'].max().date()}"
     )
 
     # --------------------------------------------------------
-    # Structure
+    # Universe validation
+    # --------------------------------------------------------
+
+    tickers = set(df["Ticker"].unique())
+
+    print("\nUNIVERSE VALIDATION")
+    print("-" * 70)
+
+    print(
+        f"Expected ETFs:      {EXPECTED_ETF_COUNT}"
+    )
+    print(
+        f"Actual ETFs:        {len(tickers)}"
+    )
+
+    if len(tickers) != EXPECTED_ETF_COUNT:
+        raise ValueError(
+            "ETF universe size mismatch."
+        )
+
+    if "DYNAMIC.NS" in tickers:
+        raise ValueError(
+            "DYNAMIC.NS is present in the final ETF target dataset."
+        )
+
+    print("DYNAMIC.NS present: False")
+    print("Universe check:     PASS")
+
+    # --------------------------------------------------------
+    # Schema validation
+    # --------------------------------------------------------
+
+    required_columns = [
+        "Ticker",
+        "Date",
+        "Adj Close",
+        "target_date_6m",
+        "future_date_6m",
+        "future_adj_close_6m",
+        "forward_return_6m",
+        "target_date_1y",
+        "future_date_1y",
+        "future_adj_close_1y",
+        "forward_return_1y",
+    ]
+
+    print("\nSCHEMA VALIDATION")
+    print("-" * 70)
+
+    missing_columns = [
+        col
+        for col in required_columns
+        if col not in df.columns
+    ]
+
+    if missing_columns:
+        raise ValueError(
+            f"Missing columns: {missing_columns}"
+        )
+
+    print("Required columns:   PASS")
+
+    # --------------------------------------------------------
+    # Duplicate validation
+    # --------------------------------------------------------
+
+    duplicate_count = df.duplicated(
+        subset=["Ticker", "Date"]
+    ).sum()
+
+    print(
+        f"Duplicate rows:     {duplicate_count}"
+    )
+
+    if duplicate_count != 0:
+        raise ValueError(
+            "Duplicate ticker/date observations found."
+        )
+
+    # --------------------------------------------------------
+    # Target-date validation
+    # --------------------------------------------------------
+
+    invalid_6m = (
+        df["future_date_6m"].notna()
+        &
+        (
+            df["future_date_6m"]
+            < df["target_date_6m"]
+        )
+    ).sum()
+
+    invalid_1y = (
+        df["future_date_1y"].notna()
+        &
+        (
+            df["future_date_1y"]
+            < df["target_date_1y"]
+        )
+    ).sum()
+
+    print("\nTARGET-DATE VALIDATION")
+    print("-" * 70)
+
+    print(
+        f"6M violations:      {invalid_6m}"
+    )
+
+    print(
+        f"1Y violations:      {invalid_1y}"
+    )
+
+    if invalid_6m != 0 or invalid_1y != 0:
+        raise ValueError(
+            "Forward target-date violations found."
+        )
+
+    print("Target-date checks:  PASS")
+
+    # --------------------------------------------------------
+    # Return sanity
+    # --------------------------------------------------------
+
+    invalid_6m_returns = (
+        df["forward_return_6m"].notna()
+        &
+        (
+            df["forward_return_6m"] <= -1
+        )
+    ).sum()
+
+    invalid_1y_returns = (
+        df["forward_return_1y"].notna()
+        &
+        (
+            df["forward_return_1y"] <= -1
+        )
+    ).sum()
+
+    print("\nRETURN SANITY")
+    print("-" * 70)
+
+    print(
+        f"Invalid 6M returns: {invalid_6m_returns}"
+    )
+
+    print(
+        f"Invalid 1Y returns: {invalid_1y_returns}"
+    )
+
+    if (
+        invalid_6m_returns != 0
+        or invalid_1y_returns != 0
+    ):
+        raise ValueError(
+            "Found forward returns <= -100%."
+        )
+
+    print("Return sanity:      PASS")
+
+    # --------------------------------------------------------
+    # Distribution audit
     # --------------------------------------------------------
 
     print("\n" + "=" * 70)
-    print("STRUCTURAL COMPARISON")
+    print("RETURN DISTRIBUTIONS")
     print("=" * 70)
 
-    print(
-        f"Raw row count:       {len(raw):,}"
-    )
-
-    print(
-        f"Clean row count:     {len(clean):,}"
-    )
-
-    print(
-        f"Raw ticker count:    {raw['Ticker'].nunique()}"
-    )
-
-    print(
-        f"Clean ticker count:  {clean['Ticker'].nunique()}"
-    )
-
-    print(
-        f"Raw date range:      "
-        f"{raw['Date'].min().date()} → "
-        f"{raw['Date'].max().date()}"
-    )
-
-    print(
-        f"Clean date range:    "
-        f"{clean['Date'].min().date()} → "
-        f"{clean['Date'].max().date()}"
-    )
-
-    # --------------------------------------------------------
-    # Clean distributions
-    # --------------------------------------------------------
-
     print_distribution(
-        clean,
-        "forward_return_6m",
-        "CLEAN 6-MONTH FORWARD RETURNS"
+        df["forward_return_6m"],
+        "6-MONTH FORWARD RETURNS"
     )
 
     print_distribution(
-        clean,
-        "forward_return_1y",
-        "CLEAN 1-YEAR FORWARD RETURNS"
+        df["forward_return_1y"],
+        "1-YEAR FORWARD RETURNS"
     )
 
     # --------------------------------------------------------
-    # Extremes
+    # Extreme observations
     # --------------------------------------------------------
-
-    print_extremes(
-        clean,
-        "forward_return_6m",
-        "6M"
-    )
-
-    print_extremes(
-        clean,
-        "forward_return_1y",
-        "1Y"
-    )
-
-    # --------------------------------------------------------
-    # Raw vs clean
-    # --------------------------------------------------------
-
-    compare_distributions(
-        raw,
-        clean,
-        "forward_return_6m",
-        "6-MONTH"
-    )
-
-    compare_distributions(
-        raw,
-        clean,
-        "forward_return_1y",
-        "1-YEAR"
-    )
-
-    # --------------------------------------------------------
-    # Per ETF
-    # --------------------------------------------------------
-
-    print_ticker_extremes(
-        clean,
-        "forward_return_6m",
-        "6M"
-    )
-
-    print_ticker_extremes(
-        clean,
-        "forward_return_1y",
-        "1Y"
-    )
-
-    # --------------------------------------------------------
-    # Audit CSV
-    # --------------------------------------------------------
-
-    extreme_audit = build_extreme_audit(clean)
-
-    AUDIT_OUTPUT_FILE.parent.mkdir(
-        parents=True,
-        exist_ok=True
-    )
-
-    extreme_audit.to_csv(
-        AUDIT_OUTPUT_FILE,
-        index=False
-    )
 
     print("\n" + "=" * 70)
-    print("AUDIT FILE")
+    print("EXTREME OBSERVATIONS")
     print("=" * 70)
 
+    print_extremes(
+        df,
+        "forward_return_6m",
+        "TOP 15 6-MONTH RETURNS",
+        ascending=False
+    )
+
+    print_extremes(
+        df,
+        "forward_return_6m",
+        "BOTTOM 15 6-MONTH RETURNS",
+        ascending=True
+    )
+
+    print_extremes(
+        df,
+        "forward_return_1y",
+        "TOP 15 1-YEAR RETURNS",
+        ascending=False
+    )
+
+    print_extremes(
+        df,
+        "forward_return_1y",
+        "BOTTOM 15 1-YEAR RETURNS",
+        ascending=True
+    )
+
+    # --------------------------------------------------------
+    # Per-ETF coverage
+    # --------------------------------------------------------
+
+    print("\n" + "=" * 70)
+    print("PER-ETF TARGET COVERAGE")
+    print("=" * 70)
+
+    coverage = (
+        df.groupby("Ticker")
+        .agg(
+            observations=("Date", "count"),
+            valid_6m=(
+                "forward_return_6m",
+                "count"
+            ),
+            valid_1y=(
+                "forward_return_1y",
+                "count"
+            ),
+        )
+        .reset_index()
+    )
+
+    coverage["6m_coverage"] = (
+        coverage["valid_6m"]
+        / coverage["observations"]
+    )
+
+    coverage["1y_coverage"] = (
+        coverage["valid_1y"]
+        / coverage["observations"]
+    )
+
     print(
-        f"Extreme observations saved to:\n"
-        f"{AUDIT_OUTPUT_FILE}"
+        coverage.to_string(
+            index=False,
+            formatters={
+                "6m_coverage": "{:.2%}".format,
+                "1y_coverage": "{:.2%}".format,
+            }
+        )
     )
 
     # --------------------------------------------------------
@@ -628,27 +409,21 @@ def main():
     # --------------------------------------------------------
 
     print("\n" + "=" * 70)
-    print("IMPORTANT")
+    print("AUDIT COMPLETE")
     print("=" * 70)
 
     print(
-        "No returns were deleted, clipped, capped, or modified."
+        "Final 41-ETF target dataset passed "
+        "structural and return sanity checks."
     )
 
     print(
-        "PostgreSQL was not modified."
+        "\nNO LABELS WERE CREATED."
     )
 
     print(
-        "The original raw ETF target file was not modified."
+        "NO DATA WAS MODIFIED."
     )
-
-    print(
-        "This audit is for investigation before freezing "
-        "the clean ETF target dataset."
-    )
-
-    print("=" * 70)
 
 
 if __name__ == "__main__":

@@ -36,69 +36,63 @@ def ticker_from_filename(path: Path) -> str:
 
 
 def load_clean_etf_data():
-    """
-    Load all cleaned ETF parquet files.
+    """Load all cleaned ETF parquet files.
+
+    Clean ETF Parquet files store trading dates in the DataFrame index,
+    while price fields such as ``Adj Close`` are columns.
     """
     files = sorted(INPUT_DIR.glob("*.parquet"))
-
     if not files:
-        raise FileNotFoundError(
-            f"No ETF parquet files found in {INPUT_DIR}"
-        )
+        raise FileNotFoundError(f"No ETF parquet files found in {INPUT_DIR}")
 
     frames = []
-
     for file in files:
         ticker = ticker_from_filename(file)
+        if ticker == "DYNAMIC.NS":
+            continue
 
         df = pd.read_parquet(file)
-
-        if "Date" not in df.columns:
-            raise ValueError(
-                f"{file} does not contain a 'Date' column."
-            )
-
         if "Adj Close" not in df.columns:
             raise ValueError(
-                f"{file} does not contain 'Adj Close'."
+                f"{file} does not contain 'Adj Close'. "
+                f"Columns found: {list(df.columns)}"
             )
 
-        df = df[["Date", "Adj Close"]].copy()
+        dates = pd.to_datetime(df.index, errors="coerce").normalize()
+        frame = pd.DataFrame({
+            "Date": dates,
+            "Adj Close": pd.to_numeric(df["Adj Close"], errors="coerce"),
+        })
+        frame["Ticker"] = ticker
+        frames.append(frame)
 
-        df["Date"] = pd.to_datetime(
-            df["Date"],
-            errors="coerce"
-        ).dt.normalize()
+    if not frames:
+        raise ValueError("No clean ETF files were loaded.")
 
-        df["Adj Close"] = pd.to_numeric(
-            df["Adj Close"],
-            errors="coerce"
+    data = pd.concat(frames, ignore_index=True)
+    data = data.dropna(subset=["Date", "Adj Close"])
+
+    invalid_price_count = (data["Adj Close"] <= 0).sum()
+    if invalid_price_count:
+        raise ValueError(f"Found {invalid_price_count} non-positive Adj Close values.")
+
+    data = data.sort_values(["Ticker", "Date"]).reset_index(drop=True)
+
+    duplicate_count = data.duplicated(subset=["Ticker", "Date"]).sum()
+    if duplicate_count:
+        print(f"Warning: removing {duplicate_count} duplicate ticker/date observations.")
+        data = data.drop_duplicates(
+            subset=["Ticker", "Date"], keep="last"
+        ).reset_index(drop=True)
+
+    actual_tickers = set(data["Ticker"].unique())
+    if len(actual_tickers) != 41:
+        raise ValueError(
+            f"Expected 41 clean ETF tickers, but loaded {len(actual_tickers)}."
         )
 
-        df["Ticker"] = ticker
-
-        frames.append(df)
-
-    data = pd.concat(
-        frames,
-        ignore_index=True
-    )
-
-    # Remove invalid rows
-    data = data.dropna(
-        subset=["Date", "Adj Close"]
-    )
-
-    # Sort
-    data = data.sort_values(
-        ["Ticker", "Date"]
-    ).reset_index(drop=True)
-
-    # Remove accidental duplicate observations
-    data = data.drop_duplicates(
-        subset=["Ticker", "Date"],
-        keep="last"
-    ).reset_index(drop=True)
+    if "DYNAMIC.NS" in actual_tickers:
+        raise ValueError("DYNAMIC.NS must not be present in the clean ETF target dataset.")
 
     return data
 
@@ -371,7 +365,7 @@ def print_summary(result):
 def main():
 
     print("=" * 70)
-    print("GENERATING CLEAN ETF FORWARD OUTCOMES")
+    print("GENERATING CLEAN ETF FORWARD OUTCOMES — 41 ETF UNIVERSE")
     print("=" * 70)
 
     print("\nLoading cleaned ETF prices...")
@@ -384,6 +378,10 @@ def main():
 
     print(
         f"Loaded {df['Ticker'].nunique()} ETF tickers."
+    )
+
+    print(
+        f"DYNAMIC.NS present: {'DYNAMIC.NS' in set(df['Ticker'].unique())}"
     )
 
     print("\nCalculating 6M and 1Y forward outcomes...")
