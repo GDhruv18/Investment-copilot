@@ -30,3 +30,5 @@ Thumbs.db
 # Python tools
 .pytest_cache/
 .mypy_cache/
+
+data/ml/sequences/**/*.npy

@@ -1,0 +1,34 @@
+{
+  "experiment": "MF 2Y train-only standardization",
+  "asset_class": "mutual_funds",
+  "horizon": "2y",
+  "lookback": 252,
+  "n_features": 27,
+  "scaling": "standardization",
+  "scaler_fit_split": "train_only",
+  "lstm_units": 64,
+  "dense_units": 32,
+  "dropout": 0.2,
+  "learning_rate": 0.001,
+  "batch_size": 64,
+  "max_epochs": 50,
+  "early_stopping_patience": 7,
+  "parameter_count": 25731,
+  "epochs_trained": 9,
+  "best_epoch": 2,
+  "best_val_loss": 1.1163780689239502,
+  "best_val_accuracy": 0.4799160063266754,
+  "train_accuracy_at_best_epoch": 0.6777694821357727,
+  "train_loss_at_best_epoch": 0.7418903112411499,
+  "training_seconds": 264.94456577301025,
+  "validation": {
+    "accuracy": 0.4799160025845359,
+    "balanced_accuracy": 0.47441673854435035,
+    "macro_f1": 0.4681524158331529
+  },
+  "test": {
+    "accuracy": 0.4471385542168675,
+    "balanced_accuracy": 0.4617568958305796,
+    "macro_f1": 0.44230343623924145
+  }
+}

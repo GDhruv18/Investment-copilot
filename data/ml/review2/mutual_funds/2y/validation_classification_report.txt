@@ -1,0 +1,9 @@
+              precision    recall  f1-score   support
+
+        Weak     0.4649    0.8095    0.5906     11075
+     Neutral     0.5567    0.5871    0.5715     14668
+  Attractive     0.6665    0.1399    0.2313     11401
+
+    accuracy                         0.5161     37144
+   macro avg     0.5627    0.5121    0.4645     37144
+weighted avg     0.5630    0.5161    0.4728     37144

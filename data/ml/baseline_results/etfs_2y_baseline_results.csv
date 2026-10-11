@@ -1,0 +1,2 @@
+asset_class,horizon,majority_accuracy,majority_balanced_accuracy,majority_macro_f1,majority_weighted_f1,logistic_accuracy,logistic_balanced_accuracy,logistic_macro_f1,logistic_weighted_f1
+etfs,2y,0.39508332566062054,0.3333333333333333,0.1887979584653291,0.22377277592525383,0.3681981401344259,0.36702661071847015,0.32658543883854135,0.3345828482340237

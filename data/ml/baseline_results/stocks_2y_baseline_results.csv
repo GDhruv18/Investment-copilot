@@ -1,0 +1,2 @@
+asset_class,horizon,majority_accuracy,majority_balanced_accuracy,majority_macro_f1,majority_weighted_f1,logistic_accuracy,logistic_balanced_accuracy,logistic_macro_f1,logistic_weighted_f1
+stocks,2y,0.4000991187721662,0.3333333333333333,0.19050990195753092,0.22866853167173973,0.4249562483544735,0.4153634479552128,0.41784067059746294,0.42180751927466603

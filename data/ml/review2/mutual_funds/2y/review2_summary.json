@@ -1,0 +1,32 @@
+{
+    "project": "Investment Copilot",
+    "asset_class": "Mutual Funds",
+    "horizon": "2Y",
+    "model": "LSTM",
+    "input_shape": [
+        252,
+        27
+    ],
+    "architecture": [
+        "LSTM(64)",
+        "Dropout(0.20)",
+        "Dense(32, ReLU)",
+        "Dropout(0.20)",
+        "Dense(3, Softmax)"
+    ],
+    "optimizer": "Adam",
+    "learning_rate": 0.001,
+    "loss": "Sparse Categorical Crossentropy",
+    "batch_size": 64,
+    "best_epoch": 8,
+    "validation": {
+        "accuracy": 0.516126426879173,
+        "balanced_accuracy": 0.5121470295535586,
+        "macro_f1": 0.46445168488903094
+    },
+    "test": {
+        "accuracy": 0.46780873493975905,
+        "balanced_accuracy": 0.4937395347197791,
+        "macro_f1": 0.45321398531659024
+    }
+}

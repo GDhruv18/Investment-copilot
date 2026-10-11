@@ -1,0 +1,35 @@
+{
+  "experiment": "MF 2Y rolling_sharpe_60d ablation",
+  "asset_class": "mutual_funds",
+  "horizon": "2y",
+  "lookback": 252,
+  "original_features": 27,
+  "ablation_features": 26,
+  "removed_feature": "rolling_sharpe_60d",
+  "removed_feature_index": 19,
+  "lstm_units": 64,
+  "dense_units": 32,
+  "dropout": 0.2,
+  "learning_rate": 0.001,
+  "batch_size": 64,
+  "max_epochs": 50,
+  "early_stopping_patience": 7,
+  "parameter_count": 25475,
+  "epochs_trained": 8,
+  "best_epoch": 1,
+  "best_val_loss": 1.0476220846176147,
+  "best_val_accuracy": 0.44128257036209106,
+  "training_accuracy_at_best_epoch": 0.5550692081451416,
+  "training_loss_at_best_epoch": 0.926590085029602,
+  "training_seconds": 236.93164801597595,
+  "validation": {
+    "accuracy": 0.4412825759207409,
+    "balanced_accuracy": 0.42442185070352245,
+    "macro_f1": 0.4167513650698947
+  },
+  "test": {
+    "accuracy": 0.3802710843373494,
+    "balanced_accuracy": 0.3656581872711577,
+    "macro_f1": 0.36352201220868946
+  }
+}

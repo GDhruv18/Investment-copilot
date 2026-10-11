@@ -1,0 +1,33 @@
+{
+  "asset_class": "mutual_funds",
+  "horizon": "1y",
+  "lookback": 252,
+  "n_features": 27,
+  "lstm_units": 64,
+  "dense_units": 32,
+  "dropout": 0.2,
+  "learning_rate": 0.001,
+  "batch_size": 64,
+  "max_epochs": 50,
+  "early_stopping_patience": 7,
+  "parameter_count": 25731,
+  "epochs_trained": 13,
+  "best_epoch": 6,
+  "training_seconds": 560.5923516750336,
+  "validation": {
+    "accuracy": 0.4464614355027606,
+    "balanced_accuracy": 0.4223598984500017,
+    "macro_f1": 0.4171219708961426,
+    "weighted_f1": 0.43334294171825977,
+    "macro_precision": 0.4417584854152852,
+    "macro_recall": 0.4223598984500017
+  },
+  "test": {
+    "accuracy": 0.43697714196858967,
+    "balanced_accuracy": 0.4239277237205569,
+    "macro_f1": 0.4179718116523001,
+    "weighted_f1": 0.4280149020747198,
+    "macro_precision": 0.42156571958439965,
+    "macro_recall": 0.4239277237205569
+  }
+}

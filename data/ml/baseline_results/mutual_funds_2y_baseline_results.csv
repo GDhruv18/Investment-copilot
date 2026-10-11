@@ -1,0 +1,2 @@
+asset_class,horizon,majority_accuracy,majority_balanced_accuracy,majority_macro_f1,majority_weighted_f1,logistic_accuracy,logistic_balanced_accuracy,logistic_macro_f1,logistic_weighted_f1
+mutual_funds,2y,0.3975808383233533,0.3333333333333333,0.18965192205521944,0.22620591048104824,0.5085748502994012,0.5004359916126733,0.495441602283529,0.5010641218602082
