@@ -1,0 +1,15 @@
+{
+  "register_rows": 9,
+  "register_approved_mappings": 0,
+  "register_unit_verified_mappings": 0,
+  "register_independently_verified_mappings": 0,
+  "register_mappings_passing_all_approval_checks": 0,
+  "observation_rows": 33857,
+  "observation_scoring_eligible_rows": 0,
+  "observation_mapping_approved_rows": 0,
+  "observation_currency_quarantine_rows": 785,
+  "snapshot_tickers": 100,
+  "snapshot_scoring_eligible_rows": 0,
+  "gate_status": "PASS_CLOSED_AS_EXPECTED",
+  "note": "This audit checks current flags; it does not approve mappings or change datasets."
+}

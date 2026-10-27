@@ -1,0 +1,588 @@
+{
+  "source_file": "data\\ml\\current_signals\\model_signals_20261026T134547Z.parquet",
+  "rows_written": 1680,
+  "profile_weights": {
+    "conservative": {
+      "ml": 0.45,
+      "risk": 0.4,
+      "trend": 0.15
+    },
+    "moderate": {
+      "ml": 0.5,
+      "risk": 0.3,
+      "trend": 0.2
+    },
+    "aggressive": {
+      "ml": 0.55,
+      "risk": 0.2,
+      "trend": 0.25
+    }
+  },
+  "profile_risk_component_weights": {
+    "conservative": {
+      "volatility_quality": 0.65,
+      "drawdown_quality": 0.35
+    },
+    "moderate": {
+      "volatility_quality": 0.5,
+      "drawdown_quality": 0.5
+    },
+    "aggressive": {
+      "volatility_quality": 0.35,
+      "drawdown_quality": 0.65
+    }
+  },
+  "profiles": {
+    "conservative": {
+      "rows": 360,
+      "recommendation_candidates": 72,
+      "by_horizon": {
+        "1y": {
+          "NOT_SHORTLISTED_PROBABILITY_FILTER": 86,
+          "RECOMMENDATION_CANDIDATE": 17,
+          "REVIEW_FLAT_NAV_HISTORY": 1,
+          "REVIEW_INCOMPLETE_RISK_OR_TREND": 6,
+          "REVIEW_OUTSIDE_MODEL_TRAINING_UNIVERSE": 0
+        },
+        "2y": {
+          "NOT_SHORTLISTED_PROBABILITY_FILTER": 38,
+          "RECOMMENDATION_CANDIDATE": 20,
+          "REVIEW_FLAT_NAV_HISTORY": 0,
+          "REVIEW_INCOMPLETE_RISK_OR_TREND": 6,
+          "REVIEW_OUTSIDE_MODEL_TRAINING_UNIVERSE": 46
+        },
+        "6m": {
+          "NOT_SHORTLISTED_PROBABILITY_FILTER": 99,
+          "RECOMMENDATION_CANDIDATE": 35,
+          "REVIEW_FLAT_NAV_HISTORY": 1,
+          "REVIEW_INCOMPLETE_RISK_OR_TREND": 5,
+          "REVIEW_OUTSIDE_MODEL_TRAINING_UNIVERSE": 0
+        }
+      },
+      "by_asset_and_horizon": [
+        {
+          "asset_class": "etfs",
+          "horizon": "1y",
+          "candidate_status": "NOT_SHORTLISTED_PROBABILITY_FILTER",
+          "count": 11
+        },
+        {
+          "asset_class": "etfs",
+          "horizon": "2y",
+          "candidate_status": "NOT_SHORTLISTED_PROBABILITY_FILTER",
+          "count": 5
+        },
+        {
+          "asset_class": "etfs",
+          "horizon": "2y",
+          "candidate_status": "RECOMMENDATION_CANDIDATE",
+          "count": 6
+        },
+        {
+          "asset_class": "etfs",
+          "horizon": "6m",
+          "candidate_status": "NOT_SHORTLISTED_PROBABILITY_FILTER",
+          "count": 25
+        },
+        {
+          "asset_class": "etfs",
+          "horizon": "6m",
+          "candidate_status": "RECOMMENDATION_CANDIDATE",
+          "count": 16
+        },
+        {
+          "asset_class": "mutual_funds",
+          "horizon": "1y",
+          "candidate_status": "NOT_SHORTLISTED_PROBABILITY_FILTER",
+          "count": 75
+        },
+        {
+          "asset_class": "mutual_funds",
+          "horizon": "1y",
+          "candidate_status": "RECOMMENDATION_CANDIDATE",
+          "count": 17
+        },
+        {
+          "asset_class": "mutual_funds",
+          "horizon": "1y",
+          "candidate_status": "REVIEW_FLAT_NAV_HISTORY",
+          "count": 1
+        },
+        {
+          "asset_class": "mutual_funds",
+          "horizon": "1y",
+          "candidate_status": "REVIEW_INCOMPLETE_RISK_OR_TREND",
+          "count": 6
+        },
+        {
+          "asset_class": "mutual_funds",
+          "horizon": "2y",
+          "candidate_status": "NOT_SHORTLISTED_PROBABILITY_FILTER",
+          "count": 33
+        },
+        {
+          "asset_class": "mutual_funds",
+          "horizon": "2y",
+          "candidate_status": "RECOMMENDATION_CANDIDATE",
+          "count": 14
+        },
+        {
+          "asset_class": "mutual_funds",
+          "horizon": "2y",
+          "candidate_status": "REVIEW_INCOMPLETE_RISK_OR_TREND",
+          "count": 6
+        },
+        {
+          "asset_class": "mutual_funds",
+          "horizon": "2y",
+          "candidate_status": "REVIEW_OUTSIDE_MODEL_TRAINING_UNIVERSE",
+          "count": 46
+        },
+        {
+          "asset_class": "mutual_funds",
+          "horizon": "6m",
+          "candidate_status": "NOT_SHORTLISTED_PROBABILITY_FILTER",
+          "count": 74
+        },
+        {
+          "asset_class": "mutual_funds",
+          "horizon": "6m",
+          "candidate_status": "RECOMMENDATION_CANDIDATE",
+          "count": 19
+        },
+        {
+          "asset_class": "mutual_funds",
+          "horizon": "6m",
+          "candidate_status": "REVIEW_FLAT_NAV_HISTORY",
+          "count": 1
+        },
+        {
+          "asset_class": "mutual_funds",
+          "horizon": "6m",
+          "candidate_status": "REVIEW_INCOMPLETE_RISK_OR_TREND",
+          "count": 5
+        }
+      ]
+    },
+    "moderate": {
+      "rows": 660,
+      "recommendation_candidates": 195,
+      "by_horizon": {
+        "1y": {
+          "NOT_SHORTLISTED_PROBABILITY_FILTER": 155,
+          "RECOMMENDATION_CANDIDATE": 45,
+          "REVIEW_FLAT_NAV_HISTORY": 1,
+          "REVIEW_INCOMPLETE_RISK_OR_TREND": 6,
+          "REVIEW_OUTSIDE_MODEL_TRAINING_UNIVERSE": 0,
+          "REVIEW_WEAK_SIGNAL": 3
+        },
+        "2y": {
+          "NOT_SHORTLISTED_PROBABILITY_FILTER": 85,
+          "RECOMMENDATION_CANDIDATE": 73,
+          "REVIEW_FLAT_NAV_HISTORY": 0,
+          "REVIEW_INCOMPLETE_RISK_OR_TREND": 6,
+          "REVIEW_OUTSIDE_MODEL_TRAINING_UNIVERSE": 46,
+          "REVIEW_WEAK_SIGNAL": 0
+        },
+        "6m": {
+          "NOT_SHORTLISTED_PROBABILITY_FILTER": 155,
+          "RECOMMENDATION_CANDIDATE": 77,
+          "REVIEW_FLAT_NAV_HISTORY": 1,
+          "REVIEW_INCOMPLETE_RISK_OR_TREND": 5,
+          "REVIEW_OUTSIDE_MODEL_TRAINING_UNIVERSE": 0,
+          "REVIEW_WEAK_SIGNAL": 2
+        }
+      },
+      "by_asset_and_horizon": [
+        {
+          "asset_class": "etfs",
+          "horizon": "1y",
+          "candidate_status": "NOT_SHORTLISTED_PROBABILITY_FILTER",
+          "count": 11
+        },
+        {
+          "asset_class": "etfs",
+          "horizon": "2y",
+          "candidate_status": "NOT_SHORTLISTED_PROBABILITY_FILTER",
+          "count": 5
+        },
+        {
+          "asset_class": "etfs",
+          "horizon": "2y",
+          "candidate_status": "RECOMMENDATION_CANDIDATE",
+          "count": 6
+        },
+        {
+          "asset_class": "etfs",
+          "horizon": "6m",
+          "candidate_status": "NOT_SHORTLISTED_PROBABILITY_FILTER",
+          "count": 21
+        },
+        {
+          "asset_class": "etfs",
+          "horizon": "6m",
+          "candidate_status": "RECOMMENDATION_CANDIDATE",
+          "count": 20
+        },
+        {
+          "asset_class": "mutual_funds",
+          "horizon": "1y",
+          "candidate_status": "NOT_SHORTLISTED_PROBABILITY_FILTER",
+          "count": 70
+        },
+        {
+          "asset_class": "mutual_funds",
+          "horizon": "1y",
+          "candidate_status": "RECOMMENDATION_CANDIDATE",
+          "count": 19
+        },
+        {
+          "asset_class": "mutual_funds",
+          "horizon": "1y",
+          "candidate_status": "REVIEW_FLAT_NAV_HISTORY",
+          "count": 1
+        },
+        {
+          "asset_class": "mutual_funds",
+          "horizon": "1y",
+          "candidate_status": "REVIEW_INCOMPLETE_RISK_OR_TREND",
+          "count": 6
+        },
+        {
+          "asset_class": "mutual_funds",
+          "horizon": "1y",
+          "candidate_status": "REVIEW_WEAK_SIGNAL",
+          "count": 3
+        },
+        {
+          "asset_class": "mutual_funds",
+          "horizon": "2y",
+          "candidate_status": "NOT_SHORTLISTED_PROBABILITY_FILTER",
+          "count": 32
+        },
+        {
+          "asset_class": "mutual_funds",
+          "horizon": "2y",
+          "candidate_status": "RECOMMENDATION_CANDIDATE",
+          "count": 15
+        },
+        {
+          "asset_class": "mutual_funds",
+          "horizon": "2y",
+          "candidate_status": "REVIEW_INCOMPLETE_RISK_OR_TREND",
+          "count": 6
+        },
+        {
+          "asset_class": "mutual_funds",
+          "horizon": "2y",
+          "candidate_status": "REVIEW_OUTSIDE_MODEL_TRAINING_UNIVERSE",
+          "count": 46
+        },
+        {
+          "asset_class": "mutual_funds",
+          "horizon": "6m",
+          "candidate_status": "NOT_SHORTLISTED_PROBABILITY_FILTER",
+          "count": 71
+        },
+        {
+          "asset_class": "mutual_funds",
+          "horizon": "6m",
+          "candidate_status": "RECOMMENDATION_CANDIDATE",
+          "count": 22
+        },
+        {
+          "asset_class": "mutual_funds",
+          "horizon": "6m",
+          "candidate_status": "REVIEW_FLAT_NAV_HISTORY",
+          "count": 1
+        },
+        {
+          "asset_class": "mutual_funds",
+          "horizon": "6m",
+          "candidate_status": "REVIEW_INCOMPLETE_RISK_OR_TREND",
+          "count": 5
+        },
+        {
+          "asset_class": "stocks",
+          "horizon": "1y",
+          "candidate_status": "NOT_SHORTLISTED_PROBABILITY_FILTER",
+          "count": 74
+        },
+        {
+          "asset_class": "stocks",
+          "horizon": "1y",
+          "candidate_status": "RECOMMENDATION_CANDIDATE",
+          "count": 26
+        },
+        {
+          "asset_class": "stocks",
+          "horizon": "2y",
+          "candidate_status": "NOT_SHORTLISTED_PROBABILITY_FILTER",
+          "count": 48
+        },
+        {
+          "asset_class": "stocks",
+          "horizon": "2y",
+          "candidate_status": "RECOMMENDATION_CANDIDATE",
+          "count": 52
+        },
+        {
+          "asset_class": "stocks",
+          "horizon": "6m",
+          "candidate_status": "NOT_SHORTLISTED_PROBABILITY_FILTER",
+          "count": 63
+        },
+        {
+          "asset_class": "stocks",
+          "horizon": "6m",
+          "candidate_status": "RECOMMENDATION_CANDIDATE",
+          "count": 35
+        },
+        {
+          "asset_class": "stocks",
+          "horizon": "6m",
+          "candidate_status": "REVIEW_WEAK_SIGNAL",
+          "count": 2
+        }
+      ]
+    },
+    "aggressive": {
+      "rows": 660,
+      "recommendation_candidates": 331,
+      "by_horizon": {
+        "1y": {
+          "NOT_SHORTLISTED_PROBABILITY_FILTER": 65,
+          "RECOMMENDATION_CANDIDATE": 114,
+          "REVIEW_FLAT_NAV_HISTORY": 1,
+          "REVIEW_INCOMPLETE_RISK_OR_TREND": 6,
+          "REVIEW_OUTSIDE_MODEL_TRAINING_UNIVERSE": 0,
+          "REVIEW_WEAK_SIGNAL": 24
+        },
+        "2y": {
+          "NOT_SHORTLISTED_PROBABILITY_FILTER": 66,
+          "RECOMMENDATION_CANDIDATE": 90,
+          "REVIEW_FLAT_NAV_HISTORY": 0,
+          "REVIEW_INCOMPLETE_RISK_OR_TREND": 6,
+          "REVIEW_OUTSIDE_MODEL_TRAINING_UNIVERSE": 46,
+          "REVIEW_WEAK_SIGNAL": 2
+        },
+        "6m": {
+          "NOT_SHORTLISTED_PROBABILITY_FILTER": 95,
+          "RECOMMENDATION_CANDIDATE": 127,
+          "REVIEW_FLAT_NAV_HISTORY": 1,
+          "REVIEW_INCOMPLETE_RISK_OR_TREND": 5,
+          "REVIEW_OUTSIDE_MODEL_TRAINING_UNIVERSE": 0,
+          "REVIEW_WEAK_SIGNAL": 12
+        }
+      },
+      "by_asset_and_horizon": [
+        {
+          "asset_class": "etfs",
+          "horizon": "1y",
+          "candidate_status": "NOT_SHORTLISTED_PROBABILITY_FILTER",
+          "count": 9
+        },
+        {
+          "asset_class": "etfs",
+          "horizon": "1y",
+          "candidate_status": "RECOMMENDATION_CANDIDATE",
+          "count": 2
+        },
+        {
+          "asset_class": "etfs",
+          "horizon": "2y",
+          "candidate_status": "NOT_SHORTLISTED_PROBABILITY_FILTER",
+          "count": 3
+        },
+        {
+          "asset_class": "etfs",
+          "horizon": "2y",
+          "candidate_status": "RECOMMENDATION_CANDIDATE",
+          "count": 8
+        },
+        {
+          "asset_class": "etfs",
+          "horizon": "6m",
+          "candidate_status": "NOT_SHORTLISTED_PROBABILITY_FILTER",
+          "count": 14
+        },
+        {
+          "asset_class": "etfs",
+          "horizon": "6m",
+          "candidate_status": "RECOMMENDATION_CANDIDATE",
+          "count": 25
+        },
+        {
+          "asset_class": "etfs",
+          "horizon": "6m",
+          "candidate_status": "REVIEW_WEAK_SIGNAL",
+          "count": 2
+        },
+        {
+          "asset_class": "mutual_funds",
+          "horizon": "1y",
+          "candidate_status": "NOT_SHORTLISTED_PROBABILITY_FILTER",
+          "count": 34
+        },
+        {
+          "asset_class": "mutual_funds",
+          "horizon": "1y",
+          "candidate_status": "RECOMMENDATION_CANDIDATE",
+          "count": 35
+        },
+        {
+          "asset_class": "mutual_funds",
+          "horizon": "1y",
+          "candidate_status": "REVIEW_FLAT_NAV_HISTORY",
+          "count": 1
+        },
+        {
+          "asset_class": "mutual_funds",
+          "horizon": "1y",
+          "candidate_status": "REVIEW_INCOMPLETE_RISK_OR_TREND",
+          "count": 6
+        },
+        {
+          "asset_class": "mutual_funds",
+          "horizon": "1y",
+          "candidate_status": "REVIEW_WEAK_SIGNAL",
+          "count": 23
+        },
+        {
+          "asset_class": "mutual_funds",
+          "horizon": "2y",
+          "candidate_status": "NOT_SHORTLISTED_PROBABILITY_FILTER",
+          "count": 29
+        },
+        {
+          "asset_class": "mutual_funds",
+          "horizon": "2y",
+          "candidate_status": "RECOMMENDATION_CANDIDATE",
+          "count": 18
+        },
+        {
+          "asset_class": "mutual_funds",
+          "horizon": "2y",
+          "candidate_status": "REVIEW_INCOMPLETE_RISK_OR_TREND",
+          "count": 6
+        },
+        {
+          "asset_class": "mutual_funds",
+          "horizon": "2y",
+          "candidate_status": "REVIEW_OUTSIDE_MODEL_TRAINING_UNIVERSE",
+          "count": 46
+        },
+        {
+          "asset_class": "mutual_funds",
+          "horizon": "6m",
+          "candidate_status": "NOT_SHORTLISTED_PROBABILITY_FILTER",
+          "count": 63
+        },
+        {
+          "asset_class": "mutual_funds",
+          "horizon": "6m",
+          "candidate_status": "RECOMMENDATION_CANDIDATE",
+          "count": 26
+        },
+        {
+          "asset_class": "mutual_funds",
+          "horizon": "6m",
+          "candidate_status": "REVIEW_FLAT_NAV_HISTORY",
+          "count": 1
+        },
+        {
+          "asset_class": "mutual_funds",
+          "horizon": "6m",
+          "candidate_status": "REVIEW_INCOMPLETE_RISK_OR_TREND",
+          "count": 5
+        },
+        {
+          "asset_class": "mutual_funds",
+          "horizon": "6m",
+          "candidate_status": "REVIEW_WEAK_SIGNAL",
+          "count": 4
+        },
+        {
+          "asset_class": "stocks",
+          "horizon": "1y",
+          "candidate_status": "NOT_SHORTLISTED_PROBABILITY_FILTER",
+          "count": 22
+        },
+        {
+          "asset_class": "stocks",
+          "horizon": "1y",
+          "candidate_status": "RECOMMENDATION_CANDIDATE",
+          "count": 77
+        },
+        {
+          "asset_class": "stocks",
+          "horizon": "1y",
+          "candidate_status": "REVIEW_WEAK_SIGNAL",
+          "count": 1
+        },
+        {
+          "asset_class": "stocks",
+          "horizon": "2y",
+          "candidate_status": "NOT_SHORTLISTED_PROBABILITY_FILTER",
+          "count": 34
+        },
+        {
+          "asset_class": "stocks",
+          "horizon": "2y",
+          "candidate_status": "RECOMMENDATION_CANDIDATE",
+          "count": 64
+        },
+        {
+          "asset_class": "stocks",
+          "horizon": "2y",
+          "candidate_status": "REVIEW_WEAK_SIGNAL",
+          "count": 2
+        },
+        {
+          "asset_class": "stocks",
+          "horizon": "6m",
+          "candidate_status": "NOT_SHORTLISTED_PROBABILITY_FILTER",
+          "count": 18
+        },
+        {
+          "asset_class": "stocks",
+          "horizon": "6m",
+          "candidate_status": "RECOMMENDATION_CANDIDATE",
+          "count": 76
+        },
+        {
+          "asset_class": "stocks",
+          "horizon": "6m",
+          "candidate_status": "REVIEW_WEAK_SIGNAL",
+          "count": 6
+        }
+      ]
+    }
+  },
+  "feature_coverage": {
+    "stocks": {
+      "rows": 600,
+      "matched_feature_rows": 600,
+      "missing_feature_rows": 0
+    },
+    "etfs": {
+      "rows": 189,
+      "matched_feature_rows": 189,
+      "missing_feature_rows": 0
+    },
+    "mutual_funds": {
+      "rows": 891,
+      "matched_feature_rows": 891,
+      "missing_feature_rows": 0
+    }
+  },
+  "limitations": [
+    "Scores are research rankings, not expected returns.",
+    "Weights require historical out-of-sample validation.",
+    "Profile rules are initial screening policies, not personal suitability assessments.",
+    "Fundamental scoring remains disabled pending approval.",
+    "No portfolio allocation, liquidity assessment or tax analysis is included.",
+    "Feature gaps and warm-up NaNs are not imputed.",
+    "ETF 1Y and 2Y coverage is limited by available valid model predictions."
+  ]
+}

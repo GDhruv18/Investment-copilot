@@ -1,0 +1,10 @@
+metric,period_group,screener_field,yahoo_field,matched_pairs,distinct_tickers,currency_mismatch_pairs,usable_for_scale_diagnostic,median_ratio_nonmismatch,pairs_near_1e7_nonmismatch,sign_disagreements,unit_verified_pairs,scoring_eligible_pairs
+operating_cash_flow,cash_flow,Cash from Operating Activity +,Cash Flow From Continuing Operating Activities,21,6,4,17,10000021.025202557,15,0,0,0
+operating_cash_flow,cash_flow,Cash from Operating Activity +,Operating Cash Flow,381,97,8,372,10000000.0,370,1,0,0
+revenue,income,Revenue +,Operating Revenue,43,11,0,43,6851214.912823049,31,0,0,0
+revenue,income,Revenue +,Total Revenue,43,11,0,43,6851214.912823049,31,0,0,0
+revenue,income,Sales +,Operating Revenue,370,86,9,361,9999412.052915238,361,0,0,0
+revenue,income,Sales +,Total Revenue,370,86,9,361,9999412.052915238,361,0,0,0
+total_assets,balance_sheet,Total Assets,Total Assets,382,97,8,374,10005615.518240783,374,0,0,0
+total_debt,balance_sheet,Borrowing,Total Debt,44,11,0,44,9887410.571138483,44,0,0,0
+total_debt,balance_sheet,Borrowings +,Total Debt,338,86,8,329,10000000.0,323,1,0,0

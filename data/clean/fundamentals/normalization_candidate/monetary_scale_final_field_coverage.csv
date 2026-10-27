@@ -1,0 +1,13 @@
+metric,source,field,statement_types_configured,observations,tickers,dated_observations
+revenue,Screener.in,Sales +,annual_income_statement | quarterly_income_statement,2118,87,2118
+revenue,Screener.in,Revenue +,annual_income_statement | quarterly_income_statement,276,12,276
+revenue,Yahoo Finance via yfinance,Total Revenue,annual_income_statement | quarterly_income_statement,895,100,895
+revenue,Yahoo Finance via yfinance,Operating Revenue,annual_income_statement | quarterly_income_statement,895,100,895
+total_assets,Screener.in,Total Assets,balance_sheet,1146,99,1146
+total_assets,Yahoo Finance via yfinance,Total Assets,annual_balance_sheet,399,100,399
+total_debt,Screener.in,Borrowings +,balance_sheet,1007,87,1007
+total_debt,Screener.in,Borrowing,balance_sheet,139,12,139
+total_debt,Yahoo Finance via yfinance,Total Debt,annual_balance_sheet,399,100,399
+operating_cash_flow,Screener.in,Cash from Operating Activity +,cash_flow,1126,99,1126
+operating_cash_flow,Yahoo Finance via yfinance,Operating Cash Flow,annual_cash_flow,399,100,399
+operating_cash_flow,Yahoo Finance via yfinance,Cash Flow From Continuing Operating Activities,annual_cash_flow,21,6,21

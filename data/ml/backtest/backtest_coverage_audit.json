@@ -1,0 +1,13 @@
+{
+  "input_rows": 254573,
+  "valid_return_rows": 254573,
+  "coverage_pct": 100.0,
+  "status_counts": {
+    "OK": 254573
+  },
+  "price_series_loaded": 234,
+  "entry_rule": "First available price/NAV date strictly after prediction_date",
+  "exit_rule": "First available price/NAV date on or after label_end_date",
+  "return_formula": "(exit_price / entry_price) - 1",
+  "warning": "Signal-level returns overlap in time and are not a portfolio backtest. Transaction costs, slippage, and portfolio constraints are not included."
+}

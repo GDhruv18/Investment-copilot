@@ -1,0 +1,801 @@
+ticker_folder,file,key,path,value
+ABB.NS,data\raw\fundamentals\yfinance\ABB.NS\info.json,currency,data.currency,INR
+ABB.NS,data\raw\fundamentals\yfinance\ABB.NS\info.json,quoteType,data.quoteType,EQUITY
+ABB.NS,data\raw\fundamentals\yfinance\ABB.NS\info.json,financialCurrency,data.financialCurrency,INR
+ABB.NS,data\raw\fundamentals\yfinance\ABB.NS\info.json,symbol,data.symbol,ABB.NS
+ABB.NS,data\raw\fundamentals\yfinance\ABB.NS\info.json,fullExchangeName,data.fullExchangeName,NSE
+ABB.NS,data\raw\fundamentals\yfinance\ABB.NS\info.json,exchange,data.exchange,NSI
+ABB.NS,data\raw\fundamentals\yfinance\ABB.NS\info.json,shortName,data.shortName,ABB INDIA LIMITED
+ABB.NS,data\raw\fundamentals\yfinance\ABB.NS\info.json,longName,data.longName,ABB India Limited
+ADANIENT.NS,data\raw\fundamentals\yfinance\ADANIENT.NS\info.json,currency,data.currency,INR
+ADANIENT.NS,data\raw\fundamentals\yfinance\ADANIENT.NS\info.json,quoteType,data.quoteType,EQUITY
+ADANIENT.NS,data\raw\fundamentals\yfinance\ADANIENT.NS\info.json,financialCurrency,data.financialCurrency,INR
+ADANIENT.NS,data\raw\fundamentals\yfinance\ADANIENT.NS\info.json,symbol,data.symbol,ADANIENT.NS
+ADANIENT.NS,data\raw\fundamentals\yfinance\ADANIENT.NS\info.json,fullExchangeName,data.fullExchangeName,NSE
+ADANIENT.NS,data\raw\fundamentals\yfinance\ADANIENT.NS\info.json,shortName,data.shortName,ADANI ENTERPRISES LIMITED
+ADANIENT.NS,data\raw\fundamentals\yfinance\ADANIENT.NS\info.json,longName,data.longName,Adani Enterprises Limited
+ADANIENT.NS,data\raw\fundamentals\yfinance\ADANIENT.NS\info.json,exchange,data.exchange,NSI
+ADANIGREEN.NS,data\raw\fundamentals\yfinance\ADANIGREEN.NS\info.json,currency,data.currency,INR
+ADANIGREEN.NS,data\raw\fundamentals\yfinance\ADANIGREEN.NS\info.json,quoteType,data.quoteType,EQUITY
+ADANIGREEN.NS,data\raw\fundamentals\yfinance\ADANIGREEN.NS\info.json,financialCurrency,data.financialCurrency,INR
+ADANIGREEN.NS,data\raw\fundamentals\yfinance\ADANIGREEN.NS\info.json,symbol,data.symbol,ADANIGREEN.NS
+ADANIGREEN.NS,data\raw\fundamentals\yfinance\ADANIGREEN.NS\info.json,exchange,data.exchange,NSI
+ADANIGREEN.NS,data\raw\fundamentals\yfinance\ADANIGREEN.NS\info.json,shortName,data.shortName,ADANI GREEN ENERGY LTD
+ADANIGREEN.NS,data\raw\fundamentals\yfinance\ADANIGREEN.NS\info.json,longName,data.longName,Adani Green Energy Limited
+ADANIGREEN.NS,data\raw\fundamentals\yfinance\ADANIGREEN.NS\info.json,fullExchangeName,data.fullExchangeName,NSE
+ADANIPORTS.NS,data\raw\fundamentals\yfinance\ADANIPORTS.NS\info.json,currency,data.currency,INR
+ADANIPORTS.NS,data\raw\fundamentals\yfinance\ADANIPORTS.NS\info.json,quoteType,data.quoteType,EQUITY
+ADANIPORTS.NS,data\raw\fundamentals\yfinance\ADANIPORTS.NS\info.json,financialCurrency,data.financialCurrency,INR
+ADANIPORTS.NS,data\raw\fundamentals\yfinance\ADANIPORTS.NS\info.json,symbol,data.symbol,ADANIPORTS.NS
+ADANIPORTS.NS,data\raw\fundamentals\yfinance\ADANIPORTS.NS\info.json,shortName,data.shortName,ADANI PORT & SEZ LTD
+ADANIPORTS.NS,data\raw\fundamentals\yfinance\ADANIPORTS.NS\info.json,longName,data.longName,Adani Ports and Special Economic Zone Limited
+ADANIPORTS.NS,data\raw\fundamentals\yfinance\ADANIPORTS.NS\info.json,fullExchangeName,data.fullExchangeName,NSE
+ADANIPORTS.NS,data\raw\fundamentals\yfinance\ADANIPORTS.NS\info.json,exchange,data.exchange,NSI
+ADANIPOWER.NS,data\raw\fundamentals\yfinance\ADANIPOWER.NS\info.json,currency,data.currency,INR
+ADANIPOWER.NS,data\raw\fundamentals\yfinance\ADANIPOWER.NS\info.json,quoteType,data.quoteType,EQUITY
+ADANIPOWER.NS,data\raw\fundamentals\yfinance\ADANIPOWER.NS\info.json,financialCurrency,data.financialCurrency,INR
+ADANIPOWER.NS,data\raw\fundamentals\yfinance\ADANIPOWER.NS\info.json,symbol,data.symbol,ADANIPOWER.NS
+ADANIPOWER.NS,data\raw\fundamentals\yfinance\ADANIPOWER.NS\info.json,shortName,data.shortName,ADANI POWER LTD
+ADANIPOWER.NS,data\raw\fundamentals\yfinance\ADANIPOWER.NS\info.json,longName,data.longName,Adani Power Limited
+ADANIPOWER.NS,data\raw\fundamentals\yfinance\ADANIPOWER.NS\info.json,fullExchangeName,data.fullExchangeName,NSE
+ADANIPOWER.NS,data\raw\fundamentals\yfinance\ADANIPOWER.NS\info.json,exchange,data.exchange,NSI
+AMBUJACEM.NS,data\raw\fundamentals\yfinance\AMBUJACEM.NS\info.json,currency,data.currency,INR
+AMBUJACEM.NS,data\raw\fundamentals\yfinance\AMBUJACEM.NS\info.json,quoteType,data.quoteType,EQUITY
+AMBUJACEM.NS,data\raw\fundamentals\yfinance\AMBUJACEM.NS\info.json,financialCurrency,data.financialCurrency,INR
+AMBUJACEM.NS,data\raw\fundamentals\yfinance\AMBUJACEM.NS\info.json,symbol,data.symbol,AMBUJACEM.NS
+AMBUJACEM.NS,data\raw\fundamentals\yfinance\AMBUJACEM.NS\info.json,shortName,data.shortName,AMBUJA CEMENTS LTD
+AMBUJACEM.NS,data\raw\fundamentals\yfinance\AMBUJACEM.NS\info.json,longName,data.longName,Ambuja Cements Limited
+AMBUJACEM.NS,data\raw\fundamentals\yfinance\AMBUJACEM.NS\info.json,exchange,data.exchange,NSI
+AMBUJACEM.NS,data\raw\fundamentals\yfinance\AMBUJACEM.NS\info.json,fullExchangeName,data.fullExchangeName,NSE
+APLAPOLLO.NS,data\raw\fundamentals\yfinance\APLAPOLLO.NS\info.json,currency,data.currency,INR
+APLAPOLLO.NS,data\raw\fundamentals\yfinance\APLAPOLLO.NS\info.json,quoteType,data.quoteType,EQUITY
+APLAPOLLO.NS,data\raw\fundamentals\yfinance\APLAPOLLO.NS\info.json,financialCurrency,data.financialCurrency,INR
+APLAPOLLO.NS,data\raw\fundamentals\yfinance\APLAPOLLO.NS\info.json,symbol,data.symbol,APLAPOLLO.NS
+APLAPOLLO.NS,data\raw\fundamentals\yfinance\APLAPOLLO.NS\info.json,fullExchangeName,data.fullExchangeName,NSE
+APLAPOLLO.NS,data\raw\fundamentals\yfinance\APLAPOLLO.NS\info.json,exchange,data.exchange,NSI
+APLAPOLLO.NS,data\raw\fundamentals\yfinance\APLAPOLLO.NS\info.json,shortName,data.shortName,APL APOLLO TUBES LTD
+APLAPOLLO.NS,data\raw\fundamentals\yfinance\APLAPOLLO.NS\info.json,longName,data.longName,APL Apollo Tubes Limited
+APOLLOHOSP.NS,data\raw\fundamentals\yfinance\APOLLOHOSP.NS\info.json,currency,data.currency,INR
+APOLLOHOSP.NS,data\raw\fundamentals\yfinance\APOLLOHOSP.NS\info.json,quoteType,data.quoteType,EQUITY
+APOLLOHOSP.NS,data\raw\fundamentals\yfinance\APOLLOHOSP.NS\info.json,financialCurrency,data.financialCurrency,INR
+APOLLOHOSP.NS,data\raw\fundamentals\yfinance\APOLLOHOSP.NS\info.json,symbol,data.symbol,APOLLOHOSP.NS
+APOLLOHOSP.NS,data\raw\fundamentals\yfinance\APOLLOHOSP.NS\info.json,fullExchangeName,data.fullExchangeName,NSE
+APOLLOHOSP.NS,data\raw\fundamentals\yfinance\APOLLOHOSP.NS\info.json,shortName,data.shortName,APOLLO HOSPITALS ENTER. L
+APOLLOHOSP.NS,data\raw\fundamentals\yfinance\APOLLOHOSP.NS\info.json,longName,data.longName,Apollo Hospitals Enterprise Limited
+APOLLOHOSP.NS,data\raw\fundamentals\yfinance\APOLLOHOSP.NS\info.json,exchange,data.exchange,NSI
+ASHOKLEY.NS,data\raw\fundamentals\yfinance\ASHOKLEY.NS\info.json,currency,data.currency,INR
+ASHOKLEY.NS,data\raw\fundamentals\yfinance\ASHOKLEY.NS\info.json,quoteType,data.quoteType,EQUITY
+ASHOKLEY.NS,data\raw\fundamentals\yfinance\ASHOKLEY.NS\info.json,financialCurrency,data.financialCurrency,INR
+ASHOKLEY.NS,data\raw\fundamentals\yfinance\ASHOKLEY.NS\info.json,symbol,data.symbol,ASHOKLEY.NS
+ASHOKLEY.NS,data\raw\fundamentals\yfinance\ASHOKLEY.NS\info.json,fullExchangeName,data.fullExchangeName,NSE
+ASHOKLEY.NS,data\raw\fundamentals\yfinance\ASHOKLEY.NS\info.json,shortName,data.shortName,ASHOK LEYLAND LTD
+ASHOKLEY.NS,data\raw\fundamentals\yfinance\ASHOKLEY.NS\info.json,longName,data.longName,Ashok Leyland Limited
+ASHOKLEY.NS,data\raw\fundamentals\yfinance\ASHOKLEY.NS\info.json,exchange,data.exchange,NSI
+ASIANPAINT.NS,data\raw\fundamentals\yfinance\ASIANPAINT.NS\info.json,currency,data.currency,INR
+ASIANPAINT.NS,data\raw\fundamentals\yfinance\ASIANPAINT.NS\info.json,quoteType,data.quoteType,EQUITY
+ASIANPAINT.NS,data\raw\fundamentals\yfinance\ASIANPAINT.NS\info.json,financialCurrency,data.financialCurrency,INR
+ASIANPAINT.NS,data\raw\fundamentals\yfinance\ASIANPAINT.NS\info.json,symbol,data.symbol,ASIANPAINT.NS
+ASIANPAINT.NS,data\raw\fundamentals\yfinance\ASIANPAINT.NS\info.json,exchange,data.exchange,NSI
+ASIANPAINT.NS,data\raw\fundamentals\yfinance\ASIANPAINT.NS\info.json,shortName,data.shortName,ASIAN PAINTS LIMITED
+ASIANPAINT.NS,data\raw\fundamentals\yfinance\ASIANPAINT.NS\info.json,longName,data.longName,Asian Paints Limited
+ASIANPAINT.NS,data\raw\fundamentals\yfinance\ASIANPAINT.NS\info.json,fullExchangeName,data.fullExchangeName,NSE
+AUBANK.NS,data\raw\fundamentals\yfinance\AUBANK.NS\info.json,currency,data.currency,INR
+AUBANK.NS,data\raw\fundamentals\yfinance\AUBANK.NS\info.json,quoteType,data.quoteType,EQUITY
+AUBANK.NS,data\raw\fundamentals\yfinance\AUBANK.NS\info.json,financialCurrency,data.financialCurrency,INR
+AUBANK.NS,data\raw\fundamentals\yfinance\AUBANK.NS\info.json,symbol,data.symbol,AUBANK.NS
+AUBANK.NS,data\raw\fundamentals\yfinance\AUBANK.NS\info.json,fullExchangeName,data.fullExchangeName,NSE
+AUBANK.NS,data\raw\fundamentals\yfinance\AUBANK.NS\info.json,shortName,data.shortName,AU SMALL FINANCE BANK LTD
+AUBANK.NS,data\raw\fundamentals\yfinance\AUBANK.NS\info.json,exchange,data.exchange,NSI
+AUBANK.NS,data\raw\fundamentals\yfinance\AUBANK.NS\info.json,longName,data.longName,AU Small Finance Bank Limited
+AUROPHARMA.NS,data\raw\fundamentals\yfinance\AUROPHARMA.NS\info.json,currency,data.currency,INR
+AUROPHARMA.NS,data\raw\fundamentals\yfinance\AUROPHARMA.NS\info.json,quoteType,data.quoteType,EQUITY
+AUROPHARMA.NS,data\raw\fundamentals\yfinance\AUROPHARMA.NS\info.json,financialCurrency,data.financialCurrency,INR
+AUROPHARMA.NS,data\raw\fundamentals\yfinance\AUROPHARMA.NS\info.json,symbol,data.symbol,AUROPHARMA.NS
+AUROPHARMA.NS,data\raw\fundamentals\yfinance\AUROPHARMA.NS\info.json,exchange,data.exchange,NSI
+AUROPHARMA.NS,data\raw\fundamentals\yfinance\AUROPHARMA.NS\info.json,shortName,data.shortName,AUROBINDO PHARMA LTD
+AUROPHARMA.NS,data\raw\fundamentals\yfinance\AUROPHARMA.NS\info.json,longName,data.longName,Aurobindo Pharma Limited
+AUROPHARMA.NS,data\raw\fundamentals\yfinance\AUROPHARMA.NS\info.json,fullExchangeName,data.fullExchangeName,NSE
+AXISBANK.NS,data\raw\fundamentals\yfinance\AXISBANK.NS\info.json,currency,data.currency,INR
+AXISBANK.NS,data\raw\fundamentals\yfinance\AXISBANK.NS\info.json,quoteType,data.quoteType,EQUITY
+AXISBANK.NS,data\raw\fundamentals\yfinance\AXISBANK.NS\info.json,financialCurrency,data.financialCurrency,INR
+AXISBANK.NS,data\raw\fundamentals\yfinance\AXISBANK.NS\info.json,symbol,data.symbol,AXISBANK.NS
+AXISBANK.NS,data\raw\fundamentals\yfinance\AXISBANK.NS\info.json,fullExchangeName,data.fullExchangeName,NSE
+AXISBANK.NS,data\raw\fundamentals\yfinance\AXISBANK.NS\info.json,shortName,data.shortName,AXIS BANK LIMITED
+AXISBANK.NS,data\raw\fundamentals\yfinance\AXISBANK.NS\info.json,longName,data.longName,Axis Bank Limited
+AXISBANK.NS,data\raw\fundamentals\yfinance\AXISBANK.NS\info.json,exchange,data.exchange,NSI
+BAJAJ-AUTO.NS,data\raw\fundamentals\yfinance\BAJAJ-AUTO.NS\info.json,currency,data.currency,INR
+BAJAJ-AUTO.NS,data\raw\fundamentals\yfinance\BAJAJ-AUTO.NS\info.json,quoteType,data.quoteType,EQUITY
+BAJAJ-AUTO.NS,data\raw\fundamentals\yfinance\BAJAJ-AUTO.NS\info.json,financialCurrency,data.financialCurrency,INR
+BAJAJ-AUTO.NS,data\raw\fundamentals\yfinance\BAJAJ-AUTO.NS\info.json,symbol,data.symbol,BAJAJ-AUTO.NS
+BAJAJ-AUTO.NS,data\raw\fundamentals\yfinance\BAJAJ-AUTO.NS\info.json,exchange,data.exchange,NSI
+BAJAJ-AUTO.NS,data\raw\fundamentals\yfinance\BAJAJ-AUTO.NS\info.json,shortName,data.shortName,BAJAJ AUTO LIMITED
+BAJAJ-AUTO.NS,data\raw\fundamentals\yfinance\BAJAJ-AUTO.NS\info.json,longName,data.longName,Bajaj Auto Limited
+BAJAJ-AUTO.NS,data\raw\fundamentals\yfinance\BAJAJ-AUTO.NS\info.json,fullExchangeName,data.fullExchangeName,NSE
+BANDHANBNK.NS,data\raw\fundamentals\yfinance\BANDHANBNK.NS\info.json,currency,data.currency,INR
+BANDHANBNK.NS,data\raw\fundamentals\yfinance\BANDHANBNK.NS\info.json,quoteType,data.quoteType,EQUITY
+BANDHANBNK.NS,data\raw\fundamentals\yfinance\BANDHANBNK.NS\info.json,financialCurrency,data.financialCurrency,INR
+BANDHANBNK.NS,data\raw\fundamentals\yfinance\BANDHANBNK.NS\info.json,symbol,data.symbol,BANDHANBNK.NS
+BANDHANBNK.NS,data\raw\fundamentals\yfinance\BANDHANBNK.NS\info.json,fullExchangeName,data.fullExchangeName,NSE
+BANDHANBNK.NS,data\raw\fundamentals\yfinance\BANDHANBNK.NS\info.json,exchange,data.exchange,NSI
+BANDHANBNK.NS,data\raw\fundamentals\yfinance\BANDHANBNK.NS\info.json,shortName,data.shortName,BANDHAN BANK LIMITED
+BANDHANBNK.NS,data\raw\fundamentals\yfinance\BANDHANBNK.NS\info.json,longName,data.longName,Bandhan Bank Limited
+BANKBARODA.NS,data\raw\fundamentals\yfinance\BANKBARODA.NS\info.json,currency,data.currency,INR
+BANKBARODA.NS,data\raw\fundamentals\yfinance\BANKBARODA.NS\info.json,quoteType,data.quoteType,EQUITY
+BANKBARODA.NS,data\raw\fundamentals\yfinance\BANKBARODA.NS\info.json,financialCurrency,data.financialCurrency,INR
+BANKBARODA.NS,data\raw\fundamentals\yfinance\BANKBARODA.NS\info.json,symbol,data.symbol,BANKBARODA.NS
+BANKBARODA.NS,data\raw\fundamentals\yfinance\BANKBARODA.NS\info.json,fullExchangeName,data.fullExchangeName,NSE
+BANKBARODA.NS,data\raw\fundamentals\yfinance\BANKBARODA.NS\info.json,exchange,data.exchange,NSI
+BANKBARODA.NS,data\raw\fundamentals\yfinance\BANKBARODA.NS\info.json,shortName,data.shortName,BANK OF BARODA
+BANKBARODA.NS,data\raw\fundamentals\yfinance\BANKBARODA.NS\info.json,longName,data.longName,Bank of Baroda Limited
+BEL.NS,data\raw\fundamentals\yfinance\BEL.NS\info.json,currency,data.currency,INR
+BEL.NS,data\raw\fundamentals\yfinance\BEL.NS\info.json,quoteType,data.quoteType,EQUITY
+BEL.NS,data\raw\fundamentals\yfinance\BEL.NS\info.json,financialCurrency,data.financialCurrency,INR
+BEL.NS,data\raw\fundamentals\yfinance\BEL.NS\info.json,symbol,data.symbol,BEL.NS
+BEL.NS,data\raw\fundamentals\yfinance\BEL.NS\info.json,fullExchangeName,data.fullExchangeName,NSE
+BEL.NS,data\raw\fundamentals\yfinance\BEL.NS\info.json,exchange,data.exchange,NSI
+BEL.NS,data\raw\fundamentals\yfinance\BEL.NS\info.json,shortName,data.shortName,BHARAT ELECTRONICS LTD
+BEL.NS,data\raw\fundamentals\yfinance\BEL.NS\info.json,longName,data.longName,Bharat Electronics Limited
+BHARATFORG.NS,data\raw\fundamentals\yfinance\BHARATFORG.NS\info.json,currency,data.currency,INR
+BHARATFORG.NS,data\raw\fundamentals\yfinance\BHARATFORG.NS\info.json,quoteType,data.quoteType,EQUITY
+BHARATFORG.NS,data\raw\fundamentals\yfinance\BHARATFORG.NS\info.json,financialCurrency,data.financialCurrency,INR
+BHARATFORG.NS,data\raw\fundamentals\yfinance\BHARATFORG.NS\info.json,symbol,data.symbol,BHARATFORG.NS
+BHARATFORG.NS,data\raw\fundamentals\yfinance\BHARATFORG.NS\info.json,fullExchangeName,data.fullExchangeName,NSE
+BHARATFORG.NS,data\raw\fundamentals\yfinance\BHARATFORG.NS\info.json,shortName,data.shortName,BHARAT FORGE LTD
+BHARATFORG.NS,data\raw\fundamentals\yfinance\BHARATFORG.NS\info.json,exchange,data.exchange,NSI
+BHARATFORG.NS,data\raw\fundamentals\yfinance\BHARATFORG.NS\info.json,longName,data.longName,Bharat Forge Limited
+BHARTIARTL.NS,data\raw\fundamentals\yfinance\BHARTIARTL.NS\info.json,currency,data.currency,INR
+BHARTIARTL.NS,data\raw\fundamentals\yfinance\BHARTIARTL.NS\info.json,quoteType,data.quoteType,EQUITY
+BHARTIARTL.NS,data\raw\fundamentals\yfinance\BHARTIARTL.NS\info.json,financialCurrency,data.financialCurrency,INR
+BHARTIARTL.NS,data\raw\fundamentals\yfinance\BHARTIARTL.NS\info.json,symbol,data.symbol,BHARTIARTL.NS
+BHARTIARTL.NS,data\raw\fundamentals\yfinance\BHARTIARTL.NS\info.json,shortName,data.shortName,BHARTI AIRTEL LIMITED
+BHARTIARTL.NS,data\raw\fundamentals\yfinance\BHARTIARTL.NS\info.json,longName,data.longName,Bharti Airtel Limited
+BHARTIARTL.NS,data\raw\fundamentals\yfinance\BHARTIARTL.NS\info.json,exchange,data.exchange,NSI
+BHARTIARTL.NS,data\raw\fundamentals\yfinance\BHARTIARTL.NS\info.json,fullExchangeName,data.fullExchangeName,NSE
+BHEL.NS,data\raw\fundamentals\yfinance\BHEL.NS\info.json,currency,data.currency,INR
+BHEL.NS,data\raw\fundamentals\yfinance\BHEL.NS\info.json,quoteType,data.quoteType,EQUITY
+BHEL.NS,data\raw\fundamentals\yfinance\BHEL.NS\info.json,financialCurrency,data.financialCurrency,INR
+BHEL.NS,data\raw\fundamentals\yfinance\BHEL.NS\info.json,symbol,data.symbol,BHEL.NS
+BHEL.NS,data\raw\fundamentals\yfinance\BHEL.NS\info.json,exchange,data.exchange,NSI
+BHEL.NS,data\raw\fundamentals\yfinance\BHEL.NS\info.json,shortName,data.shortName,BHEL
+BHEL.NS,data\raw\fundamentals\yfinance\BHEL.NS\info.json,longName,data.longName,Bharat Heavy Electricals Limited
+BHEL.NS,data\raw\fundamentals\yfinance\BHEL.NS\info.json,fullExchangeName,data.fullExchangeName,NSE
+BOSCHLTD.NS,data\raw\fundamentals\yfinance\BOSCHLTD.NS\info.json,currency,data.currency,INR
+BOSCHLTD.NS,data\raw\fundamentals\yfinance\BOSCHLTD.NS\info.json,quoteType,data.quoteType,EQUITY
+BOSCHLTD.NS,data\raw\fundamentals\yfinance\BOSCHLTD.NS\info.json,financialCurrency,data.financialCurrency,INR
+BOSCHLTD.NS,data\raw\fundamentals\yfinance\BOSCHLTD.NS\info.json,symbol,data.symbol,BOSCHLTD.NS
+BOSCHLTD.NS,data\raw\fundamentals\yfinance\BOSCHLTD.NS\info.json,shortName,data.shortName,BOSCH LIMITED
+BOSCHLTD.NS,data\raw\fundamentals\yfinance\BOSCHLTD.NS\info.json,longName,data.longName,Bosch Limited
+BOSCHLTD.NS,data\raw\fundamentals\yfinance\BOSCHLTD.NS\info.json,fullExchangeName,data.fullExchangeName,NSE
+BOSCHLTD.NS,data\raw\fundamentals\yfinance\BOSCHLTD.NS\info.json,exchange,data.exchange,NSI
+BPCL.NS,data\raw\fundamentals\yfinance\BPCL.NS\info.json,currency,data.currency,INR
+BPCL.NS,data\raw\fundamentals\yfinance\BPCL.NS\info.json,quoteType,data.quoteType,EQUITY
+BPCL.NS,data\raw\fundamentals\yfinance\BPCL.NS\info.json,financialCurrency,data.financialCurrency,INR
+BPCL.NS,data\raw\fundamentals\yfinance\BPCL.NS\info.json,symbol,data.symbol,BPCL.NS
+BPCL.NS,data\raw\fundamentals\yfinance\BPCL.NS\info.json,fullExchangeName,data.fullExchangeName,NSE
+BPCL.NS,data\raw\fundamentals\yfinance\BPCL.NS\info.json,shortName,data.shortName,BHARAT PETROLEUM CORP  LT
+BPCL.NS,data\raw\fundamentals\yfinance\BPCL.NS\info.json,longName,data.longName,Bharat Petroleum Corporation Limited
+BPCL.NS,data\raw\fundamentals\yfinance\BPCL.NS\info.json,exchange,data.exchange,NSI
+BRITANNIA.NS,data\raw\fundamentals\yfinance\BRITANNIA.NS\info.json,currency,data.currency,INR
+BRITANNIA.NS,data\raw\fundamentals\yfinance\BRITANNIA.NS\info.json,quoteType,data.quoteType,EQUITY
+BRITANNIA.NS,data\raw\fundamentals\yfinance\BRITANNIA.NS\info.json,financialCurrency,data.financialCurrency,INR
+BRITANNIA.NS,data\raw\fundamentals\yfinance\BRITANNIA.NS\info.json,symbol,data.symbol,BRITANNIA.NS
+BRITANNIA.NS,data\raw\fundamentals\yfinance\BRITANNIA.NS\info.json,fullExchangeName,data.fullExchangeName,NSE
+BRITANNIA.NS,data\raw\fundamentals\yfinance\BRITANNIA.NS\info.json,exchange,data.exchange,NSI
+BRITANNIA.NS,data\raw\fundamentals\yfinance\BRITANNIA.NS\info.json,shortName,data.shortName,BRITANNIA INDUSTRIES LTD
+BRITANNIA.NS,data\raw\fundamentals\yfinance\BRITANNIA.NS\info.json,longName,data.longName,Britannia Industries Limited
+CANBK.NS,data\raw\fundamentals\yfinance\CANBK.NS\info.json,currency,data.currency,INR
+CANBK.NS,data\raw\fundamentals\yfinance\CANBK.NS\info.json,quoteType,data.quoteType,EQUITY
+CANBK.NS,data\raw\fundamentals\yfinance\CANBK.NS\info.json,financialCurrency,data.financialCurrency,INR
+CANBK.NS,data\raw\fundamentals\yfinance\CANBK.NS\info.json,symbol,data.symbol,CANBK.NS
+CANBK.NS,data\raw\fundamentals\yfinance\CANBK.NS\info.json,fullExchangeName,data.fullExchangeName,NSE
+CANBK.NS,data\raw\fundamentals\yfinance\CANBK.NS\info.json,shortName,data.shortName,CANARA BANK
+CANBK.NS,data\raw\fundamentals\yfinance\CANBK.NS\info.json,exchange,data.exchange,NSI
+CANBK.NS,data\raw\fundamentals\yfinance\CANBK.NS\info.json,longName,data.longName,Canara Bank
+CIPLA.NS,data\raw\fundamentals\yfinance\CIPLA.NS\info.json,currency,data.currency,INR
+CIPLA.NS,data\raw\fundamentals\yfinance\CIPLA.NS\info.json,quoteType,data.quoteType,EQUITY
+CIPLA.NS,data\raw\fundamentals\yfinance\CIPLA.NS\info.json,financialCurrency,data.financialCurrency,INR
+CIPLA.NS,data\raw\fundamentals\yfinance\CIPLA.NS\info.json,symbol,data.symbol,CIPLA.NS
+CIPLA.NS,data\raw\fundamentals\yfinance\CIPLA.NS\info.json,exchange,data.exchange,NSI
+CIPLA.NS,data\raw\fundamentals\yfinance\CIPLA.NS\info.json,shortName,data.shortName,CIPLA LTD
+CIPLA.NS,data\raw\fundamentals\yfinance\CIPLA.NS\info.json,longName,data.longName,Cipla Limited
+CIPLA.NS,data\raw\fundamentals\yfinance\CIPLA.NS\info.json,fullExchangeName,data.fullExchangeName,NSE
+COALINDIA.NS,data\raw\fundamentals\yfinance\COALINDIA.NS\info.json,currency,data.currency,INR
+COALINDIA.NS,data\raw\fundamentals\yfinance\COALINDIA.NS\info.json,quoteType,data.quoteType,EQUITY
+COALINDIA.NS,data\raw\fundamentals\yfinance\COALINDIA.NS\info.json,financialCurrency,data.financialCurrency,INR
+COALINDIA.NS,data\raw\fundamentals\yfinance\COALINDIA.NS\info.json,symbol,data.symbol,COALINDIA.NS
+COALINDIA.NS,data\raw\fundamentals\yfinance\COALINDIA.NS\info.json,fullExchangeName,data.fullExchangeName,NSE
+COALINDIA.NS,data\raw\fundamentals\yfinance\COALINDIA.NS\info.json,exchange,data.exchange,NSI
+COALINDIA.NS,data\raw\fundamentals\yfinance\COALINDIA.NS\info.json,shortName,data.shortName,COAL INDIA LTD
+COALINDIA.NS,data\raw\fundamentals\yfinance\COALINDIA.NS\info.json,longName,data.longName,Coal India Limited
+COFORGE.NS,data\raw\fundamentals\yfinance\COFORGE.NS\info.json,currency,data.currency,INR
+COFORGE.NS,data\raw\fundamentals\yfinance\COFORGE.NS\info.json,quoteType,data.quoteType,EQUITY
+COFORGE.NS,data\raw\fundamentals\yfinance\COFORGE.NS\info.json,financialCurrency,data.financialCurrency,INR
+COFORGE.NS,data\raw\fundamentals\yfinance\COFORGE.NS\info.json,symbol,data.symbol,COFORGE.NS
+COFORGE.NS,data\raw\fundamentals\yfinance\COFORGE.NS\info.json,fullExchangeName,data.fullExchangeName,NSE
+COFORGE.NS,data\raw\fundamentals\yfinance\COFORGE.NS\info.json,exchange,data.exchange,NSI
+COFORGE.NS,data\raw\fundamentals\yfinance\COFORGE.NS\info.json,shortName,data.shortName,COFORGE LIMITED
+COFORGE.NS,data\raw\fundamentals\yfinance\COFORGE.NS\info.json,longName,data.longName,Coforge Limited
+DABUR.NS,data\raw\fundamentals\yfinance\DABUR.NS\info.json,currency,data.currency,INR
+DABUR.NS,data\raw\fundamentals\yfinance\DABUR.NS\info.json,quoteType,data.quoteType,EQUITY
+DABUR.NS,data\raw\fundamentals\yfinance\DABUR.NS\info.json,financialCurrency,data.financialCurrency,INR
+DABUR.NS,data\raw\fundamentals\yfinance\DABUR.NS\info.json,symbol,data.symbol,DABUR.NS
+DABUR.NS,data\raw\fundamentals\yfinance\DABUR.NS\info.json,shortName,data.shortName,DABUR INDIA LTD
+DABUR.NS,data\raw\fundamentals\yfinance\DABUR.NS\info.json,longName,data.longName,Dabur India Limited
+DABUR.NS,data\raw\fundamentals\yfinance\DABUR.NS\info.json,fullExchangeName,data.fullExchangeName,NSE
+DABUR.NS,data\raw\fundamentals\yfinance\DABUR.NS\info.json,exchange,data.exchange,NSI
+DELHIVERY.NS,data\raw\fundamentals\yfinance\DELHIVERY.NS\info.json,currency,data.currency,INR
+DELHIVERY.NS,data\raw\fundamentals\yfinance\DELHIVERY.NS\info.json,quoteType,data.quoteType,EQUITY
+DELHIVERY.NS,data\raw\fundamentals\yfinance\DELHIVERY.NS\info.json,financialCurrency,data.financialCurrency,INR
+DELHIVERY.NS,data\raw\fundamentals\yfinance\DELHIVERY.NS\info.json,symbol,data.symbol,DELHIVERY.NS
+DELHIVERY.NS,data\raw\fundamentals\yfinance\DELHIVERY.NS\info.json,shortName,data.shortName,DELHIVERY LIMITED
+DELHIVERY.NS,data\raw\fundamentals\yfinance\DELHIVERY.NS\info.json,longName,data.longName,Delhivery Limited
+DELHIVERY.NS,data\raw\fundamentals\yfinance\DELHIVERY.NS\info.json,fullExchangeName,data.fullExchangeName,NSE
+DELHIVERY.NS,data\raw\fundamentals\yfinance\DELHIVERY.NS\info.json,exchange,data.exchange,NSI
+DIVISLAB.NS,data\raw\fundamentals\yfinance\DIVISLAB.NS\info.json,currency,data.currency,INR
+DIVISLAB.NS,data\raw\fundamentals\yfinance\DIVISLAB.NS\info.json,quoteType,data.quoteType,EQUITY
+DIVISLAB.NS,data\raw\fundamentals\yfinance\DIVISLAB.NS\info.json,financialCurrency,data.financialCurrency,INR
+DIVISLAB.NS,data\raw\fundamentals\yfinance\DIVISLAB.NS\info.json,symbol,data.symbol,DIVISLAB.NS
+DIVISLAB.NS,data\raw\fundamentals\yfinance\DIVISLAB.NS\info.json,fullExchangeName,data.fullExchangeName,NSE
+DIVISLAB.NS,data\raw\fundamentals\yfinance\DIVISLAB.NS\info.json,shortName,data.shortName,DIVI S LABORATORIES LTD
+DIVISLAB.NS,data\raw\fundamentals\yfinance\DIVISLAB.NS\info.json,longName,data.longName,Divi's Laboratories Limited
+DIVISLAB.NS,data\raw\fundamentals\yfinance\DIVISLAB.NS\info.json,exchange,data.exchange,NSI
+DLF.NS,data\raw\fundamentals\yfinance\DLF.NS\info.json,currency,data.currency,INR
+DLF.NS,data\raw\fundamentals\yfinance\DLF.NS\info.json,quoteType,data.quoteType,EQUITY
+DLF.NS,data\raw\fundamentals\yfinance\DLF.NS\info.json,financialCurrency,data.financialCurrency,INR
+DLF.NS,data\raw\fundamentals\yfinance\DLF.NS\info.json,symbol,data.symbol,DLF.NS
+DLF.NS,data\raw\fundamentals\yfinance\DLF.NS\info.json,exchange,data.exchange,NSI
+DLF.NS,data\raw\fundamentals\yfinance\DLF.NS\info.json,shortName,data.shortName,DLF LIMITED
+DLF.NS,data\raw\fundamentals\yfinance\DLF.NS\info.json,longName,data.longName,DLF Limited
+DLF.NS,data\raw\fundamentals\yfinance\DLF.NS\info.json,fullExchangeName,data.fullExchangeName,NSE
+DMART.NS,data\raw\fundamentals\yfinance\DMART.NS\info.json,currency,data.currency,INR
+DMART.NS,data\raw\fundamentals\yfinance\DMART.NS\info.json,quoteType,data.quoteType,EQUITY
+DMART.NS,data\raw\fundamentals\yfinance\DMART.NS\info.json,financialCurrency,data.financialCurrency,INR
+DMART.NS,data\raw\fundamentals\yfinance\DMART.NS\info.json,symbol,data.symbol,DMART.NS
+DMART.NS,data\raw\fundamentals\yfinance\DMART.NS\info.json,shortName,data.shortName,AVENUE SUPERMARTS LIMITED
+DMART.NS,data\raw\fundamentals\yfinance\DMART.NS\info.json,longName,data.longName,Avenue Supermarts Limited
+DMART.NS,data\raw\fundamentals\yfinance\DMART.NS\info.json,fullExchangeName,data.fullExchangeName,NSE
+DMART.NS,data\raw\fundamentals\yfinance\DMART.NS\info.json,exchange,data.exchange,NSI
+DRREDDY.NS,data\raw\fundamentals\yfinance\DRREDDY.NS\info.json,currency,data.currency,INR
+DRREDDY.NS,data\raw\fundamentals\yfinance\DRREDDY.NS\info.json,quoteType,data.quoteType,EQUITY
+DRREDDY.NS,data\raw\fundamentals\yfinance\DRREDDY.NS\info.json,financialCurrency,data.financialCurrency,INR
+DRREDDY.NS,data\raw\fundamentals\yfinance\DRREDDY.NS\info.json,symbol,data.symbol,DRREDDY.NS
+DRREDDY.NS,data\raw\fundamentals\yfinance\DRREDDY.NS\info.json,fullExchangeName,data.fullExchangeName,NSE
+DRREDDY.NS,data\raw\fundamentals\yfinance\DRREDDY.NS\info.json,shortName,data.shortName,DR. REDDY S LABORATORIES
+DRREDDY.NS,data\raw\fundamentals\yfinance\DRREDDY.NS\info.json,longName,data.longName,Dr. Reddy's Laboratories Limited
+DRREDDY.NS,data\raw\fundamentals\yfinance\DRREDDY.NS\info.json,exchange,data.exchange,NSI
+EICHERMOT.NS,data\raw\fundamentals\yfinance\EICHERMOT.NS\info.json,currency,data.currency,INR
+EICHERMOT.NS,data\raw\fundamentals\yfinance\EICHERMOT.NS\info.json,quoteType,data.quoteType,EQUITY
+EICHERMOT.NS,data\raw\fundamentals\yfinance\EICHERMOT.NS\info.json,financialCurrency,data.financialCurrency,INR
+EICHERMOT.NS,data\raw\fundamentals\yfinance\EICHERMOT.NS\info.json,symbol,data.symbol,EICHERMOT.NS
+EICHERMOT.NS,data\raw\fundamentals\yfinance\EICHERMOT.NS\info.json,fullExchangeName,data.fullExchangeName,NSE
+EICHERMOT.NS,data\raw\fundamentals\yfinance\EICHERMOT.NS\info.json,shortName,data.shortName,EICHER MOTORS LTD
+EICHERMOT.NS,data\raw\fundamentals\yfinance\EICHERMOT.NS\info.json,longName,data.longName,Eicher Motors Limited
+EICHERMOT.NS,data\raw\fundamentals\yfinance\EICHERMOT.NS\info.json,exchange,data.exchange,NSI
+FEDERALBNK.NS,data\raw\fundamentals\yfinance\FEDERALBNK.NS\info.json,currency,data.currency,INR
+FEDERALBNK.NS,data\raw\fundamentals\yfinance\FEDERALBNK.NS\info.json,quoteType,data.quoteType,EQUITY
+FEDERALBNK.NS,data\raw\fundamentals\yfinance\FEDERALBNK.NS\info.json,financialCurrency,data.financialCurrency,INR
+FEDERALBNK.NS,data\raw\fundamentals\yfinance\FEDERALBNK.NS\info.json,symbol,data.symbol,FEDERALBNK.NS
+FEDERALBNK.NS,data\raw\fundamentals\yfinance\FEDERALBNK.NS\info.json,fullExchangeName,data.fullExchangeName,NSE
+FEDERALBNK.NS,data\raw\fundamentals\yfinance\FEDERALBNK.NS\info.json,exchange,data.exchange,NSI
+FEDERALBNK.NS,data\raw\fundamentals\yfinance\FEDERALBNK.NS\info.json,shortName,data.shortName,FEDERAL BANK LTD
+FEDERALBNK.NS,data\raw\fundamentals\yfinance\FEDERALBNK.NS\info.json,longName,data.longName,The Federal Bank Limited
+GAIL.NS,data\raw\fundamentals\yfinance\GAIL.NS\info.json,currency,data.currency,INR
+GAIL.NS,data\raw\fundamentals\yfinance\GAIL.NS\info.json,quoteType,data.quoteType,EQUITY
+GAIL.NS,data\raw\fundamentals\yfinance\GAIL.NS\info.json,financialCurrency,data.financialCurrency,INR
+GAIL.NS,data\raw\fundamentals\yfinance\GAIL.NS\info.json,symbol,data.symbol,GAIL.NS
+GAIL.NS,data\raw\fundamentals\yfinance\GAIL.NS\info.json,exchange,data.exchange,NSI
+GAIL.NS,data\raw\fundamentals\yfinance\GAIL.NS\info.json,shortName,data.shortName,GAIL (INDIA) LTD
+GAIL.NS,data\raw\fundamentals\yfinance\GAIL.NS\info.json,longName,data.longName,GAIL (India) Limited
+GAIL.NS,data\raw\fundamentals\yfinance\GAIL.NS\info.json,fullExchangeName,data.fullExchangeName,NSE
+GRASIM.NS,data\raw\fundamentals\yfinance\GRASIM.NS\info.json,currency,data.currency,INR
+GRASIM.NS,data\raw\fundamentals\yfinance\GRASIM.NS\info.json,quoteType,data.quoteType,EQUITY
+GRASIM.NS,data\raw\fundamentals\yfinance\GRASIM.NS\info.json,financialCurrency,data.financialCurrency,INR
+GRASIM.NS,data\raw\fundamentals\yfinance\GRASIM.NS\info.json,symbol,data.symbol,GRASIM.NS
+GRASIM.NS,data\raw\fundamentals\yfinance\GRASIM.NS\info.json,fullExchangeName,data.fullExchangeName,NSE
+GRASIM.NS,data\raw\fundamentals\yfinance\GRASIM.NS\info.json,shortName,data.shortName,GRASIM INDUSTRIES LTD
+GRASIM.NS,data\raw\fundamentals\yfinance\GRASIM.NS\info.json,longName,data.longName,Grasim Industries Limited
+GRASIM.NS,data\raw\fundamentals\yfinance\GRASIM.NS\info.json,exchange,data.exchange,NSI
+HAL.NS,data\raw\fundamentals\yfinance\HAL.NS\info.json,currency,data.currency,INR
+HAL.NS,data\raw\fundamentals\yfinance\HAL.NS\info.json,quoteType,data.quoteType,EQUITY
+HAL.NS,data\raw\fundamentals\yfinance\HAL.NS\info.json,financialCurrency,data.financialCurrency,INR
+HAL.NS,data\raw\fundamentals\yfinance\HAL.NS\info.json,symbol,data.symbol,HAL.NS
+HAL.NS,data\raw\fundamentals\yfinance\HAL.NS\info.json,exchange,data.exchange,NSI
+HAL.NS,data\raw\fundamentals\yfinance\HAL.NS\info.json,shortName,data.shortName,HINDUSTAN AERONAUTICS LTD
+HAL.NS,data\raw\fundamentals\yfinance\HAL.NS\info.json,longName,data.longName,Hindustan Aeronautics Limited
+HAL.NS,data\raw\fundamentals\yfinance\HAL.NS\info.json,fullExchangeName,data.fullExchangeName,NSE
+HAVELLS.NS,data\raw\fundamentals\yfinance\HAVELLS.NS\info.json,currency,data.currency,INR
+HAVELLS.NS,data\raw\fundamentals\yfinance\HAVELLS.NS\info.json,quoteType,data.quoteType,EQUITY
+HAVELLS.NS,data\raw\fundamentals\yfinance\HAVELLS.NS\info.json,financialCurrency,data.financialCurrency,INR
+HAVELLS.NS,data\raw\fundamentals\yfinance\HAVELLS.NS\info.json,symbol,data.symbol,HAVELLS.NS
+HAVELLS.NS,data\raw\fundamentals\yfinance\HAVELLS.NS\info.json,exchange,data.exchange,NSI
+HAVELLS.NS,data\raw\fundamentals\yfinance\HAVELLS.NS\info.json,shortName,data.shortName,HAVELLS INDIA LIMITED
+HAVELLS.NS,data\raw\fundamentals\yfinance\HAVELLS.NS\info.json,longName,data.longName,Havells India Limited
+HAVELLS.NS,data\raw\fundamentals\yfinance\HAVELLS.NS\info.json,fullExchangeName,data.fullExchangeName,NSE
+HCLTECH.NS,data\raw\fundamentals\yfinance\HCLTECH.NS\info.json,currency,data.currency,INR
+HCLTECH.NS,data\raw\fundamentals\yfinance\HCLTECH.NS\info.json,quoteType,data.quoteType,EQUITY
+HCLTECH.NS,data\raw\fundamentals\yfinance\HCLTECH.NS\info.json,financialCurrency,data.financialCurrency,USD
+HCLTECH.NS,data\raw\fundamentals\yfinance\HCLTECH.NS\info.json,symbol,data.symbol,HCLTECH.NS
+HCLTECH.NS,data\raw\fundamentals\yfinance\HCLTECH.NS\info.json,exchange,data.exchange,NSI
+HCLTECH.NS,data\raw\fundamentals\yfinance\HCLTECH.NS\info.json,shortName,data.shortName,HCL TECHNOLOGIES LTD
+HCLTECH.NS,data\raw\fundamentals\yfinance\HCLTECH.NS\info.json,longName,data.longName,HCL Technologies Limited
+HCLTECH.NS,data\raw\fundamentals\yfinance\HCLTECH.NS\info.json,fullExchangeName,data.fullExchangeName,NSE
+HDFCBANK.NS,data\raw\fundamentals\yfinance\HDFCBANK.NS\info.json,currency,data.currency,INR
+HDFCBANK.NS,data\raw\fundamentals\yfinance\HDFCBANK.NS\info.json,quoteType,data.quoteType,EQUITY
+HDFCBANK.NS,data\raw\fundamentals\yfinance\HDFCBANK.NS\info.json,financialCurrency,data.financialCurrency,INR
+HDFCBANK.NS,data\raw\fundamentals\yfinance\HDFCBANK.NS\info.json,symbol,data.symbol,HDFCBANK.NS
+HDFCBANK.NS,data\raw\fundamentals\yfinance\HDFCBANK.NS\info.json,fullExchangeName,data.fullExchangeName,NSE
+HDFCBANK.NS,data\raw\fundamentals\yfinance\HDFCBANK.NS\info.json,shortName,data.shortName,HDFC BANK LTD
+HDFCBANK.NS,data\raw\fundamentals\yfinance\HDFCBANK.NS\info.json,longName,data.longName,HDFC Bank Limited
+HDFCBANK.NS,data\raw\fundamentals\yfinance\HDFCBANK.NS\info.json,exchange,data.exchange,NSI
+HEROMOTOCO.NS,data\raw\fundamentals\yfinance\HEROMOTOCO.NS\info.json,currency,data.currency,INR
+HEROMOTOCO.NS,data\raw\fundamentals\yfinance\HEROMOTOCO.NS\info.json,quoteType,data.quoteType,EQUITY
+HEROMOTOCO.NS,data\raw\fundamentals\yfinance\HEROMOTOCO.NS\info.json,financialCurrency,data.financialCurrency,INR
+HEROMOTOCO.NS,data\raw\fundamentals\yfinance\HEROMOTOCO.NS\info.json,symbol,data.symbol,HEROMOTOCO.NS
+HEROMOTOCO.NS,data\raw\fundamentals\yfinance\HEROMOTOCO.NS\info.json,exchange,data.exchange,NSI
+HEROMOTOCO.NS,data\raw\fundamentals\yfinance\HEROMOTOCO.NS\info.json,shortName,data.shortName,HERO MOTOCORP LIMITED
+HEROMOTOCO.NS,data\raw\fundamentals\yfinance\HEROMOTOCO.NS\info.json,longName,data.longName,Hero MotoCorp Limited
+HEROMOTOCO.NS,data\raw\fundamentals\yfinance\HEROMOTOCO.NS\info.json,fullExchangeName,data.fullExchangeName,NSE
+HINDALCO.NS,data\raw\fundamentals\yfinance\HINDALCO.NS\info.json,currency,data.currency,INR
+HINDALCO.NS,data\raw\fundamentals\yfinance\HINDALCO.NS\info.json,quoteType,data.quoteType,EQUITY
+HINDALCO.NS,data\raw\fundamentals\yfinance\HINDALCO.NS\info.json,financialCurrency,data.financialCurrency,INR
+HINDALCO.NS,data\raw\fundamentals\yfinance\HINDALCO.NS\info.json,symbol,data.symbol,HINDALCO.NS
+HINDALCO.NS,data\raw\fundamentals\yfinance\HINDALCO.NS\info.json,shortName,data.shortName,HINDALCO  INDUSTRIES  LTD
+HINDALCO.NS,data\raw\fundamentals\yfinance\HINDALCO.NS\info.json,longName,data.longName,Hindalco Industries Limited
+HINDALCO.NS,data\raw\fundamentals\yfinance\HINDALCO.NS\info.json,fullExchangeName,data.fullExchangeName,NSE
+HINDALCO.NS,data\raw\fundamentals\yfinance\HINDALCO.NS\info.json,exchange,data.exchange,NSI
+HINDUNILVR.NS,data\raw\fundamentals\yfinance\HINDUNILVR.NS\info.json,currency,data.currency,INR
+HINDUNILVR.NS,data\raw\fundamentals\yfinance\HINDUNILVR.NS\info.json,quoteType,data.quoteType,EQUITY
+HINDUNILVR.NS,data\raw\fundamentals\yfinance\HINDUNILVR.NS\info.json,financialCurrency,data.financialCurrency,INR
+HINDUNILVR.NS,data\raw\fundamentals\yfinance\HINDUNILVR.NS\info.json,symbol,data.symbol,HINDUNILVR.NS
+HINDUNILVR.NS,data\raw\fundamentals\yfinance\HINDUNILVR.NS\info.json,fullExchangeName,data.fullExchangeName,NSE
+HINDUNILVR.NS,data\raw\fundamentals\yfinance\HINDUNILVR.NS\info.json,shortName,data.shortName,HINDUSTAN UNILEVER LTD.
+HINDUNILVR.NS,data\raw\fundamentals\yfinance\HINDUNILVR.NS\info.json,longName,data.longName,Hindustan Unilever Limited
+HINDUNILVR.NS,data\raw\fundamentals\yfinance\HINDUNILVR.NS\info.json,exchange,data.exchange,NSI
+ICICIBANK.NS,data\raw\fundamentals\yfinance\ICICIBANK.NS\info.json,currency,data.currency,INR
+ICICIBANK.NS,data\raw\fundamentals\yfinance\ICICIBANK.NS\info.json,quoteType,data.quoteType,EQUITY
+ICICIBANK.NS,data\raw\fundamentals\yfinance\ICICIBANK.NS\info.json,financialCurrency,data.financialCurrency,INR
+ICICIBANK.NS,data\raw\fundamentals\yfinance\ICICIBANK.NS\info.json,symbol,data.symbol,ICICIBANK.NS
+ICICIBANK.NS,data\raw\fundamentals\yfinance\ICICIBANK.NS\info.json,fullExchangeName,data.fullExchangeName,NSE
+ICICIBANK.NS,data\raw\fundamentals\yfinance\ICICIBANK.NS\info.json,shortName,data.shortName,ICICI BANK LTD.
+ICICIBANK.NS,data\raw\fundamentals\yfinance\ICICIBANK.NS\info.json,longName,data.longName,ICICI Bank Limited
+ICICIBANK.NS,data\raw\fundamentals\yfinance\ICICIBANK.NS\info.json,exchange,data.exchange,NSI
+IDFCFIRSTB.NS,data\raw\fundamentals\yfinance\IDFCFIRSTB.NS\info.json,currency,data.currency,INR
+IDFCFIRSTB.NS,data\raw\fundamentals\yfinance\IDFCFIRSTB.NS\info.json,quoteType,data.quoteType,EQUITY
+IDFCFIRSTB.NS,data\raw\fundamentals\yfinance\IDFCFIRSTB.NS\info.json,financialCurrency,data.financialCurrency,INR
+IDFCFIRSTB.NS,data\raw\fundamentals\yfinance\IDFCFIRSTB.NS\info.json,symbol,data.symbol,IDFCFIRSTB.NS
+IDFCFIRSTB.NS,data\raw\fundamentals\yfinance\IDFCFIRSTB.NS\info.json,shortName,data.shortName,IDFC FIRST BANK LIMITED
+IDFCFIRSTB.NS,data\raw\fundamentals\yfinance\IDFCFIRSTB.NS\info.json,longName,data.longName,IDFC First Bank Limited
+IDFCFIRSTB.NS,data\raw\fundamentals\yfinance\IDFCFIRSTB.NS\info.json,exchange,data.exchange,NSI
+IDFCFIRSTB.NS,data\raw\fundamentals\yfinance\IDFCFIRSTB.NS\info.json,fullExchangeName,data.fullExchangeName,NSE
+INDHOTEL.NS,data\raw\fundamentals\yfinance\INDHOTEL.NS\info.json,currency,data.currency,INR
+INDHOTEL.NS,data\raw\fundamentals\yfinance\INDHOTEL.NS\info.json,quoteType,data.quoteType,EQUITY
+INDHOTEL.NS,data\raw\fundamentals\yfinance\INDHOTEL.NS\info.json,financialCurrency,data.financialCurrency,INR
+INDHOTEL.NS,data\raw\fundamentals\yfinance\INDHOTEL.NS\info.json,symbol,data.symbol,INDHOTEL.NS
+INDHOTEL.NS,data\raw\fundamentals\yfinance\INDHOTEL.NS\info.json,shortName,data.shortName,THE INDIAN HOTELS CO. LTD
+INDHOTEL.NS,data\raw\fundamentals\yfinance\INDHOTEL.NS\info.json,longName,data.longName,The Indian Hotels Company Limited
+INDHOTEL.NS,data\raw\fundamentals\yfinance\INDHOTEL.NS\info.json,exchange,data.exchange,NSI
+INDHOTEL.NS,data\raw\fundamentals\yfinance\INDHOTEL.NS\info.json,fullExchangeName,data.fullExchangeName,NSE
+INDIAMART.NS,data\raw\fundamentals\yfinance\INDIAMART.NS\info.json,currency,data.currency,INR
+INDIAMART.NS,data\raw\fundamentals\yfinance\INDIAMART.NS\info.json,quoteType,data.quoteType,EQUITY
+INDIAMART.NS,data\raw\fundamentals\yfinance\INDIAMART.NS\info.json,financialCurrency,data.financialCurrency,INR
+INDIAMART.NS,data\raw\fundamentals\yfinance\INDIAMART.NS\info.json,symbol,data.symbol,INDIAMART.NS
+INDIAMART.NS,data\raw\fundamentals\yfinance\INDIAMART.NS\info.json,exchange,data.exchange,NSI
+INDIAMART.NS,data\raw\fundamentals\yfinance\INDIAMART.NS\info.json,shortName,data.shortName,INDIAMART INTERMESH LTD
+INDIAMART.NS,data\raw\fundamentals\yfinance\INDIAMART.NS\info.json,longName,data.longName,IndiaMART InterMESH Limited
+INDIAMART.NS,data\raw\fundamentals\yfinance\INDIAMART.NS\info.json,fullExchangeName,data.fullExchangeName,NSE
+INDIGO.NS,data\raw\fundamentals\yfinance\INDIGO.NS\info.json,currency,data.currency,INR
+INDIGO.NS,data\raw\fundamentals\yfinance\INDIGO.NS\info.json,quoteType,data.quoteType,EQUITY
+INDIGO.NS,data\raw\fundamentals\yfinance\INDIGO.NS\info.json,financialCurrency,data.financialCurrency,INR
+INDIGO.NS,data\raw\fundamentals\yfinance\INDIGO.NS\info.json,symbol,data.symbol,INDIGO.NS
+INDIGO.NS,data\raw\fundamentals\yfinance\INDIGO.NS\info.json,shortName,data.shortName,INTERGLOBE AVIATION LTD
+INDIGO.NS,data\raw\fundamentals\yfinance\INDIGO.NS\info.json,longName,data.longName,InterGlobe Aviation Limited
+INDIGO.NS,data\raw\fundamentals\yfinance\INDIGO.NS\info.json,fullExchangeName,data.fullExchangeName,NSE
+INDIGO.NS,data\raw\fundamentals\yfinance\INDIGO.NS\info.json,exchange,data.exchange,NSI
+INDUSINDBK.NS,data\raw\fundamentals\yfinance\INDUSINDBK.NS\info.json,currency,data.currency,INR
+INDUSINDBK.NS,data\raw\fundamentals\yfinance\INDUSINDBK.NS\info.json,quoteType,data.quoteType,EQUITY
+INDUSINDBK.NS,data\raw\fundamentals\yfinance\INDUSINDBK.NS\info.json,financialCurrency,data.financialCurrency,INR
+INDUSINDBK.NS,data\raw\fundamentals\yfinance\INDUSINDBK.NS\info.json,symbol,data.symbol,INDUSINDBK.NS
+INDUSINDBK.NS,data\raw\fundamentals\yfinance\INDUSINDBK.NS\info.json,fullExchangeName,data.fullExchangeName,NSE
+INDUSINDBK.NS,data\raw\fundamentals\yfinance\INDUSINDBK.NS\info.json,shortName,data.shortName,INDUSIND BANK LIMITED
+INDUSINDBK.NS,data\raw\fundamentals\yfinance\INDUSINDBK.NS\info.json,longName,data.longName,IndusInd Bank Limited
+INDUSINDBK.NS,data\raw\fundamentals\yfinance\INDUSINDBK.NS\info.json,exchange,data.exchange,NSI
+INFY.NS,data\raw\fundamentals\yfinance\INFY.NS\info.json,currency,data.currency,INR
+INFY.NS,data\raw\fundamentals\yfinance\INFY.NS\info.json,quoteType,data.quoteType,EQUITY
+INFY.NS,data\raw\fundamentals\yfinance\INFY.NS\info.json,financialCurrency,data.financialCurrency,USD
+INFY.NS,data\raw\fundamentals\yfinance\INFY.NS\info.json,symbol,data.symbol,INFY.NS
+INFY.NS,data\raw\fundamentals\yfinance\INFY.NS\info.json,fullExchangeName,data.fullExchangeName,NSE
+INFY.NS,data\raw\fundamentals\yfinance\INFY.NS\info.json,shortName,data.shortName,INFOSYS LIMITED
+INFY.NS,data\raw\fundamentals\yfinance\INFY.NS\info.json,longName,data.longName,Infosys Limited
+INFY.NS,data\raw\fundamentals\yfinance\INFY.NS\info.json,exchange,data.exchange,NSI
+IOC.NS,data\raw\fundamentals\yfinance\IOC.NS\info.json,currency,data.currency,INR
+IOC.NS,data\raw\fundamentals\yfinance\IOC.NS\info.json,quoteType,data.quoteType,EQUITY
+IOC.NS,data\raw\fundamentals\yfinance\IOC.NS\info.json,financialCurrency,data.financialCurrency,INR
+IOC.NS,data\raw\fundamentals\yfinance\IOC.NS\info.json,symbol,data.symbol,IOC.NS
+IOC.NS,data\raw\fundamentals\yfinance\IOC.NS\info.json,fullExchangeName,data.fullExchangeName,NSE
+IOC.NS,data\raw\fundamentals\yfinance\IOC.NS\info.json,exchange,data.exchange,NSI
+IOC.NS,data\raw\fundamentals\yfinance\IOC.NS\info.json,shortName,data.shortName,INDIAN OIL CORP LTD
+IOC.NS,data\raw\fundamentals\yfinance\IOC.NS\info.json,longName,data.longName,Indian Oil Corporation Limited
+IRCTC.NS,data\raw\fundamentals\yfinance\IRCTC.NS\info.json,currency,data.currency,INR
+IRCTC.NS,data\raw\fundamentals\yfinance\IRCTC.NS\info.json,quoteType,data.quoteType,EQUITY
+IRCTC.NS,data\raw\fundamentals\yfinance\IRCTC.NS\info.json,financialCurrency,data.financialCurrency,INR
+IRCTC.NS,data\raw\fundamentals\yfinance\IRCTC.NS\info.json,symbol,data.symbol,IRCTC.NS
+IRCTC.NS,data\raw\fundamentals\yfinance\IRCTC.NS\info.json,fullExchangeName,data.fullExchangeName,NSE
+IRCTC.NS,data\raw\fundamentals\yfinance\IRCTC.NS\info.json,exchange,data.exchange,NSI
+IRCTC.NS,data\raw\fundamentals\yfinance\IRCTC.NS\info.json,shortName,data.shortName,INDIAN RAIL TOUR CORP LTD
+IRCTC.NS,data\raw\fundamentals\yfinance\IRCTC.NS\info.json,longName,data.longName,Indian Railway Catering & Tourism Corporation Limited
+ITC.NS,data\raw\fundamentals\yfinance\ITC.NS\info.json,currency,data.currency,INR
+ITC.NS,data\raw\fundamentals\yfinance\ITC.NS\info.json,quoteType,data.quoteType,EQUITY
+ITC.NS,data\raw\fundamentals\yfinance\ITC.NS\info.json,financialCurrency,data.financialCurrency,INR
+ITC.NS,data\raw\fundamentals\yfinance\ITC.NS\info.json,symbol,data.symbol,ITC.NS
+ITC.NS,data\raw\fundamentals\yfinance\ITC.NS\info.json,exchange,data.exchange,NSI
+ITC.NS,data\raw\fundamentals\yfinance\ITC.NS\info.json,shortName,data.shortName,ITC LTD
+ITC.NS,data\raw\fundamentals\yfinance\ITC.NS\info.json,longName,data.longName,ITC Limited
+ITC.NS,data\raw\fundamentals\yfinance\ITC.NS\info.json,fullExchangeName,data.fullExchangeName,NSE
+JINDALSTEL.NS,data\raw\fundamentals\yfinance\JINDALSTEL.NS\info.json,currency,data.currency,INR
+JINDALSTEL.NS,data\raw\fundamentals\yfinance\JINDALSTEL.NS\info.json,quoteType,data.quoteType,EQUITY
+JINDALSTEL.NS,data\raw\fundamentals\yfinance\JINDALSTEL.NS\info.json,financialCurrency,data.financialCurrency,INR
+JINDALSTEL.NS,data\raw\fundamentals\yfinance\JINDALSTEL.NS\info.json,symbol,data.symbol,JINDALSTEL.NS
+JINDALSTEL.NS,data\raw\fundamentals\yfinance\JINDALSTEL.NS\info.json,fullExchangeName,data.fullExchangeName,NSE
+JINDALSTEL.NS,data\raw\fundamentals\yfinance\JINDALSTEL.NS\info.json,shortName,data.shortName,JINDAL STEEL LIMITED
+JINDALSTEL.NS,data\raw\fundamentals\yfinance\JINDALSTEL.NS\info.json,longName,data.longName,Jindal Steel Limited
+JINDALSTEL.NS,data\raw\fundamentals\yfinance\JINDALSTEL.NS\info.json,exchange,data.exchange,NSI
+JSWENERGY.NS,data\raw\fundamentals\yfinance\JSWENERGY.NS\info.json,currency,data.currency,INR
+JSWENERGY.NS,data\raw\fundamentals\yfinance\JSWENERGY.NS\info.json,quoteType,data.quoteType,EQUITY
+JSWENERGY.NS,data\raw\fundamentals\yfinance\JSWENERGY.NS\info.json,financialCurrency,data.financialCurrency,INR
+JSWENERGY.NS,data\raw\fundamentals\yfinance\JSWENERGY.NS\info.json,symbol,data.symbol,JSWENERGY.NS
+JSWENERGY.NS,data\raw\fundamentals\yfinance\JSWENERGY.NS\info.json,exchange,data.exchange,NSI
+JSWENERGY.NS,data\raw\fundamentals\yfinance\JSWENERGY.NS\info.json,shortName,data.shortName,JSW ENERGY LIMITED
+JSWENERGY.NS,data\raw\fundamentals\yfinance\JSWENERGY.NS\info.json,longName,data.longName,JSW Energy Limited
+JSWENERGY.NS,data\raw\fundamentals\yfinance\JSWENERGY.NS\info.json,fullExchangeName,data.fullExchangeName,NSE
+JSWSTEEL.NS,data\raw\fundamentals\yfinance\JSWSTEEL.NS\info.json,currency,data.currency,INR
+JSWSTEEL.NS,data\raw\fundamentals\yfinance\JSWSTEEL.NS\info.json,quoteType,data.quoteType,EQUITY
+JSWSTEEL.NS,data\raw\fundamentals\yfinance\JSWSTEEL.NS\info.json,financialCurrency,data.financialCurrency,INR
+JSWSTEEL.NS,data\raw\fundamentals\yfinance\JSWSTEEL.NS\info.json,symbol,data.symbol,JSWSTEEL.NS
+JSWSTEEL.NS,data\raw\fundamentals\yfinance\JSWSTEEL.NS\info.json,fullExchangeName,data.fullExchangeName,NSE
+JSWSTEEL.NS,data\raw\fundamentals\yfinance\JSWSTEEL.NS\info.json,exchange,data.exchange,NSI
+JSWSTEEL.NS,data\raw\fundamentals\yfinance\JSWSTEEL.NS\info.json,shortName,data.shortName,JSW STEEL LIMITED
+JSWSTEEL.NS,data\raw\fundamentals\yfinance\JSWSTEEL.NS\info.json,longName,data.longName,JSW Steel Limited
+JUBLFOOD.NS,data\raw\fundamentals\yfinance\JUBLFOOD.NS\info.json,currency,data.currency,INR
+JUBLFOOD.NS,data\raw\fundamentals\yfinance\JUBLFOOD.NS\info.json,quoteType,data.quoteType,EQUITY
+JUBLFOOD.NS,data\raw\fundamentals\yfinance\JUBLFOOD.NS\info.json,financialCurrency,data.financialCurrency,INR
+JUBLFOOD.NS,data\raw\fundamentals\yfinance\JUBLFOOD.NS\info.json,symbol,data.symbol,JUBLFOOD.NS
+JUBLFOOD.NS,data\raw\fundamentals\yfinance\JUBLFOOD.NS\info.json,fullExchangeName,data.fullExchangeName,NSE
+JUBLFOOD.NS,data\raw\fundamentals\yfinance\JUBLFOOD.NS\info.json,exchange,data.exchange,NSI
+JUBLFOOD.NS,data\raw\fundamentals\yfinance\JUBLFOOD.NS\info.json,shortName,data.shortName,JUBILANT FOODWORKS LTD
+JUBLFOOD.NS,data\raw\fundamentals\yfinance\JUBLFOOD.NS\info.json,longName,data.longName,Jubilant FoodWorks Limited
+KOTAKBANK.NS,data\raw\fundamentals\yfinance\KOTAKBANK.NS\info.json,currency,data.currency,INR
+KOTAKBANK.NS,data\raw\fundamentals\yfinance\KOTAKBANK.NS\info.json,quoteType,data.quoteType,EQUITY
+KOTAKBANK.NS,data\raw\fundamentals\yfinance\KOTAKBANK.NS\info.json,financialCurrency,data.financialCurrency,INR
+KOTAKBANK.NS,data\raw\fundamentals\yfinance\KOTAKBANK.NS\info.json,symbol,data.symbol,KOTAKBANK.NS
+KOTAKBANK.NS,data\raw\fundamentals\yfinance\KOTAKBANK.NS\info.json,fullExchangeName,data.fullExchangeName,NSE
+KOTAKBANK.NS,data\raw\fundamentals\yfinance\KOTAKBANK.NS\info.json,shortName,data.shortName,KOTAK MAHINDRA BANK LTD
+KOTAKBANK.NS,data\raw\fundamentals\yfinance\KOTAKBANK.NS\info.json,longName,data.longName,Kotak Mahindra Bank Limited
+KOTAKBANK.NS,data\raw\fundamentals\yfinance\KOTAKBANK.NS\info.json,exchange,data.exchange,NSI
+KPITTECH.NS,data\raw\fundamentals\yfinance\KPITTECH.NS\info.json,currency,data.currency,INR
+KPITTECH.NS,data\raw\fundamentals\yfinance\KPITTECH.NS\info.json,quoteType,data.quoteType,EQUITY
+KPITTECH.NS,data\raw\fundamentals\yfinance\KPITTECH.NS\info.json,financialCurrency,data.financialCurrency,INR
+KPITTECH.NS,data\raw\fundamentals\yfinance\KPITTECH.NS\info.json,symbol,data.symbol,KPITTECH.NS
+KPITTECH.NS,data\raw\fundamentals\yfinance\KPITTECH.NS\info.json,fullExchangeName,data.fullExchangeName,NSE
+KPITTECH.NS,data\raw\fundamentals\yfinance\KPITTECH.NS\info.json,shortName,data.shortName,KPIT TECHNOLOGIES LIMITED
+KPITTECH.NS,data\raw\fundamentals\yfinance\KPITTECH.NS\info.json,exchange,data.exchange,NSI
+KPITTECH.NS,data\raw\fundamentals\yfinance\KPITTECH.NS\info.json,longName,data.longName,KPIT Technologies Limited
+LT.NS,data\raw\fundamentals\yfinance\LT.NS\info.json,currency,data.currency,INR
+LT.NS,data\raw\fundamentals\yfinance\LT.NS\info.json,quoteType,data.quoteType,EQUITY
+LT.NS,data\raw\fundamentals\yfinance\LT.NS\info.json,financialCurrency,data.financialCurrency,INR
+LT.NS,data\raw\fundamentals\yfinance\LT.NS\info.json,symbol,data.symbol,LT.NS
+LT.NS,data\raw\fundamentals\yfinance\LT.NS\info.json,shortName,data.shortName,LARSEN & TOUBRO LTD.
+LT.NS,data\raw\fundamentals\yfinance\LT.NS\info.json,longName,data.longName,Larsen & Toubro Limited
+LT.NS,data\raw\fundamentals\yfinance\LT.NS\info.json,fullExchangeName,data.fullExchangeName,NSE
+LT.NS,data\raw\fundamentals\yfinance\LT.NS\info.json,exchange,data.exchange,NSI
+LUPIN.NS,data\raw\fundamentals\yfinance\LUPIN.NS\info.json,currency,data.currency,INR
+LUPIN.NS,data\raw\fundamentals\yfinance\LUPIN.NS\info.json,quoteType,data.quoteType,EQUITY
+LUPIN.NS,data\raw\fundamentals\yfinance\LUPIN.NS\info.json,financialCurrency,data.financialCurrency,INR
+LUPIN.NS,data\raw\fundamentals\yfinance\LUPIN.NS\info.json,symbol,data.symbol,LUPIN.NS
+LUPIN.NS,data\raw\fundamentals\yfinance\LUPIN.NS\info.json,fullExchangeName,data.fullExchangeName,NSE
+LUPIN.NS,data\raw\fundamentals\yfinance\LUPIN.NS\info.json,exchange,data.exchange,NSI
+LUPIN.NS,data\raw\fundamentals\yfinance\LUPIN.NS\info.json,shortName,data.shortName,LUPIN LIMITED
+LUPIN.NS,data\raw\fundamentals\yfinance\LUPIN.NS\info.json,longName,data.longName,Lupin Limited
+MARICO.NS,data\raw\fundamentals\yfinance\MARICO.NS\info.json,currency,data.currency,INR
+MARICO.NS,data\raw\fundamentals\yfinance\MARICO.NS\info.json,quoteType,data.quoteType,EQUITY
+MARICO.NS,data\raw\fundamentals\yfinance\MARICO.NS\info.json,financialCurrency,data.financialCurrency,INR
+MARICO.NS,data\raw\fundamentals\yfinance\MARICO.NS\info.json,symbol,data.symbol,MARICO.NS
+MARICO.NS,data\raw\fundamentals\yfinance\MARICO.NS\info.json,fullExchangeName,data.fullExchangeName,NSE
+MARICO.NS,data\raw\fundamentals\yfinance\MARICO.NS\info.json,shortName,data.shortName,MARICO LIMITED
+MARICO.NS,data\raw\fundamentals\yfinance\MARICO.NS\info.json,exchange,data.exchange,NSI
+MARICO.NS,data\raw\fundamentals\yfinance\MARICO.NS\info.json,longName,data.longName,Marico Limited
+MARUTI.NS,data\raw\fundamentals\yfinance\MARUTI.NS\info.json,currency,data.currency,INR
+MARUTI.NS,data\raw\fundamentals\yfinance\MARUTI.NS\info.json,quoteType,data.quoteType,EQUITY
+MARUTI.NS,data\raw\fundamentals\yfinance\MARUTI.NS\info.json,financialCurrency,data.financialCurrency,INR
+MARUTI.NS,data\raw\fundamentals\yfinance\MARUTI.NS\info.json,symbol,data.symbol,MARUTI.NS
+MARUTI.NS,data\raw\fundamentals\yfinance\MARUTI.NS\info.json,exchange,data.exchange,NSI
+MARUTI.NS,data\raw\fundamentals\yfinance\MARUTI.NS\info.json,shortName,data.shortName,MARUTI SUZUKI INDIA LTD.
+MARUTI.NS,data\raw\fundamentals\yfinance\MARUTI.NS\info.json,longName,data.longName,Maruti Suzuki India Limited
+MARUTI.NS,data\raw\fundamentals\yfinance\MARUTI.NS\info.json,fullExchangeName,data.fullExchangeName,NSE
+MAXHEALTH.NS,data\raw\fundamentals\yfinance\MAXHEALTH.NS\info.json,currency,data.currency,INR
+MAXHEALTH.NS,data\raw\fundamentals\yfinance\MAXHEALTH.NS\info.json,quoteType,data.quoteType,EQUITY
+MAXHEALTH.NS,data\raw\fundamentals\yfinance\MAXHEALTH.NS\info.json,financialCurrency,data.financialCurrency,INR
+MAXHEALTH.NS,data\raw\fundamentals\yfinance\MAXHEALTH.NS\info.json,symbol,data.symbol,MAXHEALTH.NS
+MAXHEALTH.NS,data\raw\fundamentals\yfinance\MAXHEALTH.NS\info.json,fullExchangeName,data.fullExchangeName,NSE
+MAXHEALTH.NS,data\raw\fundamentals\yfinance\MAXHEALTH.NS\info.json,shortName,data.shortName,MAX HEALTHCARE INS LTD
+MAXHEALTH.NS,data\raw\fundamentals\yfinance\MAXHEALTH.NS\info.json,exchange,data.exchange,NSI
+MAXHEALTH.NS,data\raw\fundamentals\yfinance\MAXHEALTH.NS\info.json,longName,data.longName,Max Healthcare Institute Limited
+MOTHERSON.NS,data\raw\fundamentals\yfinance\MOTHERSON.NS\info.json,currency,data.currency,INR
+MOTHERSON.NS,data\raw\fundamentals\yfinance\MOTHERSON.NS\info.json,quoteType,data.quoteType,EQUITY
+MOTHERSON.NS,data\raw\fundamentals\yfinance\MOTHERSON.NS\info.json,financialCurrency,data.financialCurrency,INR
+MOTHERSON.NS,data\raw\fundamentals\yfinance\MOTHERSON.NS\info.json,symbol,data.symbol,MOTHERSON.NS
+MOTHERSON.NS,data\raw\fundamentals\yfinance\MOTHERSON.NS\info.json,fullExchangeName,data.fullExchangeName,NSE
+MOTHERSON.NS,data\raw\fundamentals\yfinance\MOTHERSON.NS\info.json,shortName,data.shortName,SAMVRDHNA MTHRSN INTL LTD
+MOTHERSON.NS,data\raw\fundamentals\yfinance\MOTHERSON.NS\info.json,longName,data.longName,Samvardhana Motherson International Limited
+MOTHERSON.NS,data\raw\fundamentals\yfinance\MOTHERSON.NS\info.json,exchange,data.exchange,NSI
+MPHASIS.NS,data\raw\fundamentals\yfinance\MPHASIS.NS\info.json,currency,data.currency,INR
+MPHASIS.NS,data\raw\fundamentals\yfinance\MPHASIS.NS\info.json,quoteType,data.quoteType,EQUITY
+MPHASIS.NS,data\raw\fundamentals\yfinance\MPHASIS.NS\info.json,financialCurrency,data.financialCurrency,INR
+MPHASIS.NS,data\raw\fundamentals\yfinance\MPHASIS.NS\info.json,symbol,data.symbol,MPHASIS.NS
+MPHASIS.NS,data\raw\fundamentals\yfinance\MPHASIS.NS\info.json,exchange,data.exchange,NSI
+MPHASIS.NS,data\raw\fundamentals\yfinance\MPHASIS.NS\info.json,shortName,data.shortName,MPHASIS LIMITED
+MPHASIS.NS,data\raw\fundamentals\yfinance\MPHASIS.NS\info.json,longName,data.longName,Mphasis Limited
+MPHASIS.NS,data\raw\fundamentals\yfinance\MPHASIS.NS\info.json,fullExchangeName,data.fullExchangeName,NSE
+M_M.NS,data\raw\fundamentals\yfinance\M_M.NS\info.json,currency,data.currency,INR
+M_M.NS,data\raw\fundamentals\yfinance\M_M.NS\info.json,quoteType,data.quoteType,EQUITY
+M_M.NS,data\raw\fundamentals\yfinance\M_M.NS\info.json,financialCurrency,data.financialCurrency,INR
+M_M.NS,data\raw\fundamentals\yfinance\M_M.NS\info.json,symbol,data.symbol,M&M.NS
+M_M.NS,data\raw\fundamentals\yfinance\M_M.NS\info.json,exchange,data.exchange,NSI
+M_M.NS,data\raw\fundamentals\yfinance\M_M.NS\info.json,shortName,data.shortName,MAHINDRA & MAHINDRA LTD
+M_M.NS,data\raw\fundamentals\yfinance\M_M.NS\info.json,longName,data.longName,Mahindra & Mahindra Limited
+M_M.NS,data\raw\fundamentals\yfinance\M_M.NS\info.json,fullExchangeName,data.fullExchangeName,NSE
+NATIONALUM.NS,data\raw\fundamentals\yfinance\NATIONALUM.NS\info.json,currency,data.currency,INR
+NATIONALUM.NS,data\raw\fundamentals\yfinance\NATIONALUM.NS\info.json,quoteType,data.quoteType,EQUITY
+NATIONALUM.NS,data\raw\fundamentals\yfinance\NATIONALUM.NS\info.json,financialCurrency,data.financialCurrency,INR
+NATIONALUM.NS,data\raw\fundamentals\yfinance\NATIONALUM.NS\info.json,symbol,data.symbol,NATIONALUM.NS
+NATIONALUM.NS,data\raw\fundamentals\yfinance\NATIONALUM.NS\info.json,shortName,data.shortName,NATIONAL ALUMINIUM CO LTD
+NATIONALUM.NS,data\raw\fundamentals\yfinance\NATIONALUM.NS\info.json,longName,data.longName,National Aluminium Company Limited
+NATIONALUM.NS,data\raw\fundamentals\yfinance\NATIONALUM.NS\info.json,fullExchangeName,data.fullExchangeName,NSE
+NATIONALUM.NS,data\raw\fundamentals\yfinance\NATIONALUM.NS\info.json,exchange,data.exchange,NSI
+NESTLEIND.NS,data\raw\fundamentals\yfinance\NESTLEIND.NS\info.json,currency,data.currency,INR
+NESTLEIND.NS,data\raw\fundamentals\yfinance\NESTLEIND.NS\info.json,quoteType,data.quoteType,EQUITY
+NESTLEIND.NS,data\raw\fundamentals\yfinance\NESTLEIND.NS\info.json,financialCurrency,data.financialCurrency,INR
+NESTLEIND.NS,data\raw\fundamentals\yfinance\NESTLEIND.NS\info.json,symbol,data.symbol,NESTLEIND.NS
+NESTLEIND.NS,data\raw\fundamentals\yfinance\NESTLEIND.NS\info.json,fullExchangeName,data.fullExchangeName,NSE
+NESTLEIND.NS,data\raw\fundamentals\yfinance\NESTLEIND.NS\info.json,exchange,data.exchange,NSI
+NESTLEIND.NS,data\raw\fundamentals\yfinance\NESTLEIND.NS\info.json,shortName,data.shortName,NESTLE INDIA LIMITED
+NESTLEIND.NS,data\raw\fundamentals\yfinance\NESTLEIND.NS\info.json,longName,data.longName,Nestlé India Limited
+NMDC.NS,data\raw\fundamentals\yfinance\NMDC.NS\info.json,currency,data.currency,INR
+NMDC.NS,data\raw\fundamentals\yfinance\NMDC.NS\info.json,quoteType,data.quoteType,EQUITY
+NMDC.NS,data\raw\fundamentals\yfinance\NMDC.NS\info.json,financialCurrency,data.financialCurrency,INR
+NMDC.NS,data\raw\fundamentals\yfinance\NMDC.NS\info.json,symbol,data.symbol,NMDC.NS
+NMDC.NS,data\raw\fundamentals\yfinance\NMDC.NS\info.json,fullExchangeName,data.fullExchangeName,NSE
+NMDC.NS,data\raw\fundamentals\yfinance\NMDC.NS\info.json,shortName,data.shortName,NMDC LTD.
+NMDC.NS,data\raw\fundamentals\yfinance\NMDC.NS\info.json,longName,data.longName,NMDC Limited
+NMDC.NS,data\raw\fundamentals\yfinance\NMDC.NS\info.json,exchange,data.exchange,NSI
+NTPC.NS,data\raw\fundamentals\yfinance\NTPC.NS\info.json,currency,data.currency,INR
+NTPC.NS,data\raw\fundamentals\yfinance\NTPC.NS\info.json,quoteType,data.quoteType,EQUITY
+NTPC.NS,data\raw\fundamentals\yfinance\NTPC.NS\info.json,financialCurrency,data.financialCurrency,INR
+NTPC.NS,data\raw\fundamentals\yfinance\NTPC.NS\info.json,symbol,data.symbol,NTPC.NS
+NTPC.NS,data\raw\fundamentals\yfinance\NTPC.NS\info.json,shortName,data.shortName,NTPC LTD
+NTPC.NS,data\raw\fundamentals\yfinance\NTPC.NS\info.json,longName,data.longName,NTPC Limited
+NTPC.NS,data\raw\fundamentals\yfinance\NTPC.NS\info.json,exchange,data.exchange,NSI
+NTPC.NS,data\raw\fundamentals\yfinance\NTPC.NS\info.json,fullExchangeName,data.fullExchangeName,NSE
+NYKAA.NS,data\raw\fundamentals\yfinance\NYKAA.NS\info.json,currency,data.currency,INR
+NYKAA.NS,data\raw\fundamentals\yfinance\NYKAA.NS\info.json,quoteType,data.quoteType,EQUITY
+NYKAA.NS,data\raw\fundamentals\yfinance\NYKAA.NS\info.json,financialCurrency,data.financialCurrency,INR
+NYKAA.NS,data\raw\fundamentals\yfinance\NYKAA.NS\info.json,symbol,data.symbol,NYKAA.NS
+NYKAA.NS,data\raw\fundamentals\yfinance\NYKAA.NS\info.json,exchange,data.exchange,NSI
+NYKAA.NS,data\raw\fundamentals\yfinance\NYKAA.NS\info.json,shortName,data.shortName,FSN E COMMERCE VENTURES
+NYKAA.NS,data\raw\fundamentals\yfinance\NYKAA.NS\info.json,longName,data.longName,FSN E-Commerce Ventures Limited
+NYKAA.NS,data\raw\fundamentals\yfinance\NYKAA.NS\info.json,fullExchangeName,data.fullExchangeName,NSE
+OFSS.NS,data\raw\fundamentals\yfinance\OFSS.NS\info.json,currency,data.currency,INR
+OFSS.NS,data\raw\fundamentals\yfinance\OFSS.NS\info.json,quoteType,data.quoteType,EQUITY
+OFSS.NS,data\raw\fundamentals\yfinance\OFSS.NS\info.json,financialCurrency,data.financialCurrency,INR
+OFSS.NS,data\raw\fundamentals\yfinance\OFSS.NS\info.json,symbol,data.symbol,OFSS.NS
+OFSS.NS,data\raw\fundamentals\yfinance\OFSS.NS\info.json,fullExchangeName,data.fullExchangeName,NSE
+OFSS.NS,data\raw\fundamentals\yfinance\OFSS.NS\info.json,exchange,data.exchange,NSI
+OFSS.NS,data\raw\fundamentals\yfinance\OFSS.NS\info.json,shortName,data.shortName,ORACLE FIN SERV SOFT LTD.
+OFSS.NS,data\raw\fundamentals\yfinance\OFSS.NS\info.json,longName,data.longName,Oracle Financial Services Software Limited
+ONGC.NS,data\raw\fundamentals\yfinance\ONGC.NS\info.json,currency,data.currency,INR
+ONGC.NS,data\raw\fundamentals\yfinance\ONGC.NS\info.json,quoteType,data.quoteType,EQUITY
+ONGC.NS,data\raw\fundamentals\yfinance\ONGC.NS\info.json,financialCurrency,data.financialCurrency,INR
+ONGC.NS,data\raw\fundamentals\yfinance\ONGC.NS\info.json,symbol,data.symbol,ONGC.NS
+ONGC.NS,data\raw\fundamentals\yfinance\ONGC.NS\info.json,exchange,data.exchange,NSI
+ONGC.NS,data\raw\fundamentals\yfinance\ONGC.NS\info.json,fullExchangeName,data.fullExchangeName,NSE
+ONGC.NS,data\raw\fundamentals\yfinance\ONGC.NS\info.json,shortName,data.shortName,OIL AND NATURAL GAS CORP.
+ONGC.NS,data\raw\fundamentals\yfinance\ONGC.NS\info.json,longName,data.longName,Oil and Natural Gas Corporation Limited
+PAYTM.NS,data\raw\fundamentals\yfinance\PAYTM.NS\info.json,currency,data.currency,INR
+PAYTM.NS,data\raw\fundamentals\yfinance\PAYTM.NS\info.json,quoteType,data.quoteType,EQUITY
+PAYTM.NS,data\raw\fundamentals\yfinance\PAYTM.NS\info.json,financialCurrency,data.financialCurrency,INR
+PAYTM.NS,data\raw\fundamentals\yfinance\PAYTM.NS\info.json,symbol,data.symbol,PAYTM.NS
+PAYTM.NS,data\raw\fundamentals\yfinance\PAYTM.NS\info.json,fullExchangeName,data.fullExchangeName,NSE
+PAYTM.NS,data\raw\fundamentals\yfinance\PAYTM.NS\info.json,exchange,data.exchange,NSI
+PAYTM.NS,data\raw\fundamentals\yfinance\PAYTM.NS\info.json,shortName,data.shortName,ONE 97 COMMUNICATIONS LTD
+PAYTM.NS,data\raw\fundamentals\yfinance\PAYTM.NS\info.json,longName,data.longName,One97 Communications Limited
+PERSISTENT.NS,data\raw\fundamentals\yfinance\PERSISTENT.NS\info.json,currency,data.currency,INR
+PERSISTENT.NS,data\raw\fundamentals\yfinance\PERSISTENT.NS\info.json,quoteType,data.quoteType,EQUITY
+PERSISTENT.NS,data\raw\fundamentals\yfinance\PERSISTENT.NS\info.json,financialCurrency,data.financialCurrency,INR
+PERSISTENT.NS,data\raw\fundamentals\yfinance\PERSISTENT.NS\info.json,symbol,data.symbol,PERSISTENT.NS
+PERSISTENT.NS,data\raw\fundamentals\yfinance\PERSISTENT.NS\info.json,fullExchangeName,data.fullExchangeName,NSE
+PERSISTENT.NS,data\raw\fundamentals\yfinance\PERSISTENT.NS\info.json,shortName,data.shortName,PERSISTENT SYSTEMS LTD
+PERSISTENT.NS,data\raw\fundamentals\yfinance\PERSISTENT.NS\info.json,exchange,data.exchange,NSI
+PERSISTENT.NS,data\raw\fundamentals\yfinance\PERSISTENT.NS\info.json,longName,data.longName,Persistent Systems Limited
+PIDILITIND.NS,data\raw\fundamentals\yfinance\PIDILITIND.NS\info.json,currency,data.currency,INR
+PIDILITIND.NS,data\raw\fundamentals\yfinance\PIDILITIND.NS\info.json,quoteType,data.quoteType,EQUITY
+PIDILITIND.NS,data\raw\fundamentals\yfinance\PIDILITIND.NS\info.json,financialCurrency,data.financialCurrency,INR
+PIDILITIND.NS,data\raw\fundamentals\yfinance\PIDILITIND.NS\info.json,symbol,data.symbol,PIDILITIND.NS
+PIDILITIND.NS,data\raw\fundamentals\yfinance\PIDILITIND.NS\info.json,exchange,data.exchange,NSI
+PIDILITIND.NS,data\raw\fundamentals\yfinance\PIDILITIND.NS\info.json,shortName,data.shortName,PIDILITE INDUSTRIES LTD
+PIDILITIND.NS,data\raw\fundamentals\yfinance\PIDILITIND.NS\info.json,longName,data.longName,Pidilite Industries Limited
+PIDILITIND.NS,data\raw\fundamentals\yfinance\PIDILITIND.NS\info.json,fullExchangeName,data.fullExchangeName,NSE
+PNB.NS,data\raw\fundamentals\yfinance\PNB.NS\info.json,currency,data.currency,INR
+PNB.NS,data\raw\fundamentals\yfinance\PNB.NS\info.json,quoteType,data.quoteType,EQUITY
+PNB.NS,data\raw\fundamentals\yfinance\PNB.NS\info.json,financialCurrency,data.financialCurrency,INR
+PNB.NS,data\raw\fundamentals\yfinance\PNB.NS\info.json,symbol,data.symbol,PNB.NS
+PNB.NS,data\raw\fundamentals\yfinance\PNB.NS\info.json,shortName,data.shortName,PUNJAB NATIONAL BANK
+PNB.NS,data\raw\fundamentals\yfinance\PNB.NS\info.json,longName,data.longName,Punjab National Bank
+PNB.NS,data\raw\fundamentals\yfinance\PNB.NS\info.json,fullExchangeName,data.fullExchangeName,NSE
+PNB.NS,data\raw\fundamentals\yfinance\PNB.NS\info.json,exchange,data.exchange,NSI
+POLICYBZR.NS,data\raw\fundamentals\yfinance\POLICYBZR.NS\info.json,currency,data.currency,INR
+POLICYBZR.NS,data\raw\fundamentals\yfinance\POLICYBZR.NS\info.json,quoteType,data.quoteType,EQUITY
+POLICYBZR.NS,data\raw\fundamentals\yfinance\POLICYBZR.NS\info.json,financialCurrency,data.financialCurrency,INR
+POLICYBZR.NS,data\raw\fundamentals\yfinance\POLICYBZR.NS\info.json,symbol,data.symbol,POLICYBZR.NS
+POLICYBZR.NS,data\raw\fundamentals\yfinance\POLICYBZR.NS\info.json,fullExchangeName,data.fullExchangeName,NSE
+POLICYBZR.NS,data\raw\fundamentals\yfinance\POLICYBZR.NS\info.json,exchange,data.exchange,NSI
+POLICYBZR.NS,data\raw\fundamentals\yfinance\POLICYBZR.NS\info.json,shortName,data.shortName,PB FINTECH LIMITED
+POLICYBZR.NS,data\raw\fundamentals\yfinance\POLICYBZR.NS\info.json,longName,data.longName,PB Fintech Limited
+POWERGRID.NS,data\raw\fundamentals\yfinance\POWERGRID.NS\info.json,currency,data.currency,INR
+POWERGRID.NS,data\raw\fundamentals\yfinance\POWERGRID.NS\info.json,quoteType,data.quoteType,EQUITY
+POWERGRID.NS,data\raw\fundamentals\yfinance\POWERGRID.NS\info.json,financialCurrency,data.financialCurrency,INR
+POWERGRID.NS,data\raw\fundamentals\yfinance\POWERGRID.NS\info.json,symbol,data.symbol,POWERGRID.NS
+POWERGRID.NS,data\raw\fundamentals\yfinance\POWERGRID.NS\info.json,fullExchangeName,data.fullExchangeName,NSE
+POWERGRID.NS,data\raw\fundamentals\yfinance\POWERGRID.NS\info.json,shortName,data.shortName,POWER GRID CORP. LTD.
+POWERGRID.NS,data\raw\fundamentals\yfinance\POWERGRID.NS\info.json,exchange,data.exchange,NSI
+POWERGRID.NS,data\raw\fundamentals\yfinance\POWERGRID.NS\info.json,longName,data.longName,Power Grid Corporation of India Limited
+RELIANCE.NS,data\raw\fundamentals\yfinance\RELIANCE.NS\info.json,currency,data.currency,INR
+RELIANCE.NS,data\raw\fundamentals\yfinance\RELIANCE.NS\info.json,quoteType,data.quoteType,EQUITY
+RELIANCE.NS,data\raw\fundamentals\yfinance\RELIANCE.NS\info.json,financialCurrency,data.financialCurrency,INR
+RELIANCE.NS,data\raw\fundamentals\yfinance\RELIANCE.NS\info.json,symbol,data.symbol,RELIANCE.NS
+RELIANCE.NS,data\raw\fundamentals\yfinance\RELIANCE.NS\info.json,shortName,data.shortName,RELIANCE INDUSTRIES LTD
+RELIANCE.NS,data\raw\fundamentals\yfinance\RELIANCE.NS\info.json,longName,data.longName,Reliance Industries Limited
+RELIANCE.NS,data\raw\fundamentals\yfinance\RELIANCE.NS\info.json,fullExchangeName,data.fullExchangeName,NSE
+RELIANCE.NS,data\raw\fundamentals\yfinance\RELIANCE.NS\info.json,exchange,data.exchange,NSI
+RVNL.NS,data\raw\fundamentals\yfinance\RVNL.NS\info.json,currency,data.currency,INR
+RVNL.NS,data\raw\fundamentals\yfinance\RVNL.NS\info.json,quoteType,data.quoteType,EQUITY
+RVNL.NS,data\raw\fundamentals\yfinance\RVNL.NS\info.json,financialCurrency,data.financialCurrency,INR
+RVNL.NS,data\raw\fundamentals\yfinance\RVNL.NS\info.json,symbol,data.symbol,RVNL.NS
+RVNL.NS,data\raw\fundamentals\yfinance\RVNL.NS\info.json,shortName,data.shortName,RAIL VIKAS NIGAM LIMITED
+RVNL.NS,data\raw\fundamentals\yfinance\RVNL.NS\info.json,longName,data.longName,Rail Vikas Nigam Limited
+RVNL.NS,data\raw\fundamentals\yfinance\RVNL.NS\info.json,exchange,data.exchange,NSI
+RVNL.NS,data\raw\fundamentals\yfinance\RVNL.NS\info.json,fullExchangeName,data.fullExchangeName,NSE
+SAIL.NS,data\raw\fundamentals\yfinance\SAIL.NS\info.json,currency,data.currency,INR
+SAIL.NS,data\raw\fundamentals\yfinance\SAIL.NS\info.json,quoteType,data.quoteType,EQUITY
+SAIL.NS,data\raw\fundamentals\yfinance\SAIL.NS\info.json,financialCurrency,data.financialCurrency,INR
+SAIL.NS,data\raw\fundamentals\yfinance\SAIL.NS\info.json,symbol,data.symbol,SAIL.NS
+SAIL.NS,data\raw\fundamentals\yfinance\SAIL.NS\info.json,fullExchangeName,data.fullExchangeName,NSE
+SAIL.NS,data\raw\fundamentals\yfinance\SAIL.NS\info.json,exchange,data.exchange,NSI
+SAIL.NS,data\raw\fundamentals\yfinance\SAIL.NS\info.json,shortName,data.shortName,STEEL AUTHORITY OF INDIA
+SAIL.NS,data\raw\fundamentals\yfinance\SAIL.NS\info.json,longName,data.longName,Steel Authority of India Limited
+SBIN.NS,data\raw\fundamentals\yfinance\SBIN.NS\info.json,currency,data.currency,INR
+SBIN.NS,data\raw\fundamentals\yfinance\SBIN.NS\info.json,quoteType,data.quoteType,EQUITY
+SBIN.NS,data\raw\fundamentals\yfinance\SBIN.NS\info.json,financialCurrency,data.financialCurrency,INR
+SBIN.NS,data\raw\fundamentals\yfinance\SBIN.NS\info.json,symbol,data.symbol,SBIN.NS
+SBIN.NS,data\raw\fundamentals\yfinance\SBIN.NS\info.json,fullExchangeName,data.fullExchangeName,NSE
+SBIN.NS,data\raw\fundamentals\yfinance\SBIN.NS\info.json,shortName,data.shortName,STATE BANK OF INDIA
+SBIN.NS,data\raw\fundamentals\yfinance\SBIN.NS\info.json,exchange,data.exchange,NSI
+SBIN.NS,data\raw\fundamentals\yfinance\SBIN.NS\info.json,longName,data.longName,State Bank of India
+SIEMENS.NS,data\raw\fundamentals\yfinance\SIEMENS.NS\info.json,currency,data.currency,INR
+SIEMENS.NS,data\raw\fundamentals\yfinance\SIEMENS.NS\info.json,quoteType,data.quoteType,EQUITY
+SIEMENS.NS,data\raw\fundamentals\yfinance\SIEMENS.NS\info.json,financialCurrency,data.financialCurrency,INR
+SIEMENS.NS,data\raw\fundamentals\yfinance\SIEMENS.NS\info.json,symbol,data.symbol,SIEMENS.NS
+SIEMENS.NS,data\raw\fundamentals\yfinance\SIEMENS.NS\info.json,fullExchangeName,data.fullExchangeName,NSE
+SIEMENS.NS,data\raw\fundamentals\yfinance\SIEMENS.NS\info.json,shortName,data.shortName,SIEMENS LTD
+SIEMENS.NS,data\raw\fundamentals\yfinance\SIEMENS.NS\info.json,longName,data.longName,Siemens Limited
+SIEMENS.NS,data\raw\fundamentals\yfinance\SIEMENS.NS\info.json,exchange,data.exchange,NSI
+SUNPHARMA.NS,data\raw\fundamentals\yfinance\SUNPHARMA.NS\info.json,currency,data.currency,INR
+SUNPHARMA.NS,data\raw\fundamentals\yfinance\SUNPHARMA.NS\info.json,quoteType,data.quoteType,EQUITY
+SUNPHARMA.NS,data\raw\fundamentals\yfinance\SUNPHARMA.NS\info.json,financialCurrency,data.financialCurrency,INR
+SUNPHARMA.NS,data\raw\fundamentals\yfinance\SUNPHARMA.NS\info.json,symbol,data.symbol,SUNPHARMA.NS
+SUNPHARMA.NS,data\raw\fundamentals\yfinance\SUNPHARMA.NS\info.json,shortName,data.shortName,SUN PHARMACEUTICAL IND L
+SUNPHARMA.NS,data\raw\fundamentals\yfinance\SUNPHARMA.NS\info.json,longName,data.longName,Sun Pharmaceutical Industries Limited
+SUNPHARMA.NS,data\raw\fundamentals\yfinance\SUNPHARMA.NS\info.json,fullExchangeName,data.fullExchangeName,NSE
+SUNPHARMA.NS,data\raw\fundamentals\yfinance\SUNPHARMA.NS\info.json,exchange,data.exchange,NSI
+TATAELXSI.NS,data\raw\fundamentals\yfinance\TATAELXSI.NS\info.json,currency,data.currency,INR
+TATAELXSI.NS,data\raw\fundamentals\yfinance\TATAELXSI.NS\info.json,quoteType,data.quoteType,EQUITY
+TATAELXSI.NS,data\raw\fundamentals\yfinance\TATAELXSI.NS\info.json,financialCurrency,data.financialCurrency,INR
+TATAELXSI.NS,data\raw\fundamentals\yfinance\TATAELXSI.NS\info.json,symbol,data.symbol,TATAELXSI.NS
+TATAELXSI.NS,data\raw\fundamentals\yfinance\TATAELXSI.NS\info.json,fullExchangeName,data.fullExchangeName,NSE
+TATAELXSI.NS,data\raw\fundamentals\yfinance\TATAELXSI.NS\info.json,shortName,data.shortName,TATA ELXSI LIMITED
+TATAELXSI.NS,data\raw\fundamentals\yfinance\TATAELXSI.NS\info.json,exchange,data.exchange,NSI
+TATAELXSI.NS,data\raw\fundamentals\yfinance\TATAELXSI.NS\info.json,longName,data.longName,Tata Elxsi Limited
+TATAPOWER.NS,data\raw\fundamentals\yfinance\TATAPOWER.NS\info.json,currency,data.currency,INR
+TATAPOWER.NS,data\raw\fundamentals\yfinance\TATAPOWER.NS\info.json,quoteType,data.quoteType,EQUITY
+TATAPOWER.NS,data\raw\fundamentals\yfinance\TATAPOWER.NS\info.json,financialCurrency,data.financialCurrency,INR
+TATAPOWER.NS,data\raw\fundamentals\yfinance\TATAPOWER.NS\info.json,symbol,data.symbol,TATAPOWER.NS
+TATAPOWER.NS,data\raw\fundamentals\yfinance\TATAPOWER.NS\info.json,shortName,data.shortName,TATA POWER CO LTD
+TATAPOWER.NS,data\raw\fundamentals\yfinance\TATAPOWER.NS\info.json,longName,data.longName,The Tata Power Company Limited
+TATAPOWER.NS,data\raw\fundamentals\yfinance\TATAPOWER.NS\info.json,fullExchangeName,data.fullExchangeName,NSE
+TATAPOWER.NS,data\raw\fundamentals\yfinance\TATAPOWER.NS\info.json,exchange,data.exchange,NSI
+TATASTEEL.NS,data\raw\fundamentals\yfinance\TATASTEEL.NS\info.json,currency,data.currency,INR
+TATASTEEL.NS,data\raw\fundamentals\yfinance\TATASTEEL.NS\info.json,quoteType,data.quoteType,EQUITY
+TATASTEEL.NS,data\raw\fundamentals\yfinance\TATASTEEL.NS\info.json,financialCurrency,data.financialCurrency,INR
+TATASTEEL.NS,data\raw\fundamentals\yfinance\TATASTEEL.NS\info.json,symbol,data.symbol,TATASTEEL.NS
+TATASTEEL.NS,data\raw\fundamentals\yfinance\TATASTEEL.NS\info.json,fullExchangeName,data.fullExchangeName,NSE
+TATASTEEL.NS,data\raw\fundamentals\yfinance\TATASTEEL.NS\info.json,exchange,data.exchange,NSI
+TATASTEEL.NS,data\raw\fundamentals\yfinance\TATASTEEL.NS\info.json,shortName,data.shortName,TATA STEEL LIMITED
+TATASTEEL.NS,data\raw\fundamentals\yfinance\TATASTEEL.NS\info.json,longName,data.longName,Tata Steel Limited
+TCS.NS,data\raw\fundamentals\yfinance\TCS.NS\info.json,currency,data.currency,INR
+TCS.NS,data\raw\fundamentals\yfinance\TCS.NS\info.json,quoteType,data.quoteType,EQUITY
+TCS.NS,data\raw\fundamentals\yfinance\TCS.NS\info.json,financialCurrency,data.financialCurrency,INR
+TCS.NS,data\raw\fundamentals\yfinance\TCS.NS\info.json,symbol,data.symbol,TCS.NS
+TCS.NS,data\raw\fundamentals\yfinance\TCS.NS\info.json,fullExchangeName,data.fullExchangeName,NSE
+TCS.NS,data\raw\fundamentals\yfinance\TCS.NS\info.json,shortName,data.shortName,TATA CONSULTANCY SERV LT
+TCS.NS,data\raw\fundamentals\yfinance\TCS.NS\info.json,exchange,data.exchange,NSI
+TCS.NS,data\raw\fundamentals\yfinance\TCS.NS\info.json,longName,data.longName,Tata Consultancy Services Limited
+TECHM.NS,data\raw\fundamentals\yfinance\TECHM.NS\info.json,currency,data.currency,INR
+TECHM.NS,data\raw\fundamentals\yfinance\TECHM.NS\info.json,quoteType,data.quoteType,EQUITY
+TECHM.NS,data\raw\fundamentals\yfinance\TECHM.NS\info.json,financialCurrency,data.financialCurrency,INR
+TECHM.NS,data\raw\fundamentals\yfinance\TECHM.NS\info.json,symbol,data.symbol,TECHM.NS
+TECHM.NS,data\raw\fundamentals\yfinance\TECHM.NS\info.json,shortName,data.shortName,TECH MAHINDRA LIMITED
+TECHM.NS,data\raw\fundamentals\yfinance\TECHM.NS\info.json,longName,data.longName,Tech Mahindra Limited
+TECHM.NS,data\raw\fundamentals\yfinance\TECHM.NS\info.json,fullExchangeName,data.fullExchangeName,NSE
+TECHM.NS,data\raw\fundamentals\yfinance\TECHM.NS\info.json,exchange,data.exchange,NSI
+TITAN.NS,data\raw\fundamentals\yfinance\TITAN.NS\info.json,currency,data.currency,INR
+TITAN.NS,data\raw\fundamentals\yfinance\TITAN.NS\info.json,quoteType,data.quoteType,EQUITY
+TITAN.NS,data\raw\fundamentals\yfinance\TITAN.NS\info.json,financialCurrency,data.financialCurrency,INR
+TITAN.NS,data\raw\fundamentals\yfinance\TITAN.NS\info.json,symbol,data.symbol,TITAN.NS
+TITAN.NS,data\raw\fundamentals\yfinance\TITAN.NS\info.json,shortName,data.shortName,TITAN COMPANY LIMITED
+TITAN.NS,data\raw\fundamentals\yfinance\TITAN.NS\info.json,longName,data.longName,Titan Company Limited
+TITAN.NS,data\raw\fundamentals\yfinance\TITAN.NS\info.json,exchange,data.exchange,NSI
+TITAN.NS,data\raw\fundamentals\yfinance\TITAN.NS\info.json,fullExchangeName,data.fullExchangeName,NSE
+TORNTPHARM.NS,data\raw\fundamentals\yfinance\TORNTPHARM.NS\info.json,currency,data.currency,INR
+TORNTPHARM.NS,data\raw\fundamentals\yfinance\TORNTPHARM.NS\info.json,quoteType,data.quoteType,EQUITY
+TORNTPHARM.NS,data\raw\fundamentals\yfinance\TORNTPHARM.NS\info.json,financialCurrency,data.financialCurrency,INR
+TORNTPHARM.NS,data\raw\fundamentals\yfinance\TORNTPHARM.NS\info.json,symbol,data.symbol,TORNTPHARM.NS
+TORNTPHARM.NS,data\raw\fundamentals\yfinance\TORNTPHARM.NS\info.json,shortName,data.shortName,TORRENT PHARMACEUTICALS L
+TORNTPHARM.NS,data\raw\fundamentals\yfinance\TORNTPHARM.NS\info.json,longName,data.longName,Torrent Pharmaceuticals Limited
+TORNTPHARM.NS,data\raw\fundamentals\yfinance\TORNTPHARM.NS\info.json,fullExchangeName,data.fullExchangeName,NSE
+TORNTPHARM.NS,data\raw\fundamentals\yfinance\TORNTPHARM.NS\info.json,exchange,data.exchange,NSI
+TRENT.NS,data\raw\fundamentals\yfinance\TRENT.NS\info.json,currency,data.currency,INR
+TRENT.NS,data\raw\fundamentals\yfinance\TRENT.NS\info.json,quoteType,data.quoteType,EQUITY
+TRENT.NS,data\raw\fundamentals\yfinance\TRENT.NS\info.json,financialCurrency,data.financialCurrency,INR
+TRENT.NS,data\raw\fundamentals\yfinance\TRENT.NS\info.json,symbol,data.symbol,TRENT.NS
+TRENT.NS,data\raw\fundamentals\yfinance\TRENT.NS\info.json,fullExchangeName,data.fullExchangeName,NSE
+TRENT.NS,data\raw\fundamentals\yfinance\TRENT.NS\info.json,shortName,data.shortName,TRENT LTD
+TRENT.NS,data\raw\fundamentals\yfinance\TRENT.NS\info.json,longName,data.longName,Trent Limited
+TRENT.NS,data\raw\fundamentals\yfinance\TRENT.NS\info.json,exchange,data.exchange,NSI
+TVSMOTOR.NS,data\raw\fundamentals\yfinance\TVSMOTOR.NS\info.json,currency,data.currency,INR
+TVSMOTOR.NS,data\raw\fundamentals\yfinance\TVSMOTOR.NS\info.json,quoteType,data.quoteType,EQUITY
+TVSMOTOR.NS,data\raw\fundamentals\yfinance\TVSMOTOR.NS\info.json,financialCurrency,data.financialCurrency,INR
+TVSMOTOR.NS,data\raw\fundamentals\yfinance\TVSMOTOR.NS\info.json,symbol,data.symbol,TVSMOTOR.NS
+TVSMOTOR.NS,data\raw\fundamentals\yfinance\TVSMOTOR.NS\info.json,fullExchangeName,data.fullExchangeName,NSE
+TVSMOTOR.NS,data\raw\fundamentals\yfinance\TVSMOTOR.NS\info.json,exchange,data.exchange,NSI
+TVSMOTOR.NS,data\raw\fundamentals\yfinance\TVSMOTOR.NS\info.json,shortName,data.shortName,TVS MOTOR COMPANY  LTD
+TVSMOTOR.NS,data\raw\fundamentals\yfinance\TVSMOTOR.NS\info.json,longName,data.longName,TVS Motor Company Limited
+ULTRACEMCO.NS,data\raw\fundamentals\yfinance\ULTRACEMCO.NS\info.json,currency,data.currency,INR
+ULTRACEMCO.NS,data\raw\fundamentals\yfinance\ULTRACEMCO.NS\info.json,quoteType,data.quoteType,EQUITY
+ULTRACEMCO.NS,data\raw\fundamentals\yfinance\ULTRACEMCO.NS\info.json,financialCurrency,data.financialCurrency,INR
+ULTRACEMCO.NS,data\raw\fundamentals\yfinance\ULTRACEMCO.NS\info.json,symbol,data.symbol,ULTRACEMCO.NS
+ULTRACEMCO.NS,data\raw\fundamentals\yfinance\ULTRACEMCO.NS\info.json,exchange,data.exchange,NSI
+ULTRACEMCO.NS,data\raw\fundamentals\yfinance\ULTRACEMCO.NS\info.json,shortName,data.shortName,ULTRATECH CEMENT LIMITED
+ULTRACEMCO.NS,data\raw\fundamentals\yfinance\ULTRACEMCO.NS\info.json,longName,data.longName,UltraTech Cement Limited
+ULTRACEMCO.NS,data\raw\fundamentals\yfinance\ULTRACEMCO.NS\info.json,fullExchangeName,data.fullExchangeName,NSE
+VEDL.NS,data\raw\fundamentals\yfinance\VEDL.NS\info.json,currency,data.currency,INR
+VEDL.NS,data\raw\fundamentals\yfinance\VEDL.NS\info.json,quoteType,data.quoteType,EQUITY
+VEDL.NS,data\raw\fundamentals\yfinance\VEDL.NS\info.json,financialCurrency,data.financialCurrency,INR
+VEDL.NS,data\raw\fundamentals\yfinance\VEDL.NS\info.json,symbol,data.symbol,VEDL.NS
+VEDL.NS,data\raw\fundamentals\yfinance\VEDL.NS\info.json,fullExchangeName,data.fullExchangeName,NSE
+VEDL.NS,data\raw\fundamentals\yfinance\VEDL.NS\info.json,exchange,data.exchange,NSI
+VEDL.NS,data\raw\fundamentals\yfinance\VEDL.NS\info.json,shortName,data.shortName,VEDANTA LIMITED
+VEDL.NS,data\raw\fundamentals\yfinance\VEDL.NS\info.json,longName,data.longName,Vedanta Limited
+WIPRO.NS,data\raw\fundamentals\yfinance\WIPRO.NS\info.json,currency,data.currency,INR
+WIPRO.NS,data\raw\fundamentals\yfinance\WIPRO.NS\info.json,quoteType,data.quoteType,EQUITY
+WIPRO.NS,data\raw\fundamentals\yfinance\WIPRO.NS\info.json,financialCurrency,data.financialCurrency,INR
+WIPRO.NS,data\raw\fundamentals\yfinance\WIPRO.NS\info.json,symbol,data.symbol,WIPRO.NS
+WIPRO.NS,data\raw\fundamentals\yfinance\WIPRO.NS\info.json,shortName,data.shortName,WIPRO LTD
+WIPRO.NS,data\raw\fundamentals\yfinance\WIPRO.NS\info.json,longName,data.longName,Wipro Limited
+WIPRO.NS,data\raw\fundamentals\yfinance\WIPRO.NS\info.json,exchange,data.exchange,NSI
+WIPRO.NS,data\raw\fundamentals\yfinance\WIPRO.NS\info.json,fullExchangeName,data.fullExchangeName,NSE
+ZYDUSLIFE.NS,data\raw\fundamentals\yfinance\ZYDUSLIFE.NS\info.json,currency,data.currency,INR
+ZYDUSLIFE.NS,data\raw\fundamentals\yfinance\ZYDUSLIFE.NS\info.json,quoteType,data.quoteType,EQUITY
+ZYDUSLIFE.NS,data\raw\fundamentals\yfinance\ZYDUSLIFE.NS\info.json,financialCurrency,data.financialCurrency,INR
+ZYDUSLIFE.NS,data\raw\fundamentals\yfinance\ZYDUSLIFE.NS\info.json,symbol,data.symbol,ZYDUSLIFE.NS
+ZYDUSLIFE.NS,data\raw\fundamentals\yfinance\ZYDUSLIFE.NS\info.json,exchange,data.exchange,NSI
+ZYDUSLIFE.NS,data\raw\fundamentals\yfinance\ZYDUSLIFE.NS\info.json,shortName,data.shortName,ZYDUS LIFESCIENCES LTD
+ZYDUSLIFE.NS,data\raw\fundamentals\yfinance\ZYDUSLIFE.NS\info.json,longName,data.longName,Zydus Lifesciences Limited
+ZYDUSLIFE.NS,data\raw\fundamentals\yfinance\ZYDUSLIFE.NS\info.json,fullExchangeName,data.fullExchangeName,NSE

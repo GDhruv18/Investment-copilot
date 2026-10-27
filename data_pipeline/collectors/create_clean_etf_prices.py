@@ -1,4 +1,4 @@
-from pathlib import Path
+﻿from pathlib import Path
 import json
 import pandas as pd
 
@@ -13,10 +13,10 @@ CONFIG_FILE = (
     PROJECT_ROOT
     / "data_pipeline"
     / "config"
-    / "etfs_42_validated.json"
+    / "etfs_41_validated.json"
 )
 
-RAW_DIR = PROJECT_ROOT / "data" / "raw" / "etfs"
+RAW_DIR = PROJECT_ROOT / "data" / "staging" / "etfs_refresh"
 
 CLEAN_DIR = (
     PROJECT_ROOT
@@ -141,7 +141,7 @@ def load_rules():
 def main():
 
     print("=" * 70)
-    print("CLEAN ETF PRICE LAYER — 41 ETF UNIVERSE")
+    print("CLEAN ETF PRICE LAYER â€” 41 ETF UNIVERSE")
     print("=" * 70)
 
     universe = load_universe()
@@ -378,7 +378,7 @@ def main():
                 ticker_rules_used.append(
                     f"{event_type}"
                     f"|{event_date.date()}"
-                    f"→{event_end_date.date()}"
+                    f"â†’{event_end_date.date()}"
                     f"|factor={factor}"
                 )
 

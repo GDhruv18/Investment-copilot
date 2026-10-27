@@ -25,7 +25,7 @@ OUTPUT_FILE = OUTPUT_DIR / "etf_features.parquet"
 EXPECTED_ETFS = 41
 
 EXPECTED_START_DATE = pd.Timestamp("2014-01-01")
-EXPECTED_END_DATE = pd.Timestamp("2026-09-18")
+EXPECTED_END_DATE = pd.Timestamp("2026-10-23")
 
 REQUIRED_RAW_COLUMNS = [
     "Open",

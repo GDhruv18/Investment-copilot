@@ -1,0 +1,18 @@
+{
+  "input_rows": 2557,
+  "dated_statement_candidate_rows": 2427,
+  "ttm_summary_candidate_rows": 50,
+  "growth_ratio_summary_rows": 80,
+  "other_nonstandard_rows": 0,
+  "all_input_rows_preserved_in_master": true,
+  "reporting_basis_values": [
+    "consolidated"
+  ],
+  "unit_scale_verified": false,
+  "cash_flow_semantics_verified": false,
+  "statement_candidates_approved_for_scoring": false,
+  "database_modified": false,
+  "models_modified": false,
+  "historical_ml_data_modified": false,
+  "status": "TABLES_SEPARATED_VALIDATION_PENDING"
+}

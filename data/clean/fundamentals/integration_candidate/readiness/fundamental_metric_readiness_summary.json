@@ -1,0 +1,69 @@
+{
+  "stage": "fundamental_metric_readiness_diagnostic",
+  "snapshot_tickers": 100,
+  "latest_observation_rows": 33857,
+  "mapping_register_rows": 9,
+  "readiness_report_rows": 900,
+  "stocks_with_any_currency_quarantine": 2,
+  "readiness_status_counts": {
+    "CROSS_SOURCE_EVIDENCE_AVAILABLE_REQUIRES_REVIEW": 491,
+    "SINGLE_SOURCE_EVIDENCE_REQUIRES_REVIEW": 390,
+    "CURRENCY_REVIEW_REQUIRED": 18,
+    "NO_LATEST_FIELD_EVIDENCE": 1
+  },
+  "metrics": [
+    {
+      "metric": "operating_cash_flow",
+      "stock_mapping_rows": 200,
+      "stocks_with_screener_field": 198,
+      "stocks_with_yahoo_field": 106,
+      "stocks_with_both_fields": 105,
+      "stocks_in_currency_review": 4,
+      "approved_mapping_rows": 0,
+      "scoring_eligible_rows": 0
+    },
+    {
+      "metric": "revenue",
+      "stock_mapping_rows": 400,
+      "stocks_with_screener_field": 198,
+      "stocks_with_yahoo_field": 400,
+      "stocks_with_both_fields": 198,
+      "stocks_in_currency_review": 8,
+      "approved_mapping_rows": 0,
+      "scoring_eligible_rows": 0
+    },
+    {
+      "metric": "total_assets",
+      "stock_mapping_rows": 100,
+      "stocks_with_screener_field": 100,
+      "stocks_with_yahoo_field": 100,
+      "stocks_with_both_fields": 100,
+      "stocks_in_currency_review": 2,
+      "approved_mapping_rows": 0,
+      "scoring_eligible_rows": 0
+    },
+    {
+      "metric": "total_debt",
+      "stock_mapping_rows": 200,
+      "stocks_with_screener_field": 99,
+      "stocks_with_yahoo_field": 200,
+      "stocks_with_both_fields": 99,
+      "stocks_in_currency_review": 4,
+      "approved_mapping_rows": 0,
+      "scoring_eligible_rows": 0
+    }
+  ],
+  "approved_mapping_rows": 0,
+  "scoring_eligible_rows": 0,
+  "outputs": [
+    "data\\clean\\fundamentals\\integration_candidate\\readiness\\fundamental_metric_readiness.csv",
+    "data\\clean\\fundamentals\\integration_candidate\\readiness\\fundamental_metric_readiness_summary.json"
+  ],
+  "limitations": [
+    "Field presence does not establish metric equivalence.",
+    "Field presence does not verify units or financial values.",
+    "The report does not compare source values or approve mappings.",
+    "Latest source observations can have different reporting dates.",
+    "All rows remain ineligible for scoring."
+  ]
+}

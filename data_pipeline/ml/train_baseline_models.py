@@ -734,7 +734,8 @@ def main():
     for asset_class, horizons in DATASETS.items():
 
         for horizon, paths in horizons.items():
-
+            if horizon != "2y":
+                continue
             result = train_one_dataset(
                 asset_class,
                 horizon,

@@ -1,0 +1,22 @@
+[
+  {
+    "asset_class": "etfs",
+    "horizon": "6m",
+    "error": "ModuleNotFoundError(\"No module named 'data_pipeline'\")"
+  },
+  {
+    "asset_class": "etfs",
+    "horizon": "1y",
+    "error": "ModuleNotFoundError(\"No module named 'data_pipeline'\")"
+  },
+  {
+    "asset_class": "etfs",
+    "horizon": "2y",
+    "error": "ModuleNotFoundError(\"No module named 'data_pipeline'\")"
+  },
+  {
+    "asset_class": "mutual_funds",
+    "horizon": "2y",
+    "error": "ModuleNotFoundError(\"No module named 'data_pipeline'\")"
+  }
+]

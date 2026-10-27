@@ -6,7 +6,7 @@ INPUT_FILE = Path("data/clean/mutual_fund_nav_clean.parquet")
 OUTPUT_FILE = Path("data/targets/mutual_fund_2y_diagnostics.parquet")
 EXPECTED_SCHEMES = 100
 EXPECTED_START = pd.Timestamp("2013-01-01")
-EXPECTED_END = pd.Timestamp("2026-08-25")
+EXPECTED_END = pd.Timestamp("2026-10-22")
 
 
 class RangeDrawdownTree:

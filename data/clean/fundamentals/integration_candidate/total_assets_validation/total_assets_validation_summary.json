@@ -1,0 +1,46 @@
+{
+  "stage": "total_assets_mapping_validation_candidate",
+  "screener_source_field": "Total Assets",
+  "yahoo_source_field": "Total Assets",
+  "candidate_scale_factor": 10000000.0,
+  "candidate_scale_factor_is_approved": false,
+  "mapping_approved_for_scoring": false,
+  "unit_verified": false,
+  "financial_values_independently_verified": false,
+  "scoring_eligible_rows": 0,
+  "screener_raw_rows": 99,
+  "yahoo_raw_rows": 200,
+  "screener_comparison_keys_retained": 99,
+  "yahoo_comparison_keys_retained": 113,
+  "exact_ticker_date_matched_pairs": 80,
+  "usable_positive_pairs_outside_currency_quarantine": 79,
+  "currency_quarantined_pairs": 1,
+  "positive_pairs_near_candidate_scale": 79,
+  "positive_pairs_within_1pct_after_candidate_scaling": 69,
+  "positive_pairs_with_sign_disagreement": 0,
+  "duplicate_review_rows": 87,
+  "duplicate_review_status_counts": {
+    "IDENTICAL_VALUES_COLLAPSED_FOR_COMPARISON": 87
+  },
+  "median_yahoo_to_screener_ratio": 10004320.843505643,
+  "median_candidate_abs_pct_difference": 0.06988469026106923,
+  "median_log10_distance_from_candidate_scale": 0.0003036114548224944,
+  "comparison_status_counts": {
+    "CANDIDATE_SCALE_MATCH_WITHIN_1PCT": 69,
+    "CANDIDATE_SCALE_APPROXIMATE_REVIEW": 10,
+    "CURRENCY_REVIEW_EXCLUDED": 1
+  },
+  "outputs": [
+    "data\\clean\\fundamentals\\integration_candidate\\total_assets_validation\\total_assets_source_comparison.csv",
+    "data\\clean\\fundamentals\\integration_candidate\\total_assets_validation\\total_assets_duplicate_review.csv",
+    "data\\clean\\fundamentals\\integration_candidate\\total_assets_validation\\total_assets_validation_summary.json"
+  ],
+  "limitations": [
+    "This uses the latest retained observation per source field.",
+    "Only exact ticker and reporting-date matches are compared.",
+    "Identical duplicate numeric values are collapsed for comparison only.",
+    "Conflicting duplicate values are excluded and reported separately.",
+    "A scale relationship does not independently verify units.",
+    "No mapping, normalization, or scoring approval is granted."
+  ]
+}

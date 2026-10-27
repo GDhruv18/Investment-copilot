@@ -1,0 +1,33 @@
+{
+  "asset_class": "stocks",
+  "horizon": "2y",
+  "lookback": 252,
+  "n_features": 27,
+  "lstm_units": 64,
+  "dense_units": 32,
+  "dropout": 0.2,
+  "learning_rate": 0.001,
+  "batch_size": 64,
+  "max_epochs": 50,
+  "early_stopping_patience": 7,
+  "parameter_count": 25731,
+  "epochs_trained": 11,
+  "best_epoch": 4,
+  "training_seconds": 622.6289479732513,
+  "validation": {
+    "accuracy": 0.40676447158789164,
+    "balanced_accuracy": 0.37379067955935374,
+    "macro_f1": 0.3409105937032637,
+    "weighted_f1": 0.35551712336806446,
+    "macro_precision": 0.43685116906579696,
+    "macro_recall": 0.37379067955935374
+  },
+  "test": {
+    "accuracy": 0.38804359555411677,
+    "balanced_accuracy": 0.3775221851067057,
+    "macro_f1": 0.3803955403319585,
+    "weighted_f1": 0.38353816603032037,
+    "macro_precision": 0.4176276614934533,
+    "macro_recall": 0.3775221851067057
+  }
+}

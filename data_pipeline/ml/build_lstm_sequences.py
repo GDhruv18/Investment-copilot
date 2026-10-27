@@ -135,7 +135,7 @@ ASSET_CONFIG = {
 }
 
 
-HORIZONS = ["6m", "1y", "2y"]
+HORIZONS = ["2y"]
 
 SPLITS = ["train", "validation", "test"]
 

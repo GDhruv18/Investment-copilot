@@ -1,0 +1,21 @@
+{
+  "input_rows": 2557,
+  "companies": 5,
+  "reporting_basis_values": [
+    "consolidated"
+  ],
+  "classification_counts": {
+    "STATEMENT_CANDIDATE": 2391,
+    "SUMMARY_INDICATOR": 130,
+    "DERIVED_METRIC": 36
+  },
+  "statement_series_eligible_rows": 2391,
+  "unknown_metric_rows": 0,
+  "unit_scale_independently_verified": false,
+  "cash_flow_semantics_verified": false,
+  "all_source_values_preserved": true,
+  "database_modified": false,
+  "models_modified": false,
+  "historical_ml_data_modified": false,
+  "status": "REFINED_CLASSIFICATION_REQUIRES_VALIDATION"
+}

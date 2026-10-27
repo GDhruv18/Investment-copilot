@@ -1,0 +1,33 @@
+{
+  "asset_class": "etfs",
+  "horizon": "2y",
+  "lookback": 252,
+  "n_features": 27,
+  "lstm_units": 64,
+  "dense_units": 32,
+  "dropout": 0.2,
+  "learning_rate": 0.001,
+  "batch_size": 64,
+  "max_epochs": 50,
+  "early_stopping_patience": 7,
+  "parameter_count": 25731,
+  "epochs_trained": 9,
+  "best_epoch": 2,
+  "training_seconds": 84.2941370010376,
+  "validation": {
+    "accuracy": 0.4191693290734824,
+    "balanced_accuracy": 0.4149217493360153,
+    "macro_f1": 0.40291943910247235,
+    "weighted_f1": 0.4068079091813357,
+    "macro_precision": 0.4299857070819099,
+    "macro_recall": 0.4149217493360153
+  },
+  "test": {
+    "accuracy": 0.3338731046665685,
+    "balanced_accuracy": 0.36645391673550404,
+    "macro_f1": 0.33689659016815837,
+    "weighted_f1": 0.32333528974641845,
+    "macro_precision": 0.33205461459550173,
+    "macro_recall": 0.36645391673550404
+  }
+}

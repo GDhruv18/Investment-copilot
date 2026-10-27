@@ -1,0 +1,95 @@
+{
+  "status": "CANDIDATE_BUILT_REQUIRES_VALIDATION",
+  "scoring_approved": false,
+  "historical_ml_changed": false,
+  "database_changed": false,
+  "ticker_normalization": {
+    "aliases_applied": {
+      "M_M.NS": "M&M.NS"
+    },
+    "profile_universe_tickers": 100,
+    "observation_tickers": 100,
+    "extra_tickers": [],
+    "missing_tickers": []
+  },
+  "profile_snapshot": {
+    "rows": 100,
+    "unique_tickers": 100,
+    "path": "data\\clean\\fundamentals\\integration_candidate\\company_profile_snapshot.parquet"
+  },
+  "observations": {
+    "rows": 154371,
+    "unique_tickers": 100,
+    "expected_stock_universe": 100,
+    "missing_numeric_values": 0,
+    "missing_dates": 0,
+    "unit_verified_rows": 0,
+    "scoring_eligible_rows": 0,
+    "earliest_period": "2008-03-31",
+    "latest_period": "2026-09-30",
+    "rows_by_source": {
+      "Screener.in": 45753,
+      "Yahoo Finance via yfinance": 108618
+    },
+    "rows_by_source_and_statement": [
+      {
+        "source": "Screener.in",
+        "statement_type": "annual_income_statement",
+        "rows": 13476
+      },
+      {
+        "source": "Screener.in",
+        "statement_type": "balance_sheet",
+        "rows": 11595
+      },
+      {
+        "source": "Screener.in",
+        "statement_type": "cash_flow",
+        "rows": 6623
+      },
+      {
+        "source": "Screener.in",
+        "statement_type": "quarterly_income_statement",
+        "rows": 14059
+      },
+      {
+        "source": "Yahoo Finance via yfinance",
+        "statement_type": "annual_balance_sheet",
+        "rows": 30906
+      },
+      {
+        "source": "Yahoo Finance via yfinance",
+        "statement_type": "annual_cash_flow",
+        "rows": 18400
+      },
+      {
+        "source": "Yahoo Finance via yfinance",
+        "statement_type": "annual_income_statement",
+        "rows": 19954
+      },
+      {
+        "source": "Yahoo Finance via yfinance",
+        "statement_type": "quarterly_balance_sheet",
+        "rows": 18302
+      },
+      {
+        "source": "Yahoo Finance via yfinance",
+        "statement_type": "quarterly_cash_flow",
+        "rows": 1318
+      },
+      {
+        "source": "Yahoo Finance via yfinance",
+        "statement_type": "quarterly_income_statement",
+        "rows": 19738
+      }
+    ],
+    "path": "data\\clean\\fundamentals\\integration_candidate\\fundamental_observations_candidate.parquet"
+  },
+  "limitations": [
+    "Source-specific metric names have not been fully mapped.",
+    "Yahoo Finance statement units have not been independently verified.",
+    "Screener.in units remain unverified.",
+    "Duplicate metrics across sources are retained, not reconciled.",
+    "No observation is approved for recommendation scoring."
+  ]
+}

@@ -1,0 +1,193 @@
+company,section,metric_clean,rows,distinct_periods,first_period,last_period
+HDFC_BANK,Annual Profit and Loss,Depreciation,12,12,2015-03-31,2026-03-31
+HDFC_BANK,Annual Profit and Loss,Dividend Payout %,12,12,2015-03-31,2026-03-31
+HDFC_BANK,Annual Profit and Loss,EPS in Rs,12,12,2015-03-31,2026-03-31
+HDFC_BANK,Annual Profit and Loss,Expenses,12,12,2015-03-31,2026-03-31
+HDFC_BANK,Annual Profit and Loss,Financing Margin %,12,12,2015-03-31,2026-03-31
+HDFC_BANK,Annual Profit and Loss,Financing Profit,12,12,2015-03-31,2026-03-31
+HDFC_BANK,Annual Profit and Loss,Interest,12,12,2015-03-31,2026-03-31
+HDFC_BANK,Annual Profit and Loss,Net Profit,12,12,2015-03-31,2026-03-31
+HDFC_BANK,Annual Profit and Loss,Other Income,12,12,2015-03-31,2026-03-31
+HDFC_BANK,Annual Profit and Loss,Profit before tax,12,12,2015-03-31,2026-03-31
+HDFC_BANK,Annual Profit and Loss,Revenue,12,12,2015-03-31,2026-03-31
+HDFC_BANK,Annual Profit and Loss,Tax %,12,12,2015-03-31,2026-03-31
+HDFC_BANK,Balance Sheet,Borrowing,13,13,2015-03-31,2026-09-30
+HDFC_BANK,Balance Sheet,CWIP,13,13,2015-03-31,2026-09-30
+HDFC_BANK,Balance Sheet,Deposits,13,13,2015-03-31,2026-09-30
+HDFC_BANK,Balance Sheet,Equity Capital,13,13,2015-03-31,2026-09-30
+HDFC_BANK,Balance Sheet,Fixed Assets,13,13,2015-03-31,2026-09-30
+HDFC_BANK,Balance Sheet,Investments,13,13,2015-03-31,2026-09-30
+HDFC_BANK,Balance Sheet,Other Assets,13,13,2015-03-31,2026-09-30
+HDFC_BANK,Balance Sheet,Other Liabilities,13,13,2015-03-31,2026-09-30
+HDFC_BANK,Balance Sheet,Reserves,13,13,2015-03-31,2026-09-30
+HDFC_BANK,Balance Sheet,Total Assets,13,13,2015-03-31,2026-09-30
+HDFC_BANK,Balance Sheet,Total Liabilities,13,13,2015-03-31,2026-09-30
+HDFC_BANK,Cash Flow,Cash from Financing Activity,12,12,2015-03-31,2026-03-31
+HDFC_BANK,Cash Flow,Cash from Investing Activity,12,12,2015-03-31,2026-03-31
+HDFC_BANK,Cash Flow,Cash from Operating Activity,12,12,2015-03-31,2026-03-31
+HDFC_BANK,Cash Flow,Free Cash Flow,12,12,2015-03-31,2026-03-31
+HDFC_BANK,Cash Flow,Net Cash Flow,12,12,2015-03-31,2026-03-31
+HDFC_BANK,Quarterly Results,Depreciation,13,13,2023-09-30,2026-09-30
+HDFC_BANK,Quarterly Results,EPS in Rs,13,13,2023-09-30,2026-09-30
+HDFC_BANK,Quarterly Results,Expenses,13,13,2023-09-30,2026-09-30
+HDFC_BANK,Quarterly Results,Financing Margin %,13,13,2023-09-30,2026-09-30
+HDFC_BANK,Quarterly Results,Financing Profit,13,13,2023-09-30,2026-09-30
+HDFC_BANK,Quarterly Results,Interest,13,13,2023-09-30,2026-09-30
+HDFC_BANK,Quarterly Results,Net Profit,13,13,2023-09-30,2026-09-30
+HDFC_BANK,Quarterly Results,Other Income,13,13,2023-09-30,2026-09-30
+HDFC_BANK,Quarterly Results,Profit before tax,13,13,2023-09-30,2026-09-30
+HDFC_BANK,Quarterly Results,Revenue,13,13,2023-09-30,2026-09-30
+HDFC_BANK,Quarterly Results,Tax %,13,13,2023-09-30,2026-09-30
+ICICI_BANK,Annual Profit and Loss,Depreciation,12,12,2015-03-31,2026-03-31
+ICICI_BANK,Annual Profit and Loss,Dividend Payout %,12,12,2015-03-31,2026-03-31
+ICICI_BANK,Annual Profit and Loss,EPS in Rs,12,12,2015-03-31,2026-03-31
+ICICI_BANK,Annual Profit and Loss,Expenses,12,12,2015-03-31,2026-03-31
+ICICI_BANK,Annual Profit and Loss,Financing Margin %,12,12,2015-03-31,2026-03-31
+ICICI_BANK,Annual Profit and Loss,Financing Profit,12,12,2015-03-31,2026-03-31
+ICICI_BANK,Annual Profit and Loss,Interest,12,12,2015-03-31,2026-03-31
+ICICI_BANK,Annual Profit and Loss,Net Profit,12,12,2015-03-31,2026-03-31
+ICICI_BANK,Annual Profit and Loss,Other Income,12,12,2015-03-31,2026-03-31
+ICICI_BANK,Annual Profit and Loss,Profit before tax,12,12,2015-03-31,2026-03-31
+ICICI_BANK,Annual Profit and Loss,Revenue,12,12,2015-03-31,2026-03-31
+ICICI_BANK,Annual Profit and Loss,Tax %,12,12,2015-03-31,2026-03-31
+ICICI_BANK,Balance Sheet,Borrowing,13,13,2015-03-31,2026-09-30
+ICICI_BANK,Balance Sheet,CWIP,13,13,2015-03-31,2026-09-30
+ICICI_BANK,Balance Sheet,Deposits,13,13,2015-03-31,2026-09-30
+ICICI_BANK,Balance Sheet,Equity Capital,13,13,2015-03-31,2026-09-30
+ICICI_BANK,Balance Sheet,Fixed Assets,13,13,2015-03-31,2026-09-30
+ICICI_BANK,Balance Sheet,Investments,13,13,2015-03-31,2026-09-30
+ICICI_BANK,Balance Sheet,Other Assets,13,13,2015-03-31,2026-09-30
+ICICI_BANK,Balance Sheet,Other Liabilities,13,13,2015-03-31,2026-09-30
+ICICI_BANK,Balance Sheet,Reserves,13,13,2015-03-31,2026-09-30
+ICICI_BANK,Balance Sheet,Total Assets,13,13,2015-03-31,2026-09-30
+ICICI_BANK,Balance Sheet,Total Liabilities,13,13,2015-03-31,2026-09-30
+ICICI_BANK,Cash Flow,Cash from Financing Activity,12,12,2015-03-31,2026-03-31
+ICICI_BANK,Cash Flow,Cash from Investing Activity,12,12,2015-03-31,2026-03-31
+ICICI_BANK,Cash Flow,Cash from Operating Activity,12,12,2015-03-31,2026-03-31
+ICICI_BANK,Cash Flow,Free Cash Flow,12,12,2015-03-31,2026-03-31
+ICICI_BANK,Cash Flow,Net Cash Flow,12,12,2015-03-31,2026-03-31
+ICICI_BANK,Quarterly Results,Depreciation,13,13,2023-09-30,2026-09-30
+ICICI_BANK,Quarterly Results,EPS in Rs,13,13,2023-09-30,2026-09-30
+ICICI_BANK,Quarterly Results,Expenses,13,13,2023-09-30,2026-09-30
+ICICI_BANK,Quarterly Results,Financing Margin %,13,13,2023-09-30,2026-09-30
+ICICI_BANK,Quarterly Results,Financing Profit,13,13,2023-09-30,2026-09-30
+ICICI_BANK,Quarterly Results,Interest,13,13,2023-09-30,2026-09-30
+ICICI_BANK,Quarterly Results,Net Profit,13,13,2023-09-30,2026-09-30
+ICICI_BANK,Quarterly Results,Other Income,13,13,2023-09-30,2026-09-30
+ICICI_BANK,Quarterly Results,Profit before tax,13,13,2023-09-30,2026-09-30
+ICICI_BANK,Quarterly Results,Revenue,13,13,2023-09-30,2026-09-30
+ICICI_BANK,Quarterly Results,Tax %,13,13,2023-09-30,2026-09-30
+INFOSYS,Annual Profit and Loss,Depreciation,12,12,2015-03-31,2026-03-31
+INFOSYS,Annual Profit and Loss,Dividend Payout %,12,12,2015-03-31,2026-03-31
+INFOSYS,Annual Profit and Loss,EPS in Rs,12,12,2015-03-31,2026-03-31
+INFOSYS,Annual Profit and Loss,Expenses,12,12,2015-03-31,2026-03-31
+INFOSYS,Annual Profit and Loss,Interest,12,12,2015-03-31,2026-03-31
+INFOSYS,Annual Profit and Loss,Net Profit,12,12,2015-03-31,2026-03-31
+INFOSYS,Annual Profit and Loss,OPM %,12,12,2015-03-31,2026-03-31
+INFOSYS,Annual Profit and Loss,Operating Profit,12,12,2015-03-31,2026-03-31
+INFOSYS,Annual Profit and Loss,Other Income,12,12,2015-03-31,2026-03-31
+INFOSYS,Annual Profit and Loss,Profit before tax,12,12,2015-03-31,2026-03-31
+INFOSYS,Annual Profit and Loss,Sales,12,12,2015-03-31,2026-03-31
+INFOSYS,Annual Profit and Loss,Tax %,12,12,2015-03-31,2026-03-31
+INFOSYS,Balance Sheet,Borrowings,12,12,2015-03-31,2026-03-31
+INFOSYS,Balance Sheet,CWIP,12,12,2015-03-31,2026-03-31
+INFOSYS,Balance Sheet,Equity Capital,12,12,2015-03-31,2026-03-31
+INFOSYS,Balance Sheet,Fixed Assets,12,12,2015-03-31,2026-03-31
+INFOSYS,Balance Sheet,Investments,12,12,2015-03-31,2026-03-31
+INFOSYS,Balance Sheet,Other Assets,12,12,2015-03-31,2026-03-31
+INFOSYS,Balance Sheet,Other Liabilities,12,12,2015-03-31,2026-03-31
+INFOSYS,Balance Sheet,Reserves,12,12,2015-03-31,2026-03-31
+INFOSYS,Balance Sheet,Total Assets,12,12,2015-03-31,2026-03-31
+INFOSYS,Balance Sheet,Total Liabilities,12,12,2015-03-31,2026-03-31
+INFOSYS,Cash Flow,Cash from Financing Activity,12,12,2015-03-31,2026-03-31
+INFOSYS,Cash Flow,Cash from Investing Activity,12,12,2015-03-31,2026-03-31
+INFOSYS,Cash Flow,Cash from Operating Activity,12,12,2015-03-31,2026-03-31
+INFOSYS,Cash Flow,Free Cash Flow,12,12,2015-03-31,2026-03-31
+INFOSYS,Cash Flow,Net Cash Flow,12,12,2015-03-31,2026-03-31
+INFOSYS,Quarterly Results,Depreciation,13,13,2023-06-30,2026-06-30
+INFOSYS,Quarterly Results,EPS in Rs,13,13,2023-06-30,2026-06-30
+INFOSYS,Quarterly Results,Expenses,13,13,2023-06-30,2026-06-30
+INFOSYS,Quarterly Results,Interest,13,13,2023-06-30,2026-06-30
+INFOSYS,Quarterly Results,Net Profit,13,13,2023-06-30,2026-06-30
+INFOSYS,Quarterly Results,OPM %,13,13,2023-06-30,2026-06-30
+INFOSYS,Quarterly Results,Operating Profit,13,13,2023-06-30,2026-06-30
+INFOSYS,Quarterly Results,Other Income,13,13,2023-06-30,2026-06-30
+INFOSYS,Quarterly Results,Profit before tax,13,13,2023-06-30,2026-06-30
+INFOSYS,Quarterly Results,Sales,13,13,2023-06-30,2026-06-30
+INFOSYS,Quarterly Results,Tax %,13,13,2023-06-30,2026-06-30
+RELIANCE,Annual Profit and Loss,Depreciation,12,12,2015-03-31,2026-03-31
+RELIANCE,Annual Profit and Loss,Dividend Payout %,12,12,2015-03-31,2026-03-31
+RELIANCE,Annual Profit and Loss,EPS in Rs,12,12,2015-03-31,2026-03-31
+RELIANCE,Annual Profit and Loss,Expenses,12,12,2015-03-31,2026-03-31
+RELIANCE,Annual Profit and Loss,Interest,12,12,2015-03-31,2026-03-31
+RELIANCE,Annual Profit and Loss,Net Profit,12,12,2015-03-31,2026-03-31
+RELIANCE,Annual Profit and Loss,OPM %,12,12,2015-03-31,2026-03-31
+RELIANCE,Annual Profit and Loss,Operating Profit,12,12,2015-03-31,2026-03-31
+RELIANCE,Annual Profit and Loss,Other Income,12,12,2015-03-31,2026-03-31
+RELIANCE,Annual Profit and Loss,Profit before tax,12,12,2015-03-31,2026-03-31
+RELIANCE,Annual Profit and Loss,Sales,12,12,2015-03-31,2026-03-31
+RELIANCE,Annual Profit and Loss,Tax %,12,12,2015-03-31,2026-03-31
+RELIANCE,Balance Sheet,Borrowings,12,12,2015-03-31,2026-03-31
+RELIANCE,Balance Sheet,CWIP,12,12,2015-03-31,2026-03-31
+RELIANCE,Balance Sheet,Equity Capital,12,12,2015-03-31,2026-03-31
+RELIANCE,Balance Sheet,Fixed Assets,12,12,2015-03-31,2026-03-31
+RELIANCE,Balance Sheet,Investments,12,12,2015-03-31,2026-03-31
+RELIANCE,Balance Sheet,Other Assets,12,12,2015-03-31,2026-03-31
+RELIANCE,Balance Sheet,Other Liabilities,12,12,2015-03-31,2026-03-31
+RELIANCE,Balance Sheet,Reserves,12,12,2015-03-31,2026-03-31
+RELIANCE,Balance Sheet,Total Assets,12,12,2015-03-31,2026-03-31
+RELIANCE,Balance Sheet,Total Liabilities,12,12,2015-03-31,2026-03-31
+RELIANCE,Cash Flow,Cash from Financing Activity,12,12,2015-03-31,2026-03-31
+RELIANCE,Cash Flow,Cash from Investing Activity,12,12,2015-03-31,2026-03-31
+RELIANCE,Cash Flow,Cash from Operating Activity,12,12,2015-03-31,2026-03-31
+RELIANCE,Cash Flow,Free Cash Flow,12,12,2015-03-31,2026-03-31
+RELIANCE,Cash Flow,Net Cash Flow,12,12,2015-03-31,2026-03-31
+RELIANCE,Quarterly Results,Depreciation,13,13,2023-06-30,2026-06-30
+RELIANCE,Quarterly Results,EPS in Rs,13,13,2023-06-30,2026-06-30
+RELIANCE,Quarterly Results,Expenses,13,13,2023-06-30,2026-06-30
+RELIANCE,Quarterly Results,Interest,13,13,2023-06-30,2026-06-30
+RELIANCE,Quarterly Results,Net Profit,13,13,2023-06-30,2026-06-30
+RELIANCE,Quarterly Results,OPM %,13,13,2023-06-30,2026-06-30
+RELIANCE,Quarterly Results,Operating Profit,13,13,2023-06-30,2026-06-30
+RELIANCE,Quarterly Results,Other Income,13,13,2023-06-30,2026-06-30
+RELIANCE,Quarterly Results,Profit before tax,13,13,2023-06-30,2026-06-30
+RELIANCE,Quarterly Results,Sales,13,13,2023-06-30,2026-06-30
+RELIANCE,Quarterly Results,Tax %,13,13,2023-06-30,2026-06-30
+TCS,Annual Profit and Loss,Depreciation,12,12,2015-03-31,2026-03-31
+TCS,Annual Profit and Loss,Dividend Payout %,12,12,2015-03-31,2026-03-31
+TCS,Annual Profit and Loss,EPS in Rs,12,12,2015-03-31,2026-03-31
+TCS,Annual Profit and Loss,Expenses,12,12,2015-03-31,2026-03-31
+TCS,Annual Profit and Loss,Interest,12,12,2015-03-31,2026-03-31
+TCS,Annual Profit and Loss,Net Profit,12,12,2015-03-31,2026-03-31
+TCS,Annual Profit and Loss,OPM %,12,12,2015-03-31,2026-03-31
+TCS,Annual Profit and Loss,Operating Profit,12,12,2015-03-31,2026-03-31
+TCS,Annual Profit and Loss,Other Income,12,12,2015-03-31,2026-03-31
+TCS,Annual Profit and Loss,Profit before tax,12,12,2015-03-31,2026-03-31
+TCS,Annual Profit and Loss,Sales,12,12,2015-03-31,2026-03-31
+TCS,Annual Profit and Loss,Tax %,12,12,2015-03-31,2026-03-31
+TCS,Balance Sheet,Borrowings,13,13,2015-03-31,2026-09-30
+TCS,Balance Sheet,CWIP,13,13,2015-03-31,2026-09-30
+TCS,Balance Sheet,Equity Capital,13,13,2015-03-31,2026-09-30
+TCS,Balance Sheet,Fixed Assets,13,13,2015-03-31,2026-09-30
+TCS,Balance Sheet,Investments,13,13,2015-03-31,2026-09-30
+TCS,Balance Sheet,Other Assets,13,13,2015-03-31,2026-09-30
+TCS,Balance Sheet,Other Liabilities,13,13,2015-03-31,2026-09-30
+TCS,Balance Sheet,Reserves,13,13,2015-03-31,2026-09-30
+TCS,Balance Sheet,Total Assets,13,13,2015-03-31,2026-09-30
+TCS,Balance Sheet,Total Liabilities,13,13,2015-03-31,2026-09-30
+TCS,Cash Flow,Cash from Financing Activity,12,12,2015-03-31,2026-03-31
+TCS,Cash Flow,Cash from Investing Activity,12,12,2015-03-31,2026-03-31
+TCS,Cash Flow,Cash from Operating Activity,12,12,2015-03-31,2026-03-31
+TCS,Cash Flow,Free Cash Flow,12,12,2015-03-31,2026-03-31
+TCS,Cash Flow,Net Cash Flow,12,12,2015-03-31,2026-03-31
+TCS,Quarterly Results,Depreciation,13,13,2023-09-30,2026-09-30
+TCS,Quarterly Results,EPS in Rs,13,13,2023-09-30,2026-09-30
+TCS,Quarterly Results,Expenses,13,13,2023-09-30,2026-09-30
+TCS,Quarterly Results,Interest,13,13,2023-09-30,2026-09-30
+TCS,Quarterly Results,Net Profit,13,13,2023-09-30,2026-09-30
+TCS,Quarterly Results,OPM %,13,13,2023-09-30,2026-09-30
+TCS,Quarterly Results,Operating Profit,13,13,2023-09-30,2026-09-30
+TCS,Quarterly Results,Other Income,13,13,2023-09-30,2026-09-30
+TCS,Quarterly Results,Profit before tax,13,13,2023-09-30,2026-09-30
+TCS,Quarterly Results,Sales,13,13,2023-09-30,2026-09-30
+TCS,Quarterly Results,Tax %,13,13,2023-09-30,2026-09-30

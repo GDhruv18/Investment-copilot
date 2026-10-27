@@ -1,0 +1,55 @@
+{
+    "asset_class": "stocks",
+    "horizon": "2y",
+    "model_type": "LogisticRegression",
+    "pipeline": [
+        "SimpleImputer(strategy='median')",
+        "StandardScaler()",
+        "LogisticRegression(solver='lbfgs', max_iter=2000, random_state=42)"
+    ],
+    "features": [
+        "return_5d",
+        "return_20d",
+        "return_60d",
+        "return_120d",
+        "return_252d",
+        "volatility_20d",
+        "volatility_60d",
+        "volatility_120d",
+        "volatility_252d",
+        "drawdown_60d",
+        "drawdown_120d",
+        "drawdown_252d",
+        "price_vs_sma_20",
+        "price_vs_sma_50",
+        "price_vs_sma_200",
+        "volume_ratio_20d",
+        "volume_ratio_60d",
+        "volume_change_20d",
+        "range_20d",
+        "range_60d",
+        "return_20d_pct",
+        "return_60d_pct",
+        "return_120d_pct",
+        "return_252d_pct",
+        "volatility_60d_pct",
+        "drawdown_120d_pct",
+        "volume_ratio_20d_pct"
+    ],
+    "class_mapping": {
+        "0": "Weak",
+        "1": "Neutral",
+        "2": "Attractive"
+    },
+    "classes": [
+        0,
+        1,
+        2
+    ],
+    "training_rows": 91290,
+    "training_start": "2014-01-01",
+    "training_end": "2018-05-02",
+    "training_dataset": "data\\ml\\stocks\\stock_2y_train.parquet",
+    "selection_basis": "Previously evaluated validation results; balanced accuracy primary and Macro-F1 secondary.",
+    "test_set_used_for_selection": false
+}

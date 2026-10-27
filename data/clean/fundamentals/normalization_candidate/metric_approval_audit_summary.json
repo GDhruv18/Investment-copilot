@@ -1,0 +1,22 @@
+{
+  "audit": "fundamental_metric_approval_review",
+  "input_rows": 154371,
+  "unique_tickers": 100,
+  "candidate_scaled_rows": 12596,
+  "verified_unit_rows": 0,
+  "scoring_eligible_rows": 0,
+  "cross_source_pair_rows": 3349,
+  "metric_count_including_unmapped": 14,
+  "quarantined_tickers": [
+    "HCLTECH.NS",
+    "INFY.NS"
+  ],
+  "approval_policy": "Read-only screening. No metric approved automatically. Units and financial definitions require independent verification.",
+  "outputs": [
+    "metric_source_coverage_audit.csv",
+    "metric_duplicate_key_audit.csv",
+    "metric_source_pair_audit.csv",
+    "metric_source_pair_summary.csv",
+    "metric_approval_review.csv"
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "source_file": "data\\ml\\current_signals\\model_signals_20261025T070603Z.parquet",
+  "rows_written": 1629,
+  "profiles": {
+    "conservative": {
+      "rows": 343,
+      "shortlist_candidates": 64,
+      "by_horizon": {
+        "1y": {
+          "NOT_SHORTLISTED_PROBABILITY_FILTER": 89,
+          "SHORTLIST_CANDIDATE": 21
+        },
+        "2y": {
+          "NOT_SHORTLISTED_PROBABILITY_FILTER": 87,
+          "SHORTLIST_CANDIDATE": 6
+        },
+        "6m": {
+          "NOT_SHORTLISTED_PROBABILITY_FILTER": 103,
+          "SHORTLIST_CANDIDATE": 37
+        }
+      }
+    },
+    "moderate": {
+      "rows": 643,
+      "shortlist_candidates": 188,
+      "by_horizon": {
+        "1y": {
+          "NOT_SHORTLISTED_PROBABILITY_FILTER": 158,
+          "REVIEW_WEAK_SIGNAL": 3,
+          "SHORTLIST_CANDIDATE": 49
+        },
+        "2y": {
+          "NOT_SHORTLISTED_PROBABILITY_FILTER": 133,
+          "REVIEW_WEAK_SIGNAL": 0,
+          "SHORTLIST_CANDIDATE": 60
+        },
+        "6m": {
+          "NOT_SHORTLISTED_PROBABILITY_FILTER": 159,
+          "REVIEW_WEAK_SIGNAL": 2,
+          "SHORTLIST_CANDIDATE": 79
+        }
+      }
+    },
+    "aggressive": {
+      "rows": 643,
+      "shortlist_candidates": 326,
+      "by_horizon": {
+        "1y": {
+          "NOT_SHORTLISTED_PROBABILITY_FILTER": 67,
+          "REVIEW_WEAK_SIGNAL": 24,
+          "SHORTLIST_CANDIDATE": 119
+        },
+        "2y": {
+          "NOT_SHORTLISTED_PROBABILITY_FILTER": 103,
+          "REVIEW_WEAK_SIGNAL": 12,
+          "SHORTLIST_CANDIDATE": 78
+        },
+        "6m": {
+          "NOT_SHORTLISTED_PROBABILITY_FILTER": 99,
+          "REVIEW_WEAK_SIGNAL": 12,
+          "SHORTLIST_CANDIDATE": 129
+        }
+      }
+    }
+  },
+  "important_limitations": [
+    "Scores are model probability differences, not expected returns.",
+    "Risk-profile filters are initial defaults and are not validated investment rules.",
+    "Signals use stored feature dates and may be stale.",
+    "No verified fundamental score, valuation assessment, liquidity check, portfolio allocation or personalized suitability assessment is included."
+  ]
+}

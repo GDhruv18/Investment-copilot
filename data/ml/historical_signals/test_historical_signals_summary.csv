@@ -1,0 +1,10 @@
+asset_class,horizon,model_used,rows,unique_assets,first_prediction_date,last_prediction_date,actual_weak,actual_neutral,actual_attractive
+etfs,1y,LSTM,4605,25,2023-12-18,2025-02-28,1330,1916,1359
+etfs,2y,LSTM,6734,26,2023-04-19,2024-09-18,1494,2738,2502
+etfs,6m,LSTM,6824,39,2024-05-24,2026-03-18,2213,2722,1889
+mutual_funds,1y,LogisticRegression,39232,94,2023-10-09,2025-08-25,11576,15689,11967
+mutual_funds,2y,LSTM,26560,67,2022-11-24,2024-08-23,7391,9909,9260
+mutual_funds,6m,LogisticRegression,42222,95,2024-03-15,2026-02-25,12453,16871,12898
+stocks,1y,LogisticRegression,43400,100,2023-12-18,2025-09-18,13020,17360,13020
+stocks,2y,LogisticRegression,39700,100,2023-02-06,2024-09-18,11884,15854,11962
+stocks,6m,LogisticRegression,45296,100,2024-05-24,2026-03-18,13588,18119,13589

@@ -1,0 +1,7 @@
+statement_type,yahoo_field,observations,tickers,periods
+annual_income_statement,Net Income,399,100,13
+annual_income_statement,Net Income Common Stockholders,399,100,13
+annual_income_statement,Net Income From Continuing Operation Net Minority Interest,399,100,13
+quarterly_income_statement,Net Income,496,100,6
+quarterly_income_statement,Net Income Common Stockholders,496,100,6
+quarterly_income_statement,Net Income From Continuing Operation Net Minority Interest,496,100,6

@@ -37,7 +37,7 @@ OUTPUT_FILE = BASE_DIR / "data" / "targets" / "stock_2y_diagnostics.parquet"
 # ============================================================
 
 EXPECTED_MIN_DATE = pd.Timestamp("2014-01-01")
-EXPECTED_MAX_DATE = pd.Timestamp("2026-09-18")
+EXPECTED_MAX_DATE = pd.Timestamp("2026-10-23")
 
 HORIZON_YEARS = 2
 TRADING_DAYS_PER_YEAR = 252

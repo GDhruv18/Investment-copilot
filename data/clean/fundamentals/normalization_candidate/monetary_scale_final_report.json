@@ -1,0 +1,27 @@
+{
+  "audit": "consolidated_monetary_scale_validation",
+  "candidate_tickers": 100,
+  "configured_metrics": [
+    "revenue",
+    "total_assets",
+    "total_debt",
+    "operating_cash_flow"
+  ],
+  "coverage_rows": 12,
+  "matched_pairs": 1992,
+  "matched_metrics": [
+    "operating_cash_flow",
+    "revenue",
+    "total_assets",
+    "total_debt"
+  ],
+  "metrics_without_matched_pairs": [],
+  "unit_verified_pairs": 0,
+  "scoring_eligible_pairs": 0,
+  "policy": "Read-only diagnostic. Exact date matches only. No currency conversion, normalization approval, or scoring approval.",
+  "outputs": [
+    "data\\clean\\fundamentals\\normalization_candidate\\monetary_scale_final_field_coverage.csv",
+    "data\\clean\\fundamentals\\normalization_candidate\\monetary_scale_final_pairs.csv",
+    "data\\clean\\fundamentals\\normalization_candidate\\monetary_scale_final_summary.csv"
+  ]
+}

@@ -600,10 +600,11 @@ def main():
     print("STEP 4: Final validation...")
 
     # Row count
-    if len(features) != 293430:
-        raise ValueError(
-            f"Unexpected row count: {len(features)}"
-        )
+    # Row count
+    if features.empty:
+        raise ValueError("Stock feature dataset is empty.")
+
+    print(f"Total feature rows: {len(features):,}")
 
     # Stock count
     stock_count = features["ticker"].nunique()

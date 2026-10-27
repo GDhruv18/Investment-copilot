@@ -20,7 +20,7 @@ FEATURE_FILE = PROJECT_ROOT / "data" / "features" / "etf_features.parquet"
 EXPECTED_ETFS = 41
 
 EXPECTED_START = pd.Timestamp("2014-01-01")
-EXPECTED_END = pd.Timestamp("2026-09-18")
+EXPECTED_END = pd.Timestamp("2026-10-23")
 
 REQUIRED_FEATURES = [
     # Momentum

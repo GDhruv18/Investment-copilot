@@ -1,0 +1,23 @@
+{
+  "input_rows": 2557,
+  "companies": 5,
+  "reporting_basis_values": [
+    "consolidated"
+  ],
+  "classification_counts": {
+    "STATEMENT_CANDIDATE": 2096,
+    "UNCLASSIFIED_REVIEW": 295,
+    "SUMMARY_INDICATOR": 130,
+    "DERIVED_CASH_FLOW_METRIC": 36
+  },
+  "statement_candidate_rows": 2096,
+  "summary_indicator_rows": 130,
+  "derived_cash_flow_rows": 36,
+  "unclassified_rows": 295,
+  "amount_units_independently_verified": false,
+  "cash_flow_period_semantics_verified": false,
+  "database_modified": false,
+  "models_modified": false,
+  "historical_ml_data_modified": false,
+  "status": "CLASSIFIED_REQUIRES_FINANCIAL_VALIDATION"
+}

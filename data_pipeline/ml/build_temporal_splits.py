@@ -621,6 +621,8 @@ def main():
     for dataset_name, horizons in DATASETS.items():
 
         for horizon, input_path in horizons.items():
+            if horizon != "2y":
+                continue
 
             if not input_path.exists():
                 raise FileNotFoundError(

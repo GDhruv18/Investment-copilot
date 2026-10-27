@@ -1,0 +1,24 @@
+{
+  "audit": "ticker_currency_reference_audit",
+  "profile_ticker_count": 100,
+  "raw_info_file_count": 100,
+  "candidate_ticker_count": 100,
+  "reference_ticker_count": 100,
+  "currency_status_counts": {
+    "QUOTE_AND_FINANCIAL_CURRENCY_MATCH": 98,
+    "FINANCIAL_CURRENCY_MISMATCH_REVIEW": 2
+  },
+  "financial_currency_counts": {
+    "INR": 98,
+    "USD": 2
+  },
+  "review_tickers": [
+    "HCLTECH.NS",
+    "INFY.NS"
+  ],
+  "unit_verified_rows": 0,
+  "independently_verified_rows": 0,
+  "scoring_eligible_rows": 0,
+  "output": "data\\clean\\fundamentals\\normalization_candidate\\ticker_currency_reference_audit.parquet",
+  "policy": "Audit reference only. No currency conversion, unit approval, financial-value approval, or scoring eligibility granted."
+}

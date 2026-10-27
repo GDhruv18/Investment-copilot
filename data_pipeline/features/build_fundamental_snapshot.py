@@ -1,0 +1,364 @@
+
+from pathlib import Path
+import json
+
+import pandas as pd
+
+
+ROOT = Path(__file__).resolve().parents[2]
+BASE = ROOT / "data" / "clean" / "fundamentals"
+NORMALIZATION_DIR = BASE / "normalization_candidate"
+YFINANCE_DIR = BASE / "yfinance"
+
+PROFILE_PATH = YFINANCE_DIR / "yfinance_company_snapshot.parquet"
+OBSERVATIONS_PATH = (
+    NORMALIZATION_DIR
+    / "fundamental_observations_normalization_candidate.parquet"
+)
+CURRENCY_PATH = NORMALIZATION_DIR / "ticker_currency_reference_audit.parquet"
+REGISTER_PATH = NORMALIZATION_DIR / "fundamental_mapping_review_decisions.csv"
+
+OUTPUT_DIR = BASE / "integration_candidate"
+SNAPSHOT_PATH = OUTPUT_DIR / "company_fundamental_snapshot_candidate.parquet"
+OBSERVATION_PATH = (
+    OUTPUT_DIR / "latest_fundamental_observations_candidate.parquet"
+)
+SUMMARY_PATH = OUTPUT_DIR / "fundamental_snapshot_candidate_summary.json"
+
+QUARANTINED_TICKERS = {"HCLTECH.NS", "INFY.NS"}
+
+# Canonicalize known aliases consistently across input datasets.
+# Original source values and source files remain unchanged.
+TICKER_ALIASES = {
+    "M_M.NS": "M&M.NS",
+}
+
+PROFILE_METRICS = [
+    "marketCap", "trailingPE", "forwardPE", "priceToBook",
+    "returnOnEquity", "returnOnAssets", "profitMargins",
+    "operatingMargins", "revenueGrowth", "earningsGrowth",
+    "totalRevenue", "netIncomeToCommon", "totalDebt", "totalCash",
+    "debtToEquity", "currentRatio", "freeCashflow",
+    "operatingCashflow", "dividendYield", "beta",
+    "fiftyTwoWeekHigh", "fiftyTwoWeekLow", "sharesOutstanding",
+]
+
+
+def canonical_ticker(value):
+    """Normalize known ticker aliases without changing source files."""
+    if pd.isna(value):
+        return pd.NA
+
+    value = str(value).strip()
+    return TICKER_ALIASES.get(value, value)
+
+
+def require_columns(df, required, label):
+    missing = set(required) - set(df.columns)
+    if missing:
+        raise ValueError(f"{label} missing columns: {sorted(missing)}")
+
+
+def join_unique(values):
+    return " | ".join(sorted(set(values.dropna().astype(str))))
+
+
+def normalize_ticker_column(df, label):
+    if "ticker" not in df.columns:
+        raise ValueError(f"{label} is missing the required 'ticker' column.")
+
+    df = df.copy()
+    df["ticker"] = df["ticker"].map(canonical_ticker).astype("string")
+    return df
+
+
+def main():
+    for path in [
+        PROFILE_PATH,
+        OBSERVATIONS_PATH,
+        CURRENCY_PATH,
+        REGISTER_PATH,
+    ]:
+        if not path.exists():
+            raise FileNotFoundError(f"Required input missing: {path}")
+
+    profile = pd.read_parquet(PROFILE_PATH)
+    observations = pd.read_parquet(OBSERVATIONS_PATH)
+    currency = pd.read_parquet(CURRENCY_PATH)
+    register = pd.read_csv(REGISTER_PATH)
+
+    require_columns(profile, ["ticker"], "Company profile")
+    require_columns(
+        observations,
+        [
+            "ticker", "source", "statement_type", "metric_raw",
+            "period_end", "original_numeric_value",
+            "normalization_candidate_value", "normalization_status",
+            "unit", "normalization_candidate_unit",
+            "unit_verified", "financial_value_independently_verified",
+            "scoring_eligible", "fundamental_review_flag",
+        ],
+        "Fundamental observations",
+    )
+    require_columns(
+        currency,
+        [
+            "ticker", "currency_status", "financial_currency",
+            "currency_review_required",
+        ],
+        "Currency reference",
+    )
+    require_columns(
+        register,
+        [
+            "metric", "screener_field", "yahoo_field", "decision",
+            "review_decision", "unit_verified",
+            "financial_value_independently_verified",
+            "approved_for_scoring",
+        ],
+        "Mapping register",
+    )
+
+    # Apply the same canonical ticker convention to every join key.
+    profile = normalize_ticker_column(profile, "Company profile")
+    observations = normalize_ticker_column(
+        observations, "Fundamental observations"
+    )
+    currency = normalize_ticker_column(currency, "Currency reference")
+
+    # Fail rather than silently merging duplicate records after alias mapping.
+    if profile["ticker"].duplicated().any():
+        duplicates = profile.loc[
+            profile["ticker"].duplicated(keep=False), "ticker"
+        ].dropna().unique().tolist()
+        raise ValueError(
+            f"Duplicate canonical tickers in company profile: {duplicates}"
+        )
+
+    if currency["ticker"].duplicated().any():
+        duplicates = currency.loc[
+            currency["ticker"].duplicated(keep=False), "ticker"
+        ].dropna().unique().tolist()
+        raise ValueError(
+            f"Duplicate canonical tickers in currency reference: {duplicates}"
+        )
+
+    profile_columns = ["ticker"] + [
+        column for column in PROFILE_METRICS
+        if column in profile.columns
+    ]
+    profile_small = profile[profile_columns].copy()
+
+    currency_small = currency[
+        [
+            "ticker", "financial_currency", "currency_status",
+            "currency_review_required",
+        ]
+    ].copy()
+
+    # Capture the latest observation separately for each source/raw field.
+    # Do not collapse competing raw fields into one canonical metric.
+    observations["period_end"] = pd.to_datetime(
+        observations["period_end"], errors="coerce"
+    )
+    observations["original_numeric_value"] = pd.to_numeric(
+        observations["original_numeric_value"], errors="coerce"
+    )
+    observations["normalization_candidate_value"] = pd.to_numeric(
+        observations["normalization_candidate_value"], errors="coerce"
+    )
+
+    latest_sort = observations.sort_values(
+        [
+            "ticker", "source", "statement_type",
+            "metric_raw", "period_end",
+        ],
+        na_position="first",
+    )
+
+    latest = latest_sort.drop_duplicates(
+        ["ticker", "source", "statement_type", "metric_raw"],
+        keep="last",
+    ).copy()
+
+    latest["latest_observation_is_approved"] = False
+    latest["scoring_eligible"] = False
+    latest["integration_review_status"] = "NOT_APPROVED_FOR_SCORING"
+
+    latest = latest.merge(
+        currency_small,
+        on="ticker",
+        how="left",
+        validate="many_to_one",
+    )
+
+    # Unknown currency status is conservatively quarantined.
+    latest["currency_quarantine"] = (
+        latest["ticker"].isin(QUARANTINED_TICKERS)
+        | latest["currency_review_required"].fillna(True).astype(bool)
+    )
+
+    latest.loc[
+        latest["currency_quarantine"], "integration_review_status"
+    ] = "CURRENCY_REVIEW_REQUIRED"
+
+    # Fail-closed mapping approval gate. A mapping passes only when the
+    # review decision explicitly permits scoring and all verification flags
+    # are true. Candidate/conditional/blocked decisions never pass.
+    def as_true(series):
+        return (
+            series.astype("string").str.strip().str.lower()
+            .isin(["true", "1", "yes"])
+        )
+
+    approved_flag = as_true(register["approved_for_scoring"])
+    unit_flag = as_true(register["unit_verified"])
+    value_flag = as_true(register["financial_value_independently_verified"])
+
+    allowed_decisions = {"APPROVED_FOR_SCORING", "APPROVED"}
+    decision_flag = (
+        register["review_decision"].astype("string").str.strip().str.upper()
+        .isin(allowed_decisions)
+    )
+
+    approved_register = register.loc[
+        approved_flag & unit_flag & value_flag & decision_flag
+    ].copy()
+
+    # No safe source-field-to-canonical-metric join exists yet in this
+    # builder, so do not infer a mapping from field-name similarity.
+    # Preserve an explicit false until a separately validated mapping
+    # specification defines the source and canonical metric keys.
+    latest["metric_mapping_approved"] = False
+    latest["scoring_eligible"] = False
+    latest["integration_review_status"] = "NOT_APPROVED_FOR_SCORING"
+
+    latest.loc[
+        latest["currency_quarantine"], "integration_review_status"
+    ] = "CURRENCY_REVIEW_REQUIRED"
+
+    if latest["scoring_eligible"].any():
+        raise AssertionError("Fail-closed gate violation: eligible observation found.")
+
+    latest_columns = [
+        "ticker", "source", "statement_type", "metric_raw", "period_end",
+        "original_numeric_value", "unit",
+        "normalization_candidate_value", "normalization_candidate_unit",
+        "normalization_status", "unit_verified",
+        "financial_value_independently_verified", "scoring_eligible",
+        "fundamental_review_flag", "financial_currency", "currency_status",
+        "currency_quarantine", "metric_mapping_approved",
+        "integration_review_status",
+    ]
+    latest_columns = [
+        column for column in latest_columns if column in latest.columns
+    ]
+    latest = latest[latest_columns].sort_values(
+        ["ticker", "source", "statement_type", "metric_raw"]
+    )
+
+    # Coverage is summarized after canonicalizing the observation tickers.
+    coverage = (
+        observations.groupby("ticker", dropna=False)
+        .agg(
+            candidate_observation_count=("ticker", "size"),
+            source_count=("source", "nunique"),
+            sources=("source", join_unique),
+            raw_fields=("metric_raw", join_unique),
+            latest_period_end=("period_end", "max"),
+        )
+        .reset_index()
+    )
+
+    snapshot = profile_small.merge(
+        currency_small,
+        on="ticker",
+        how="left",
+        validate="one_to_one",
+    ).merge(
+        coverage,
+        on="ticker",
+        how="left",
+        validate="one_to_one",
+    )
+
+    snapshot["currency_quarantine"] = (
+        snapshot["ticker"].isin(QUARANTINED_TICKERS)
+        | snapshot["currency_review_required"].fillna(True).astype(bool)
+    )
+    snapshot["fundamental_snapshot_status"] = "CANDIDATE_NOT_FOR_SCORING"
+    snapshot["scoring_eligible"] = False
+    snapshot["unit_verified"] = False
+    snapshot["financial_value_independently_verified"] = False
+
+    if latest["scoring_eligible"].any() or snapshot["scoring_eligible"].any():
+        raise AssertionError("Fail-closed gate violation before writing outputs.")
+
+    OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
+    snapshot.to_parquet(SNAPSHOT_PATH, index=False)
+    latest.to_parquet(OBSERVATION_PATH, index=False)
+
+    approved_values = (
+        as_true(register["approved_for_scoring"])
+        & as_true(register["unit_verified"])
+        & as_true(register["financial_value_independently_verified"])
+        & register["review_decision"].astype("string").str.strip().str.upper()
+            .isin({"APPROVED_FOR_SCORING", "APPROVED"})
+    )
+
+    summary = {
+        "stage": "non_scoring_fundamental_snapshot_candidate",
+        "profile_tickers": int(profile["ticker"].nunique()),
+        "snapshot_tickers": int(snapshot["ticker"].nunique()),
+        "latest_observation_rows": int(len(latest)),
+        "candidate_observation_tickers": int(
+            observations["ticker"].nunique()
+        ),
+        "currency_quarantine_tickers": sorted(
+            snapshot.loc[
+                snapshot["currency_quarantine"], "ticker"
+            ].dropna().astype(str).unique().tolist()
+        ),
+        "mapping_register_rows": int(len(register)),
+        "mapping_rows_approved_for_scoring": int(approved_values.sum()),
+        "snapshot_scoring_eligible_rows": 0,
+        "unit_verified_rows": 0,
+        "independently_verified_rows": 0,
+        "outputs": [
+            str(SNAPSHOT_PATH.relative_to(ROOT)),
+            str(OBSERVATION_PATH.relative_to(ROOT)),
+        ],
+        "policy": (
+            "Candidate integration only. Original source values are preserved. "
+            "No conflicting metric fields are silently selected. "
+            "No mapping, unit, or scoring approval is granted."
+        ),
+    }
+
+    SUMMARY_PATH.write_text(
+        json.dumps(summary, indent=2),
+        encoding="utf-8",
+    )
+
+    print("=" * 72)
+    print("NON-SCORING FUNDAMENTAL SNAPSHOT")
+    print("=" * 72)
+    print("Snapshot tickers:", snapshot["ticker"].nunique())
+    print("Latest observation rows:", len(latest))
+    print(
+        "Currency review tickers:",
+        ", ".join(summary["currency_quarantine_tickers"]) or "None",
+    )
+    print(
+        "Mappings approved for scoring:",
+        summary["mapping_rows_approved_for_scoring"],
+    )
+    print("Unit-verified rows: 0")
+    print("Scoring-eligible rows: 0")
+    print("\nSnapshot:", SNAPSHOT_PATH.relative_to(ROOT))
+    print("Latest observations:", OBSERVATION_PATH.relative_to(ROOT))
+    print("Summary:", SUMMARY_PATH.relative_to(ROOT))
+
+
+if __name__ == "__main__":
+    main()

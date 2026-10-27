@@ -1071,11 +1071,7 @@ def main():
             )
         )
 
-        for horizon in (
-            "6m",
-            "1y",
-            "2y",
-        ):
+        for horizon in ("2y",):
 
             result = build_dataset(
                 asset_type=asset_type,

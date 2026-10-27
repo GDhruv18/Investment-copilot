@@ -664,7 +664,7 @@ def save_clean_layer(clean):
 # RELOAD VALIDATION
 # ============================================================
 
-def reload_validation():
+def reload_validation(expected_rows):
 
     print("\n" + "=" * 70)
     print("RELOAD VALIDATION")
@@ -684,7 +684,7 @@ def reload_validation():
         f"{reloaded['scheme_code'].nunique()}"
     )
 
-    if len(reloaded) != 206639:
+    if len(reloaded) != expected_rows:
         raise RuntimeError(
             "Unexpected row count after reload."
         )
@@ -781,7 +781,7 @@ def main():
     # Reload
     # --------------------------------------------------------
 
-    reload_validation()
+    reload_validation(len(clean))
 
     print("\n" + "=" * 70)
     print("FINAL STATUS: PASS")

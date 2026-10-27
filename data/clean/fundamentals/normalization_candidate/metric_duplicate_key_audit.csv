@@ -1,0 +1,25 @@
+source,canonical_metric_candidate,observations,rows_in_duplicate_keys
+Screener.in,UNMAPPED,28291,28291
+Screener.in,earnings_per_share,2394,0
+Screener.in,financing_margin,276,0
+Screener.in,free_cash_flow,1126,0
+Screener.in,gross_npa_ratio,39,0
+Screener.in,net_income,2394,0
+Screener.in,net_npa_ratio,39,0
+Screener.in,operating_cash_flow,1126,0
+Screener.in,operating_margin,2118,0
+Screener.in,operating_profit,2118,0
+Screener.in,revenue,2394,0
+Screener.in,total_assets,1146,0
+Screener.in,total_debt,1146,0
+Screener.in,total_liabilities,1146,0
+Yahoo Finance via yfinance,UNMAPPED,98710,98642
+Yahoo Finance via yfinance,earnings_per_share,1781,1780
+Yahoo Finance via yfinance,free_cash_flow,427,0
+Yahoo Finance via yfinance,net_income,2685,2685
+Yahoo Finance via yfinance,operating_cash_flow,463,70
+Yahoo Finance via yfinance,operating_profit,782,0
+Yahoo Finance via yfinance,revenue,1790,1790
+Yahoo Finance via yfinance,total_assets,660,0
+Yahoo Finance via yfinance,total_debt,660,0
+Yahoo Finance via yfinance,total_liabilities,660,0

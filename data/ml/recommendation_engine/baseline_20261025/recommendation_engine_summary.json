@@ -1,0 +1,106 @@
+{
+  "source_file": "data\\ml\\current_signals\\model_signals_20261025T070603Z.parquet",
+  "rows_written": 1629,
+  "weights": {
+    "ml": 0.5,
+    "risk": 0.3,
+    "trend": 0.2
+  },
+  "profiles": {
+    "conservative": {
+      "rows": 343,
+      "recommendation_candidates": 58,
+      "by_horizon": {
+        "1y": {
+          "NOT_SHORTLISTED_PROBABILITY_FILTER": 87,
+          "RECOMMENDATION_CANDIDATE": 17,
+          "REVIEW_INCOMPLETE_RISK_OR_TREND": 6
+        },
+        "2y": {
+          "NOT_SHORTLISTED_PROBABILITY_FILTER": 87,
+          "RECOMMENDATION_CANDIDATE": 6,
+          "REVIEW_INCOMPLETE_RISK_OR_TREND": 0
+        },
+        "6m": {
+          "NOT_SHORTLISTED_PROBABILITY_FILTER": 100,
+          "RECOMMENDATION_CANDIDATE": 35,
+          "REVIEW_INCOMPLETE_RISK_OR_TREND": 5
+        }
+      }
+    },
+    "moderate": {
+      "rows": 643,
+      "recommendation_candidates": 182,
+      "by_horizon": {
+        "1y": {
+          "NOT_SHORTLISTED_PROBABILITY_FILTER": 156,
+          "RECOMMENDATION_CANDIDATE": 45,
+          "REVIEW_INCOMPLETE_RISK_OR_TREND": 6,
+          "REVIEW_WEAK_SIGNAL": 3
+        },
+        "2y": {
+          "NOT_SHORTLISTED_PROBABILITY_FILTER": 133,
+          "RECOMMENDATION_CANDIDATE": 60,
+          "REVIEW_INCOMPLETE_RISK_OR_TREND": 0,
+          "REVIEW_WEAK_SIGNAL": 0
+        },
+        "6m": {
+          "NOT_SHORTLISTED_PROBABILITY_FILTER": 156,
+          "RECOMMENDATION_CANDIDATE": 77,
+          "REVIEW_INCOMPLETE_RISK_OR_TREND": 5,
+          "REVIEW_WEAK_SIGNAL": 2
+        }
+      }
+    },
+    "aggressive": {
+      "rows": 643,
+      "recommendation_candidates": 320,
+      "by_horizon": {
+        "1y": {
+          "NOT_SHORTLISTED_PROBABILITY_FILTER": 65,
+          "RECOMMENDATION_CANDIDATE": 115,
+          "REVIEW_INCOMPLETE_RISK_OR_TREND": 6,
+          "REVIEW_WEAK_SIGNAL": 24
+        },
+        "2y": {
+          "NOT_SHORTLISTED_PROBABILITY_FILTER": 103,
+          "RECOMMENDATION_CANDIDATE": 78,
+          "REVIEW_INCOMPLETE_RISK_OR_TREND": 0,
+          "REVIEW_WEAK_SIGNAL": 12
+        },
+        "6m": {
+          "NOT_SHORTLISTED_PROBABILITY_FILTER": 96,
+          "RECOMMENDATION_CANDIDATE": 127,
+          "REVIEW_INCOMPLETE_RISK_OR_TREND": 5,
+          "REVIEW_WEAK_SIGNAL": 12
+        }
+      }
+    }
+  },
+  "feature_coverage": {
+    "stocks": {
+      "rows": 600,
+      "matched_feature_rows": 600,
+      "missing_feature_rows": 0
+    },
+    "etfs": {
+      "rows": 189,
+      "matched_feature_rows": 189,
+      "missing_feature_rows": 0
+    },
+    "mutual_funds": {
+      "rows": 840,
+      "matched_feature_rows": 840,
+      "missing_feature_rows": 0
+    }
+  },
+  "limitations": [
+    "Scores are research rankings, not expected returns.",
+    "Weights require historical out-of-sample validation.",
+    "Profile rules are initial screening policies, not personal suitability assessments.",
+    "Fundamental scoring remains disabled pending approval.",
+    "No portfolio allocation, liquidity assessment or tax analysis is included.",
+    "Feature gaps and warm-up NaNs are not imputed.",
+    "ETF 1Y and 2Y coverage is limited by available valid model predictions."
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "stage": "non_scoring_fundamental_snapshot_candidate",
+  "profile_tickers": 100,
+  "snapshot_tickers": 100,
+  "latest_observation_rows": 33857,
+  "candidate_observation_tickers": 100,
+  "currency_quarantine_tickers": [
+    "HCLTECH.NS",
+    "INFY.NS"
+  ],
+  "mapping_register_rows": 9,
+  "mapping_rows_approved_for_scoring": 0,
+  "snapshot_scoring_eligible_rows": 0,
+  "unit_verified_rows": 0,
+  "independently_verified_rows": 0,
+  "outputs": [
+    "data\\clean\\fundamentals\\integration_candidate\\company_fundamental_snapshot_candidate.parquet",
+    "data\\clean\\fundamentals\\integration_candidate\\latest_fundamental_observations_candidate.parquet"
+  ],
+  "policy": "Candidate integration only. Original source values are preserved. No conflicting metric fields are silently selected. No mapping, unit, or scoring approval is granted."
+}

@@ -1,0 +1,17 @@
+candidate_metric,period_class,screener_field,yahoo_field,scale_evidence_status,matched_pairs,distinct_tickers,median_yahoo_to_screener_ratio,pairs_near_1e7,sign_disagreements,zero_reviews,currency_mismatch_pairs
+revenue,annual,Sales +,Operating Revenue,RATIO_NEAR_1E7_REVIEW_ONLY,329,84,9908390.376402441,329,0,0,0
+revenue,annual,Sales +,Total Revenue,RATIO_NEAR_1E7_REVIEW_ONLY,329,84,9907623.228896428,329,0,0,0
+revenue,annual,Revenue +,Operating Revenue,RATIO_NEAR_1E7_REVIEW_ONLY,31,10,7137480.559875583,31,0,0,0
+revenue,annual,Revenue +,Total Revenue,RATIO_NEAR_1E7_REVIEW_ONLY,31,10,7137480.559875583,31,0,0,0
+revenue,annual,Revenue +,Operating Revenue,REVIEW,13,6,5422545.915136162,0,0,0,0
+revenue,annual,Revenue +,Total Revenue,REVIEW,13,6,5422545.915136162,0,0,0,0
+revenue,annual,Sales +,Operating Revenue,CURRENCY_MISMATCH_EXCLUDED_FROM_APPROVAL,8,2,5062043.919954758,4,0,0,8
+revenue,annual,Sales +,Total Revenue,CURRENCY_MISMATCH_EXCLUDED_FROM_APPROVAL,8,2,5062043.919954758,4,0,0,8
+revenue,quarterly,Sales +,Operating Revenue,RATIO_NEAR_1E7_REVIEW_ONLY,419,84,9999905.335210446,419,0,0,0
+revenue,quarterly,Sales +,Total Revenue,RATIO_NEAR_1E7_REVIEW_ONLY,419,84,9999905.335210446,419,0,0,0
+revenue,quarterly,Revenue +,Operating Revenue,RATIO_NEAR_1E7_REVIEW_ONLY,34,10,7217161.642990461,34,0,0,0
+revenue,quarterly,Revenue +,Total Revenue,RATIO_NEAR_1E7_REVIEW_ONLY,34,10,7217161.642990461,34,0,0,0
+revenue,quarterly,Revenue +,Operating Revenue,REVIEW,18,5,5174664.467892023,0,0,0,0
+revenue,quarterly,Revenue +,Total Revenue,REVIEW,18,5,5174664.467892023,0,0,0,0
+revenue,quarterly,Sales +,Operating Revenue,CURRENCY_MISMATCH_EXCLUDED_FROM_APPROVAL,10,2,5058433.264741361,5,0,0,10
+revenue,quarterly,Sales +,Total Revenue,CURRENCY_MISMATCH_EXCLUDED_FROM_APPROVAL,10,2,5058433.264741361,5,0,0,10

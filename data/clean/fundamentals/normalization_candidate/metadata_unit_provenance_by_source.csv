@@ -1,0 +1,6 @@
+source,reporting_basis,unit,normalization_candidate_unit,observations,distinct_tickers,verified_unit_rows,independently_verified_rows,scoring_eligible_rows
+Screener.in,consolidated,INR_crore_assumed_from_page_display,INR_candidate_unverified,12596,99,0,0,0
+Screener.in,consolidated,INR_crore_assumed_from_page_display,INR_crore_assumed_from_page_display,24774,99,0,0,0
+Screener.in,consolidated,INR_per_share,INR_per_share,2394,99,0,0,0
+Screener.in,consolidated,percent_as_displayed,percent_as_displayed,5989,99,0,0,0
+Yahoo Finance via yfinance,provider_reported,provider_unit_unverified,provider_unit_unverified,108618,100,0,0,0

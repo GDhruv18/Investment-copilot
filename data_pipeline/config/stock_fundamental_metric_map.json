@@ -1,0 +1,190 @@
+
+{
+  "schema_version": 1,
+  "status": "candidate_mapping_not_approved_for_scoring",
+  "description": "Candidate mappings for stock fundamental analysis. Mappings do not establish unit equivalence or scoring eligibility.",
+  "metrics": {
+    "revenue": {
+      "category": "growth",
+      "unit_type": "currency_amount",
+      "candidates": {
+        "Screener.in": ["Sales +", "Revenue +"],
+        "Yahoo Finance via yfinance": ["Total Revenue", "Operating Revenue"]
+      },
+      "mapping_status": "review_required",
+      "notes": "Operating Revenue may not mean the same thing as Total Revenue for banks or other financial companies."
+    },
+    "net_income": {
+      "category": "profitability",
+      "unit_type": "currency_amount",
+      "candidates": {
+        "Screener.in": ["Net Profit +"],
+        "Yahoo Finance via yfinance": [
+          "Net Income",
+          "Net Income Common Stockholders",
+          "Net Income From Continuing Operation Net Minority Interest"
+        ]
+      },
+      "mapping_status": "review_required",
+      "notes": "Do not treat all net income variants as interchangeable. Select a canonical definition after checking statement semantics."
+    },
+    "operating_profit": {
+      "category": "profitability",
+      "unit_type": "currency_amount",
+      "candidates": {
+        "Screener.in": ["Operating Profit"],
+        "Yahoo Finance via yfinance": [
+          "Operating Income",
+          "Operating Income As Reported"
+        ]
+      },
+      "mapping_status": "review_required",
+      "notes": "Validate the provider definition and treatment of financial companies before comparing."
+    },
+    "earnings_per_share": {
+      "category": "profitability",
+      "unit_type": "currency_per_share",
+      "candidates": {
+        "Screener.in": ["EPS in Rs"],
+        "Yahoo Finance via yfinance": ["Basic EPS", "Diluted EPS"]
+      },
+      "mapping_status": "review_required",
+      "notes": "Basic and diluted EPS are distinct measures."
+    },
+    "operating_margin": {
+      "category": "profitability",
+      "unit_type": "percentage",
+      "candidates": {
+        "Screener.in": ["OPM %"],
+        "Yahoo Finance via yfinance": ["operatingMargins"]
+      },
+      "mapping_status": "review_required",
+      "notes": "Yahoo operatingMargins is a profile metric. Do not combine it with historical statement margins as though they share the same as-of date."
+    },
+    "return_on_equity": {
+      "category": "profitability",
+      "unit_type": "percentage",
+      "candidates": {
+        "Screener.in": [],
+        "Yahoo Finance via yfinance": ["returnOnEquity"]
+      },
+      "mapping_status": "profile_only",
+      "notes": "Current profile value only in this mapping. No historical Screener ROE series has been established here."
+    },
+    "return_on_assets": {
+      "category": "profitability",
+      "unit_type": "percentage",
+      "candidates": {
+        "Screener.in": [],
+        "Yahoo Finance via yfinance": ["returnOnAssets"]
+      },
+      "mapping_status": "profile_only",
+      "notes": "Current profile value only; not a historical point-in-time series."
+    },
+    "price_to_earnings": {
+      "category": "valuation",
+      "unit_type": "ratio",
+      "candidates": {
+        "Screener.in": [],
+        "Yahoo Finance via yfinance": ["trailingPE", "forwardPE"]
+      },
+      "mapping_status": "profile_only",
+      "notes": "Trailing and forward P/E are different metrics. Keep them separate and preserve the profile retrieval date."
+    },
+    "price_to_book": {
+      "category": "valuation",
+      "unit_type": "ratio",
+      "candidates": {
+        "Screener.in": [],
+        "Yahoo Finance via yfinance": ["priceToBook"]
+      },
+      "mapping_status": "profile_only",
+      "notes": "Current profile value only; validate suitability for banks and companies with unusual book values."
+    },
+    "total_debt": {
+      "category": "leverage",
+      "unit_type": "currency_amount",
+      "candidates": {
+        "Screener.in": ["Borrowings +", "Borrowing"],
+        "Yahoo Finance via yfinance": ["Total Debt"]
+      },
+      "mapping_status": "review_required",
+      "notes": "Borrowings and provider-defined Total Debt may differ in scope. Do not equate them without validation."
+    },
+    "total_assets": {
+      "category": "balance_sheet",
+      "unit_type": "currency_amount",
+      "candidates": {
+        "Screener.in": ["Total Assets"],
+        "Yahoo Finance via yfinance": ["Total Assets"]
+      },
+      "mapping_status": "review_required",
+      "notes": "Matching labels do not prove matching currency scale, consolidation basis or period semantics."
+    },
+    "total_liabilities": {
+      "category": "leverage",
+      "unit_type": "currency_amount",
+      "candidates": {
+        "Screener.in": ["Total Liabilities"],
+        "Yahoo Finance via yfinance": [
+          "Total Liabilities Net Minority Interest"
+        ]
+      },
+      "mapping_status": "review_required",
+      "notes": "Confirm the provider's liability definition and minority-interest treatment."
+    },
+    "operating_cash_flow": {
+      "category": "cash_flow",
+      "unit_type": "currency_amount",
+      "candidates": {
+        "Screener.in": ["Cash from Operating Activity +"],
+        "Yahoo Finance via yfinance": [
+          "Operating Cash Flow",
+          "Cash Flow From Continuing Operating Activities"
+        ]
+      },
+      "mapping_status": "review_required",
+      "notes": "Check annual versus quarterly flow semantics and currency scale before comparison."
+    },
+    "free_cash_flow": {
+      "category": "cash_flow",
+      "unit_type": "currency_amount",
+      "candidates": {
+        "Screener.in": ["Free Cash Flow"],
+        "Yahoo Finance via yfinance": ["Free Cash Flow"]
+      },
+      "mapping_status": "review_required",
+      "notes": "Provider definitions may differ. This metric may be unsuitable as a primary quality metric for banks."
+    },
+    "gross_npa_ratio": {
+      "category": "banking_quality",
+      "unit_type": "percentage",
+      "candidates": {
+        "Screener.in": ["Gross NPA %"],
+        "Yahoo Finance via yfinance": []
+      },
+      "mapping_status": "source_specific",
+      "notes": "Banking-specific metric; retain as Screener-only unless a reliable equivalent is obtained."
+    },
+    "net_npa_ratio": {
+      "category": "banking_quality",
+      "unit_type": "percentage",
+      "candidates": {
+        "Screener.in": ["Net NPA %"],
+        "Yahoo Finance via yfinance": []
+      },
+      "mapping_status": "source_specific",
+      "notes": "Banking-specific metric; retain as Screener-only unless a reliable equivalent is obtained."
+    },
+    "financing_margin": {
+      "category": "banking_quality",
+      "unit_type": "percentage",
+      "candidates": {
+        "Screener.in": ["Financing Margin %"],
+        "Yahoo Finance via yfinance": []
+      },
+      "mapping_status": "source_specific",
+      "notes": "Definition needs review before scoring."
+    }
+  }
+}

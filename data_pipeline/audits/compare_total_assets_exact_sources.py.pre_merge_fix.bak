@@ -1,0 +1,76 @@
+﻿from pathlib import Path
+import pandas as pd
+
+root = Path(".")
+exception_path = root / "data/clean/fundamentals/integration_candidate/total_assets_validation/total_assets_exceptions_over_1pct.csv"
+screener_path = root / "data/raw/fundamentals/screener_consolidated_100/consolidated_financials_long.csv"
+yahoo_path = root / "data/clean/fundamentals/yfinance/yfinance_statement_observations.parquet"
+out_path = root / "data/clean/fundamentals/integration_candidate/total_assets_validation/total_assets_exact_source_comparison.csv"
+
+for p in [exception_path, screener_path, yahoo_path]:
+    if not p.exists():
+        raise FileNotFoundError(f"Required file missing: {p}")
+
+exceptions = pd.read_csv(exception_path)
+screener = pd.read_csv(screener_path, low_memory=False)
+yahoo = pd.read_parquet(yahoo_path)
+
+tickers = set(exceptions["ticker"].astype(str))
+dates = set(pd.to_datetime(exceptions["period_end"]).dt.strftime("%Y-%m-%d"))
+
+s = screener[
+    screener["ticker"].astype(str).isin(tickers)
+    & screener["metric"].astype(str).str.strip().str.casefold().eq("total assets")
+].copy()
+s["period_end"] = pd.to_datetime(s["period_end"], errors="coerce").dt.strftime("%Y-%m-%d")
+s = s[s["period_end"].isin(dates)]
+
+y = yahoo[
+    yahoo["ticker"].astype(str).isin(tickers)
+    & yahoo["financial_item"].astype(str).str.strip().str.casefold().eq("total assets")
+].copy()
+y["period_end"] = pd.to_datetime(y["period_end"], errors="coerce").dt.strftime("%Y-%m-%d")
+y = y[y["period_end"].isin(dates)]
+
+# Preserve duplicate source rows rather than silently choosing one.
+s = s[["ticker", "period_end", "reporting_basis", "metric", "raw_value",
+       "numeric_value", "unit", "unit_verified",
+       "financial_value_independently_verified", "source_url"]].rename(
+    columns={"numeric_value": "screener_value", "raw_value": "screener_raw_value",
+             "reporting_basis": "screener_reporting_basis",
+             "metric": "screener_metric", "unit": "screener_unit",
+             "unit_verified": "screener_unit_verified",
+             "financial_value_independently_verified": "screener_value_verified",
+             "source_url": "screener_source_url"}
+)
+
+y = y[["ticker", "period_end", "statement_type", "financial_item", "value", "source"]].rename(
+    columns={"value": "yahoo_value", "statement_type": "yahoo_statement_type",
+             "financial_item": "yahoo_item", "source": "yahoo_source"}
+)
+
+result = exceptions.merge(s, on=["ticker", "period_end"], how="left", validate="one_to_many")
+result = result.merge(y, on=["ticker", "period_end"], how="left", validate="many_to_many")
+
+result["candidate_screener_scaled_value"] = result["screener_value"] * 10_000_000
+result["recomputed_abs_pct_difference"] = (
+    (result["candidate_screener_scaled_value"] - result["yahoo_value"]).abs()
+    / result["yahoo_value"].abs().replace(0, float("nan")) * 100
+)
+
+out_path.parent.mkdir(parents=True, exist_ok=True)
+result.to_csv(out_path, index=False)
+
+print(f"Output: {out_path}")
+print(f"Rows: {len(result)}")
+print(f"Tickers represented: {result['ticker'].nunique()}")
+print(f"Rows missing Screener match: {result['screener_value'].isna().sum()}")
+print(f"Rows missing Yahoo exact Total Assets match: {result['yahoo_value'].isna().sum()}")
+print("\nFocused comparison:")
+cols = [
+    "ticker", "period_end", "screener_reporting_basis", "screener_value",
+    "screener_unit", "screener_unit_verified", "yahoo_statement_type",
+    "yahoo_value", "candidate_abs_pct_difference",
+    "recomputed_abs_pct_difference"
+]
+print(result[[c for c in cols if c in result.columns]].to_string(index=False, max_rows=100))

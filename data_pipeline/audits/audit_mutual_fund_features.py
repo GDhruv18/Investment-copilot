@@ -11,7 +11,7 @@ SOURCE_FILE = "data/clean/mutual_fund_nav_clean.parquet"
 FEATURE_FILE = "data/features/mutual_fund_features.parquet"
 
 MIN_DATE = pd.Timestamp("2013-01-01")
-MAX_DATE = pd.Timestamp("2026-09-18")
+MAX_DATE = pd.Timestamp("2026-10-22")
 
 EXPECTED_FUNDS = 100
 EXPECTED_FEATURE_COUNT = 27

@@ -1,0 +1,23 @@
+{
+  "register": "fundamental_mapping_approval_register",
+  "mapping_rows": 9,
+  "mapping_rows_with_audit_evidence": 9,
+  "mapping_rows_approved_for_scoring": 0,
+  "unit_verified_mappings": 0,
+  "currency_review_tickers": [
+    "HCLTECH.NS",
+    "INFY.NS"
+  ],
+  "currency_review_ticker_count": 2,
+  "mapping_decisions": {
+    "CANDIDATE_FOR_UNIT_AND_DEFINITION_REVIEW": 3,
+    "BLOCKED_DEFINITION_OR_SCALE_REVIEW": 2,
+    "CANDIDATE_WITH_EXCEPTIONS": 2,
+    "LIMITED_COVERAGE_REVIEW": 2
+  },
+  "outputs": [
+    "data\\clean\\fundamentals\\normalization_candidate\\fundamental_mapping_approval_register.csv",
+    "data\\clean\\fundamentals\\normalization_candidate\\fundamental_mapping_approval_register_summary.json"
+  ],
+  "policy": "This is a review register, not a scoring approval. Scale similarity alone does not verify units or metric definitions. No source data or normalization values were changed."
+}

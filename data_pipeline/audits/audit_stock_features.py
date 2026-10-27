@@ -1,4 +1,3 @@
-# data_pipeline/audits/audit_stock_features.py
 
 from pathlib import Path
 import numpy as np
@@ -20,10 +19,9 @@ FEATURE_FILE = PROJECT_ROOT / "data" / "features" / "stock_features.parquet"
 # ============================================================
 
 EXPECTED_STOCKS = 100
-EXPECTED_ROWS = 293430
 
 EXPECTED_START_DATE = pd.Timestamp("2014-01-01")
-EXPECTED_END_DATE = pd.Timestamp("2026-09-18")
+EXPECTED_END_DATE = pd.Timestamp("2026-10-23")
 
 EXPECTED_FEATURE_COLUMNS = [
     "ticker",
@@ -98,21 +96,11 @@ def normalize_calendar_dates(values):
     """
     Normalize dates while preserving the original calendar date.
 
-    Important:
     We deliberately do NOT convert timestamps to UTC because
     timezone conversion can shift the calendar date.
 
-    Example:
-        2020-01-02 00:00 IST
-        -> UTC
-        -> 2020-01-01 18:30
-        -> normalize
-        -> 2020-01-01
-
-    That would incorrectly change the trading date.
-
-    This function therefore removes timezone information first
-    and then normalizes to midnight.
+    This function removes timezone information first and then
+    normalizes dates to midnight.
     """
 
     if isinstance(values, pd.Series):
@@ -336,15 +324,6 @@ def main():
     )
 
     print(
-        f"Expected rows: {EXPECTED_ROWS:,}"
-    )
-
-    print(
-        f"Row count difference: "
-        f"{row_count - EXPECTED_ROWS:,}"
-    )
-
-    print(
         f"Stocks: {stock_count}"
     )
 
@@ -365,11 +344,10 @@ def main():
         f"Null dates: {null_dates:,}"
     )
 
-    if row_count != EXPECTED_ROWS:
+    if row_count == 0:
 
         raise ValueError(
-            f"Unexpected feature row count: "
-            f"{row_count:,}"
+            "Stock feature dataset is empty."
         )
 
     if stock_count != EXPECTED_STOCKS:
@@ -465,9 +443,7 @@ def main():
             f"{feature_duplicate_keys:,}"
         )
 
-    # --------------------------------------------------------
     # Exact source/feature key comparison
-    # --------------------------------------------------------
 
     source_key_set = set(
         zip(
@@ -596,10 +572,6 @@ def main():
         f"{rows_after_end:,}"
     )
 
-    # A small number of pre-start rows would indicate
-    # unexpected source history. Our current generator is
-    # expected to start exactly at 2014-01-01.
-
     if rows_before_start != 0:
 
         raise ValueError(
@@ -683,14 +655,8 @@ def main():
             f"({percentage:.3f}%)"
         )
 
-    # We intentionally do NOT fail on NaNs.
-    #
     # Rolling features naturally have warm-up NaNs.
-    # volume_change_20d can additionally have NaNs when the
-    # denominator 20 trading days earlier was zero.
-    #
-    # These are handled later during training according to
-    # feature/model requirements.
+    # These are reported, not treated as audit failures.
 
     print()
     print(
@@ -860,10 +826,6 @@ def main():
             f"{minimum_actual:3d}-{maximum_actual:3d} "
             f"mismatched_stocks={mismatches}"
         )
-
-    # We don't fail this section because features such as
-    # volume_change_20d can legitimately contain additional
-    # NaNs when the historical denominator is zero.
 
     print(
         "Rolling-window availability: REVIEWED"

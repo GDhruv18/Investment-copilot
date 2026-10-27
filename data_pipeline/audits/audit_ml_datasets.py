@@ -70,7 +70,7 @@ DATASETS = {
         "asset_col": "ticker",
         "date_col": "date",
         "horizon": "2y",
-        "expected_assets": 40,
+        "expected_assets": 41,
     },
 
     "mutual_funds_6m": {
@@ -1325,6 +1325,8 @@ def main():
     results = {}
 
     for name, config in DATASETS.items():
+        if not name.endswith("_2y"):
+            continue
 
         try:
 

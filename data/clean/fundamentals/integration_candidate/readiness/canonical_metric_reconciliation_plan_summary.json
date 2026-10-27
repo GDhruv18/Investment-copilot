@@ -1,0 +1,12 @@
+{
+  "status": "REVIEW_PLAN_CREATED_NO_APPROVALS",
+  "canonical_metrics": 4,
+  "approved_for_scoring": 0,
+  "unit_verified": 0,
+  "source_register_rows": 9,
+  "scale_coverage_rows": 12,
+  "scale_pair_rows": 1992,
+  "scale_summary_rows": 9,
+  "report": "data\\clean\\fundamentals\\integration_candidate\\readiness\\canonical_metric_reconciliation_plan.csv",
+  "note": "This is a review plan only. It does not approve mappings, change source data, or enable scoring."
+}

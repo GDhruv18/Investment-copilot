@@ -1,0 +1,22 @@
+{
+  "audit": "monetary_scale_validation",
+  "candidate_rows": 154371,
+  "screener_observations_used": 4666,
+  "yahoo_observations_used": 2913,
+  "matched_pairs": 1724,
+  "distinct_tickers_in_pairs": 97,
+  "pairs_near_1e7_scale": 1644,
+  "currency_mismatch_pairs": 36,
+  "sign_disagreements": 0,
+  "zero_reviews": 0,
+  "unit_verified_pairs": 0,
+  "scoring_eligible_pairs": 0,
+  "expected_scale": 10000000.0,
+  "log10_tolerance": 0.25,
+  "outputs": [
+    "data\\clean\\fundamentals\\normalization_candidate\\monetary_scale_validation_pairs.csv",
+    "data\\clean\\fundamentals\\normalization_candidate\\monetary_scale_validation_summary.csv",
+    "data/clean/fundamentals/normalization_candidate/monetary_scale_validation_outliers.csv"
+  ],
+  "policy": "Read-only diagnostic. A ratio near 1e7 is not unit verification. No currency conversion, normalization approval, or scoring eligibility is granted."
+}

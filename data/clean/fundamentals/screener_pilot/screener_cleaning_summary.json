@@ -1,0 +1,18 @@
+{
+  "input_file": "C:\\Users\\dhruv\\Investment-copilot\\data\\processed\\fundamentals\\screener_pilot\\screener_financials_pilot_long.csv",
+  "output_directory": "C:\\Users\\dhruv\\Investment-copilot\\data\\clean\\fundamentals\\screener_pilot",
+  "input_rows": 2609,
+  "cleaned_rows": 2609,
+  "companies": 5,
+  "sections": 4,
+  "statement_candidate_rows": 2479,
+  "summary_candidate_rows": 130,
+  "rows_with_duplicate_keys": 0,
+  "missing_numeric_values": 0,
+  "reporting_basis": "UNVERIFIED",
+  "unit_status": "VERIFY_BY_SECTION",
+  "database_modified": false,
+  "models_modified": false,
+  "historical_ml_data_modified": false,
+  "status": "CLEANING_COMPLETE_VALIDATION_PENDING"
+}

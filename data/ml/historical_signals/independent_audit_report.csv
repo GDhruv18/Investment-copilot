@@ -1,0 +1,10 @@
+asset_class,horizon,model_used,signal_rows,reference_rows,unique_assets,missing_predictions,unexpected_predictions,duplicate_keys,target_match,label_end_date_match,probability_checks,predicted_class_check,temporal_order_check,source_path,status
+stocks,6m,LogisticRegression,45296,45296,100,0,0,0,True,True,True,True,True,data\ml\stocks\stock_6m_test.parquet,PASS
+stocks,1y,LogisticRegression,43400,43400,100,0,0,0,True,True,True,True,True,data\ml\stocks\stock_1y_test.parquet,PASS
+stocks,2y,LogisticRegression,39700,39700,100,0,0,0,True,True,True,True,True,data\ml\stocks\stock_2y_test.parquet,PASS
+etfs,6m,LSTM,6824,6824,39,0,0,0,True,True,True,True,True,data\ml\sequences\etfs\6m\etfs_6m_test_metadata.parquet,PASS
+etfs,1y,LSTM,4605,4605,25,0,0,0,True,True,True,True,True,data\ml\sequences\etfs\1y\etfs_1y_test_metadata.parquet,PASS
+etfs,2y,LSTM,6734,6734,26,0,0,0,True,True,True,True,True,data\ml\sequences\etfs\2y\etfs_2y_test_metadata.parquet,PASS
+mutual_funds,6m,LogisticRegression,42222,42222,95,0,0,0,True,True,True,True,True,data\ml\mutual_funds\mutual_fund_6m_test.parquet,PASS
+mutual_funds,1y,LogisticRegression,39232,39232,94,0,0,0,True,True,True,True,True,data\ml\mutual_funds\mutual_fund_1y_test.parquet,PASS
+mutual_funds,2y,LSTM,26560,26560,67,0,0,0,True,True,True,True,True,data\ml\sequences\mutual_funds\2y\mutual_funds_2y_test_metadata.parquet,PASS

@@ -1,0 +1,7 @@
+statement_type,yahoo_field,matched_observations,distinct_tickers,close_within_1_percent,median_absolute_percentage_difference,sign_disagreements,zero_value_reviews,metadata_review_rows,verified_unit_pairs
+annual_income_statement,Net Income,381,97,0,0.34984391259105097,0,0,381,0
+annual_income_statement,Net Income Common Stockholders,381,97,0,0.360249538704859,0,0,381,0
+annual_income_statement,Net Income From Continuing Operation Net Minority Interest,381,97,0,0.4023934586018303,0,0,381,0
+quarterly_income_statement,Net Income,481,97,0,0.4165502997795965,1,0,481,0
+quarterly_income_statement,Net Income Common Stockholders,481,97,0,0.4165502997795965,1,0,481,0
+quarterly_income_statement,Net Income From Continuing Operation Net Minority Interest,481,97,0,0.53321233143259,1,0,481,0
