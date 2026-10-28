@@ -1,0 +1,704 @@
+{
+    "stocks": [
+        {
+            "company_name": "Reliance Industries Limited",
+            "display_name": "Reliance Industries Limited",
+            "internal_ticker": "RELIANCE_NS",
+            "yahoo_ticker": "RELIANCE.NS",
+            "exchange": "NSE"
+        },
+        {
+            "company_name": "Tata Consultancy Services Limited",
+            "display_name": "Tata Consultancy Services Limited",
+            "internal_ticker": "TCS_NS",
+            "yahoo_ticker": "TCS.NS",
+            "exchange": "NSE"
+        },
+        {
+            "company_name": "Infosys Limited",
+            "display_name": "Infosys Limited",
+            "internal_ticker": "INFY_NS",
+            "yahoo_ticker": "INFY.NS",
+            "exchange": "NSE"
+        },
+        {
+            "company_name": "HDFC Bank Limited",
+            "display_name": "HDFC Bank Limited",
+            "internal_ticker": "HDFCBANK_NS",
+            "yahoo_ticker": "HDFCBANK.NS",
+            "exchange": "NSE"
+        },
+        {
+            "company_name": "ICICI Bank Limited",
+            "display_name": "ICICI Bank Limited",
+            "internal_ticker": "ICICIBANK_NS",
+            "yahoo_ticker": "ICICIBANK.NS",
+            "exchange": "NSE"
+        },
+        {
+            "company_name": "State Bank of India",
+            "display_name": "State Bank of India",
+            "internal_ticker": "SBIN_NS",
+            "yahoo_ticker": "SBIN.NS",
+            "exchange": "NSE"
+        },
+        {
+            "company_name": "Bharti Airtel Limited",
+            "display_name": "Bharti Airtel Limited",
+            "internal_ticker": "BHARTIARTL_NS",
+            "yahoo_ticker": "BHARTIARTL.NS",
+            "exchange": "NSE"
+        },
+        {
+            "company_name": "ITC Limited",
+            "display_name": "ITC Limited",
+            "internal_ticker": "ITC_NS",
+            "yahoo_ticker": "ITC.NS",
+            "exchange": "NSE"
+        },
+        {
+            "company_name": "Hindustan Unilever Limited",
+            "display_name": "Hindustan Unilever Limited",
+            "internal_ticker": "HINDUNILVR_NS",
+            "yahoo_ticker": "HINDUNILVR.NS",
+            "exchange": "NSE"
+        },
+        {
+            "company_name": "Larsen & Toubro Limited",
+            "display_name": "Larsen & Toubro Limited",
+            "internal_ticker": "LT_NS",
+            "yahoo_ticker": "LT.NS",
+            "exchange": "NSE"
+        },
+        {
+            "company_name": "Axis Bank Limited",
+            "display_name": "Axis Bank Limited",
+            "internal_ticker": "AXISBANK_NS",
+            "yahoo_ticker": "AXISBANK.NS",
+            "exchange": "NSE"
+        },
+        {
+            "company_name": "Kotak Mahindra Bank Limited",
+            "display_name": "Kotak Mahindra Bank Limited",
+            "internal_ticker": "KOTAKBANK_NS",
+            "yahoo_ticker": "KOTAKBANK.NS",
+            "exchange": "NSE"
+        },
+        {
+            "company_name": "IndusInd Bank Limited",
+            "display_name": "IndusInd Bank Limited",
+            "internal_ticker": "INDUSINDBK_NS",
+            "yahoo_ticker": "INDUSINDBK.NS",
+            "exchange": "NSE"
+        },
+        {
+            "company_name": "Bank of Baroda Limited",
+            "display_name": "Bank of Baroda Limited",
+            "internal_ticker": "BANKBARODA_NS",
+            "yahoo_ticker": "BANKBARODA.NS",
+            "exchange": "NSE"
+        },
+        {
+            "company_name": "Punjab National Bank",
+            "display_name": "Punjab National Bank",
+            "internal_ticker": "PNB_NS",
+            "yahoo_ticker": "PNB.NS",
+            "exchange": "NSE"
+        },
+        {
+            "company_name": "Canara Bank",
+            "display_name": "Canara Bank",
+            "internal_ticker": "CANBK_NS",
+            "yahoo_ticker": "CANBK.NS",
+            "exchange": "NSE"
+        },
+        {
+            "company_name": "IDFC First Bank Limited",
+            "display_name": "IDFC First Bank Limited",
+            "internal_ticker": "IDFCFIRSTB_NS",
+            "yahoo_ticker": "IDFCFIRSTB.NS",
+            "exchange": "NSE"
+        },
+        {
+            "company_name": "The Federal Bank Limited",
+            "display_name": "The Federal Bank Limited",
+            "internal_ticker": "FEDERALBNK_NS",
+            "yahoo_ticker": "FEDERALBNK.NS",
+            "exchange": "NSE"
+        },
+        {
+            "company_name": "Bandhan Bank Limited",
+            "display_name": "Bandhan Bank Limited",
+            "internal_ticker": "BANDHANBNK_NS",
+            "yahoo_ticker": "BANDHANBNK.NS",
+            "exchange": "NSE"
+        },
+        {
+            "company_name": "AU Small Finance Bank Limited",
+            "display_name": "AU Small Finance Bank Limited",
+            "internal_ticker": "AUBANK_NS",
+            "yahoo_ticker": "AUBANK.NS",
+            "exchange": "NSE"
+        },
+        {
+            "company_name": "HCL Technologies Limited",
+            "display_name": "HCL Technologies Limited",
+            "internal_ticker": "HCLTECH_NS",
+            "yahoo_ticker": "HCLTECH.NS",
+            "exchange": "NSE"
+        },
+        {
+            "company_name": "Wipro Limited",
+            "display_name": "Wipro Limited",
+            "internal_ticker": "WIPRO_NS",
+            "yahoo_ticker": "WIPRO.NS",
+            "exchange": "NSE"
+        },
+        {
+            "company_name": "Tech Mahindra Limited",
+            "display_name": "Tech Mahindra Limited",
+            "internal_ticker": "TECHM_NS",
+            "yahoo_ticker": "TECHM.NS",
+            "exchange": "NSE"
+        },
+        {
+            "company_name": "Marico Limited",
+            "display_name": "Marico Limited",
+            "internal_ticker": "MARICO_NS",
+            "yahoo_ticker": "MARICO.NS",
+            "exchange": "NSE"
+        },
+        {
+            "company_name": "Mphasis Limited",
+            "display_name": "Mphasis Limited",
+            "internal_ticker": "MPHASIS_NS",
+            "yahoo_ticker": "MPHASIS.NS",
+            "exchange": "NSE"
+        },
+        {
+            "company_name": "Persistent Systems Limited",
+            "display_name": "Persistent Systems Limited",
+            "internal_ticker": "PERSISTENT_NS",
+            "yahoo_ticker": "PERSISTENT.NS",
+            "exchange": "NSE"
+        },
+        {
+            "company_name": "Coforge Limited",
+            "display_name": "Coforge Limited",
+            "internal_ticker": "COFORGE_NS",
+            "yahoo_ticker": "COFORGE.NS",
+            "exchange": "NSE"
+        },
+        {
+            "company_name": "Oracle Financial Services Software Limited",
+            "display_name": "Oracle Financial Services Software Limited",
+            "internal_ticker": "OFSS_NS",
+            "yahoo_ticker": "OFSS.NS",
+            "exchange": "NSE"
+        },
+        {
+            "company_name": "Tata Elxsi Limited",
+            "display_name": "Tata Elxsi Limited",
+            "internal_ticker": "TATAELXSI_NS",
+            "yahoo_ticker": "TATAELXSI.NS",
+            "exchange": "NSE"
+        },
+        {
+            "company_name": "KPIT Technologies Limited",
+            "display_name": "KPIT Technologies Limited",
+            "internal_ticker": "KPITTECH_NS",
+            "yahoo_ticker": "KPITTECH.NS",
+            "exchange": "NSE"
+        },
+        {
+            "company_name": "Maruti Suzuki India Limited",
+            "display_name": "Maruti Suzuki India Limited",
+            "internal_ticker": "MARUTI_NS",
+            "yahoo_ticker": "MARUTI.NS",
+            "exchange": "NSE"
+        },
+        {
+            "company_name": "Mahindra & Mahindra Limited",
+            "display_name": "Mahindra & Mahindra Limited",
+            "internal_ticker": "M&M_NS",
+            "yahoo_ticker": "M&M.NS",
+            "exchange": "NSE"
+        },
+        {
+            "company_name": "Havells India Limited",
+            "display_name": "Havells India Limited",
+            "internal_ticker": "HAVELLS_NS",
+            "yahoo_ticker": "HAVELLS.NS",
+            "exchange": "NSE"
+        },
+        {
+            "company_name": "Eicher Motors Limited",
+            "display_name": "Eicher Motors Limited",
+            "internal_ticker": "EICHERMOT_NS",
+            "yahoo_ticker": "EICHERMOT.NS",
+            "exchange": "NSE"
+        },
+        {
+            "company_name": "Hero MotoCorp Limited",
+            "display_name": "Hero MotoCorp Limited",
+            "internal_ticker": "HEROMOTOCO_NS",
+            "yahoo_ticker": "HEROMOTOCO.NS",
+            "exchange": "NSE"
+        },
+        {
+            "company_name": "Bajaj Auto Limited",
+            "display_name": "Bajaj Auto Limited",
+            "internal_ticker": "BAJAJ-AUTO_NS",
+            "yahoo_ticker": "BAJAJ-AUTO.NS",
+            "exchange": "NSE"
+        },
+        {
+            "company_name": "TVS Motor Company Limited",
+            "display_name": "TVS Motor Company Limited",
+            "internal_ticker": "TVSMOTOR_NS",
+            "yahoo_ticker": "TVSMOTOR.NS",
+            "exchange": "NSE"
+        },
+        {
+            "company_name": "Ashok Leyland Limited",
+            "display_name": "Ashok Leyland Limited",
+            "internal_ticker": "ASHOKLEY_NS",
+            "yahoo_ticker": "ASHOKLEY.NS",
+            "exchange": "NSE"
+        },
+        {
+            "company_name": "Bharat Forge Limited",
+            "display_name": "Bharat Forge Limited",
+            "internal_ticker": "BHARATFORG_NS",
+            "yahoo_ticker": "BHARATFORG.NS",
+            "exchange": "NSE"
+        },
+        {
+            "company_name": "Bosch Limited",
+            "display_name": "Bosch Limited",
+            "internal_ticker": "BOSCHLTD_NS",
+            "yahoo_ticker": "BOSCHLTD.NS",
+            "exchange": "NSE"
+        },
+        {
+            "company_name": "Sun Pharmaceutical Industries Limited",
+            "display_name": "Sun Pharmaceutical Industries Limited",
+            "internal_ticker": "SUNPHARMA_NS",
+            "yahoo_ticker": "SUNPHARMA.NS",
+            "exchange": "NSE"
+        },
+        {
+            "company_name": "Dr. Reddy's Laboratories Limited",
+            "display_name": "Dr. Reddy's Laboratories Limited",
+            "internal_ticker": "DRREDDY_NS",
+            "yahoo_ticker": "DRREDDY.NS",
+            "exchange": "NSE"
+        },
+        {
+            "company_name": "Cipla Limited",
+            "display_name": "Cipla Limited",
+            "internal_ticker": "CIPLA_NS",
+            "yahoo_ticker": "CIPLA.NS",
+            "exchange": "NSE"
+        },
+        {
+            "company_name": "Divi's Laboratories Limited",
+            "display_name": "Divi's Laboratories Limited",
+            "internal_ticker": "DIVISLAB_NS",
+            "yahoo_ticker": "DIVISLAB.NS",
+            "exchange": "NSE"
+        },
+        {
+            "company_name": "Apollo Hospitals Enterprise Limited",
+            "display_name": "Apollo Hospitals Enterprise Limited",
+            "internal_ticker": "APOLLOHOSP_NS",
+            "yahoo_ticker": "APOLLOHOSP.NS",
+            "exchange": "NSE"
+        },
+        {
+            "company_name": "Max Healthcare Institute Limited",
+            "display_name": "Max Healthcare Institute Limited",
+            "internal_ticker": "MAXHEALTH_NS",
+            "yahoo_ticker": "MAXHEALTH.NS",
+            "exchange": "NSE"
+        },
+        {
+            "company_name": "Torrent Pharmaceuticals Limited",
+            "display_name": "Torrent Pharmaceuticals Limited",
+            "internal_ticker": "TORNTPHARM_NS",
+            "yahoo_ticker": "TORNTPHARM.NS",
+            "exchange": "NSE"
+        },
+        {
+            "company_name": "Zydus Lifesciences Limited",
+            "display_name": "Zydus Lifesciences Limited",
+            "internal_ticker": "ZYDUSLIFE_NS",
+            "yahoo_ticker": "ZYDUSLIFE.NS",
+            "exchange": "NSE"
+        },
+        {
+            "company_name": "Aurobindo Pharma Limited",
+            "display_name": "Aurobindo Pharma Limited",
+            "internal_ticker": "AUROPHARMA_NS",
+            "yahoo_ticker": "AUROPHARMA.NS",
+            "exchange": "NSE"
+        },
+        {
+            "company_name": "Lupin Limited",
+            "display_name": "Lupin Limited",
+            "internal_ticker": "LUPIN_NS",
+            "yahoo_ticker": "LUPIN.NS",
+            "exchange": "NSE"
+        },
+        {
+            "company_name": "Tata Steel Limited",
+            "display_name": "Tata Steel Limited",
+            "internal_ticker": "TATASTEEL_NS",
+            "yahoo_ticker": "TATASTEEL.NS",
+            "exchange": "NSE"
+        },
+        {
+            "company_name": "JSW Steel Limited",
+            "display_name": "JSW Steel Limited",
+            "internal_ticker": "JSWSTEEL_NS",
+            "yahoo_ticker": "JSWSTEEL.NS",
+            "exchange": "NSE"
+        },
+        {
+            "company_name": "Hindalco Industries Limited",
+            "display_name": "Hindalco Industries Limited",
+            "internal_ticker": "HINDALCO_NS",
+            "yahoo_ticker": "HINDALCO.NS",
+            "exchange": "NSE"
+        },
+        {
+            "company_name": "Vedanta Limited",
+            "display_name": "Vedanta Limited",
+            "internal_ticker": "VEDL_NS",
+            "yahoo_ticker": "VEDL.NS",
+            "exchange": "NSE"
+        },
+        {
+            "company_name": "Coal India Limited",
+            "display_name": "Coal India Limited",
+            "internal_ticker": "COALINDIA_NS",
+            "yahoo_ticker": "COALINDIA.NS",
+            "exchange": "NSE"
+        },
+        {
+            "company_name": "NMDC Limited",
+            "display_name": "NMDC Limited",
+            "internal_ticker": "NMDC_NS",
+            "yahoo_ticker": "NMDC.NS",
+            "exchange": "NSE"
+        },
+        {
+            "company_name": "Jindal Steel Limited",
+            "display_name": "Jindal Steel Limited",
+            "internal_ticker": "JINDALSTEL_NS",
+            "yahoo_ticker": "JINDALSTEL.NS",
+            "exchange": "NSE"
+        },
+        {
+            "company_name": "Steel Authority of India Limited",
+            "display_name": "Steel Authority of India Limited",
+            "internal_ticker": "SAIL_NS",
+            "yahoo_ticker": "SAIL.NS",
+            "exchange": "NSE"
+        },
+        {
+            "company_name": "National Aluminium Company Limited",
+            "display_name": "National Aluminium Company Limited",
+            "internal_ticker": "NATIONALUM_NS",
+            "yahoo_ticker": "NATIONALUM.NS",
+            "exchange": "NSE"
+        },
+        {
+            "company_name": "APL Apollo Tubes Limited",
+            "display_name": "APL Apollo Tubes Limited",
+            "internal_ticker": "APLAPOLLO_NS",
+            "yahoo_ticker": "APLAPOLLO.NS",
+            "exchange": "NSE"
+        },
+        {
+            "company_name": "Oil and Natural Gas Corporation Limited",
+            "display_name": "Oil and Natural Gas Corporation Limited",
+            "internal_ticker": "ONGC_NS",
+            "yahoo_ticker": "ONGC.NS",
+            "exchange": "NSE"
+        },
+        {
+            "company_name": "NTPC Limited",
+            "display_name": "NTPC Limited",
+            "internal_ticker": "NTPC_NS",
+            "yahoo_ticker": "NTPC.NS",
+            "exchange": "NSE"
+        },
+        {
+            "company_name": "Power Grid Corporation of India Limited",
+            "display_name": "Power Grid Corporation of India Limited",
+            "internal_ticker": "POWERGRID_NS",
+            "yahoo_ticker": "POWERGRID.NS",
+            "exchange": "NSE"
+        },
+        {
+            "company_name": "Adani Green Energy Limited",
+            "display_name": "Adani Green Energy Limited",
+            "internal_ticker": "ADANIGREEN_NS",
+            "yahoo_ticker": "ADANIGREEN.NS",
+            "exchange": "NSE"
+        },
+        {
+            "company_name": "Adani Power Limited",
+            "display_name": "Adani Power Limited",
+            "internal_ticker": "ADANIPOWER_NS",
+            "yahoo_ticker": "ADANIPOWER.NS",
+            "exchange": "NSE"
+        },
+        {
+            "company_name": "The Tata Power Company Limited",
+            "display_name": "The Tata Power Company Limited",
+            "internal_ticker": "TATAPOWER_NS",
+            "yahoo_ticker": "TATAPOWER.NS",
+            "exchange": "NSE"
+        },
+        {
+            "company_name": "JSW Energy Limited",
+            "display_name": "JSW Energy Limited",
+            "internal_ticker": "JSWENERGY_NS",
+            "yahoo_ticker": "JSWENERGY.NS",
+            "exchange": "NSE"
+        },
+        {
+            "company_name": "Indian Oil Corporation Limited",
+            "display_name": "Indian Oil Corporation Limited",
+            "internal_ticker": "IOC_NS",
+            "yahoo_ticker": "IOC.NS",
+            "exchange": "NSE"
+        },
+        {
+            "company_name": "Bharat Petroleum Corporation Limited",
+            "display_name": "Bharat Petroleum Corporation Limited",
+            "internal_ticker": "BPCL_NS",
+            "yahoo_ticker": "BPCL.NS",
+            "exchange": "NSE"
+        },
+        {
+            "company_name": "GAIL (India) Limited",
+            "display_name": "GAIL (India) Limited",
+            "internal_ticker": "GAIL_NS",
+            "yahoo_ticker": "GAIL.NS",
+            "exchange": "NSE"
+        },
+        {
+            "company_name": "Asian Paints Limited",
+            "display_name": "Asian Paints Limited",
+            "internal_ticker": "ASIANPAINT_NS",
+            "yahoo_ticker": "ASIANPAINT.NS",
+            "exchange": "NSE"
+        },
+        {
+            "company_name": "UltraTech Cement Limited",
+            "display_name": "UltraTech Cement Limited",
+            "internal_ticker": "ULTRACEMCO_NS",
+            "yahoo_ticker": "ULTRACEMCO.NS",
+            "exchange": "NSE"
+        },
+        {
+            "company_name": "Grasim Industries Limited",
+            "display_name": "Grasim Industries Limited",
+            "internal_ticker": "GRASIM_NS",
+            "yahoo_ticker": "GRASIM.NS",
+            "exchange": "NSE"
+        },
+        {
+            "company_name": "Titan Company Limited",
+            "display_name": "Titan Company Limited",
+            "internal_ticker": "TITAN_NS",
+            "yahoo_ticker": "TITAN.NS",
+            "exchange": "NSE"
+        },
+        {
+            "company_name": "Trent Limited",
+            "display_name": "Trent Limited",
+            "internal_ticker": "TRENT_NS",
+            "yahoo_ticker": "TRENT.NS",
+            "exchange": "NSE"
+        },
+        {
+            "company_name": "Avenue Supermarts Limited",
+            "display_name": "Avenue Supermarts Limited",
+            "internal_ticker": "DMART_NS",
+            "yahoo_ticker": "DMART.NS",
+            "exchange": "NSE"
+        },
+        {
+            "company_name": "Pidilite Industries Limited",
+            "display_name": "Pidilite Industries Limited",
+            "internal_ticker": "PIDILITIND_NS",
+            "yahoo_ticker": "PIDILITIND.NS",
+            "exchange": "NSE"
+        },
+        {
+            "company_name": "Dabur India Limited",
+            "display_name": "Dabur India Limited",
+            "internal_ticker": "DABUR_NS",
+            "yahoo_ticker": "DABUR.NS",
+            "exchange": "NSE"
+        },
+        {
+            "company_name": "Britannia Industries Limited",
+            "display_name": "Britannia Industries Limited",
+            "internal_ticker": "BRITANNIA_NS",
+            "yahoo_ticker": "BRITANNIA.NS",
+            "exchange": "NSE"
+        },
+        {
+            "company_name": "Nestlé India Limited",
+            "display_name": "Nestlé India Limited",
+            "internal_ticker": "NESTLEIND_NS",
+            "yahoo_ticker": "NESTLEIND.NS",
+            "exchange": "NSE"
+        },
+        {
+            "company_name": "Adani Enterprises Limited",
+            "display_name": "Adani Enterprises Limited",
+            "internal_ticker": "ADANIENT_NS",
+            "yahoo_ticker": "ADANIENT.NS",
+            "exchange": "NSE"
+        },
+        {
+            "company_name": "Adani Ports and Special Economic Zone Limited",
+            "display_name": "Adani Ports and Special Economic Zone Limited",
+            "internal_ticker": "ADANIPORTS_NS",
+            "yahoo_ticker": "ADANIPORTS.NS",
+            "exchange": "NSE"
+        },
+        {
+            "company_name": "DLF Limited",
+            "display_name": "DLF Limited",
+            "internal_ticker": "DLF_NS",
+            "yahoo_ticker": "DLF.NS",
+            "exchange": "NSE"
+        },
+        {
+            "company_name": "Siemens Limited",
+            "display_name": "Siemens Limited",
+            "internal_ticker": "SIEMENS_NS",
+            "yahoo_ticker": "SIEMENS.NS",
+            "exchange": "NSE"
+        },
+        {
+            "company_name": "ABB India Limited",
+            "display_name": "ABB India Limited",
+            "internal_ticker": "ABB_NS",
+            "yahoo_ticker": "ABB.NS",
+            "exchange": "NSE"
+        },
+        {
+            "company_name": "Bharat Electronics Limited",
+            "display_name": "Bharat Electronics Limited",
+            "internal_ticker": "BEL_NS",
+            "yahoo_ticker": "BEL.NS",
+            "exchange": "NSE"
+        },
+        {
+            "company_name": "Hindustan Aeronautics Limited",
+            "display_name": "Hindustan Aeronautics Limited",
+            "internal_ticker": "HAL_NS",
+            "yahoo_ticker": "HAL.NS",
+            "exchange": "NSE"
+        },
+        {
+            "company_name": "Bharat Heavy Electricals Limited",
+            "display_name": "Bharat Heavy Electricals Limited",
+            "internal_ticker": "BHEL_NS",
+            "yahoo_ticker": "BHEL.NS",
+            "exchange": "NSE"
+        },
+        {
+            "company_name": "Indian Railway Catering & Tourism Corporation Limited",
+            "display_name": "Indian Railway Catering & Tourism Corporation Limited",
+            "internal_ticker": "IRCTC_NS",
+            "yahoo_ticker": "IRCTC.NS",
+            "exchange": "NSE"
+        },
+        {
+            "company_name": "Rail Vikas Nigam Limited",
+            "display_name": "Rail Vikas Nigam Limited",
+            "internal_ticker": "RVNL_NS",
+            "yahoo_ticker": "RVNL.NS",
+            "exchange": "NSE"
+        },
+        {
+            "company_name": "InterGlobe Aviation Limited",
+            "display_name": "InterGlobe Aviation Limited",
+            "internal_ticker": "INDIGO_NS",
+            "yahoo_ticker": "INDIGO.NS",
+            "exchange": "NSE"
+        },
+        {
+            "company_name": "Ambuja Cements Limited",
+            "display_name": "Ambuja Cements Limited",
+            "internal_ticker": "AMBUJACEM_NS",
+            "yahoo_ticker": "AMBUJACEM.NS",
+            "exchange": "NSE"
+        },
+        {
+            "company_name": "FSN E-Commerce Ventures Limited",
+            "display_name": "FSN E-Commerce Ventures Limited",
+            "internal_ticker": "NYKAA_NS",
+            "yahoo_ticker": "NYKAA.NS",
+            "exchange": "NSE"
+        },
+        {
+            "company_name": "One97 Communications Limited",
+            "display_name": "One97 Communications Limited",
+            "internal_ticker": "PAYTM_NS",
+            "yahoo_ticker": "PAYTM.NS",
+            "exchange": "NSE"
+        },
+        {
+            "company_name": "PB Fintech Limited",
+            "display_name": "PB Fintech Limited",
+            "internal_ticker": "POLICYBZR_NS",
+            "yahoo_ticker": "POLICYBZR.NS",
+            "exchange": "NSE"
+        },
+        {
+            "company_name": "Jubilant FoodWorks Limited",
+            "display_name": "Jubilant FoodWorks Limited",
+            "internal_ticker": "JUBLFOOD_NS",
+            "yahoo_ticker": "JUBLFOOD.NS",
+            "exchange": "NSE"
+        },
+        {
+            "company_name": "The Indian Hotels Company Limited",
+            "display_name": "The Indian Hotels Company Limited",
+            "internal_ticker": "INDHOTEL_NS",
+            "yahoo_ticker": "INDHOTEL.NS",
+            "exchange": "NSE"
+        },
+        {
+            "company_name": "IndiaMART InterMESH Limited",
+            "display_name": "IndiaMART InterMESH Limited",
+            "internal_ticker": "INDIAMART_NS",
+            "yahoo_ticker": "INDIAMART.NS",
+            "exchange": "NSE"
+        },
+        {
+            "company_name": "Delhivery Limited",
+            "display_name": "Delhivery Limited",
+            "internal_ticker": "DELHIVERY_NS",
+            "yahoo_ticker": "DELHIVERY.NS",
+            "exchange": "NSE"
+        },
+        {
+            "company_name": "Samvardhana Motherson International Limited",
+            "display_name": "Samvardhana Motherson International Limited",
+            "internal_ticker": "MOTHERSON_NS",
+            "yahoo_ticker": "MOTHERSON.NS",
+            "exchange": "NSE"
+        }
+    ]
+}
