@@ -1,10 +1,20 @@
-﻿from typing import Literal
+﻿
+from typing import Literal
 
 from fastapi import APIRouter, HTTPException, Query
 
-from backend.app.schemas.recommendation import RecommendationResponse
+from backend.app.schemas.recommendation import (
+    RecommendationResponse,
+    PersonalizedRecommendationRequest,
+    PersonalizedRecommendationResponse,
+)
+
 from backend.app.services.recommendation_service import (
     get_recommendations,
+)
+
+from backend.app.services.personalized_recommendation_service import (
+    get_personalized_recommendations,
 )
 
 
@@ -13,6 +23,10 @@ router = APIRouter(
     tags=["Recommendations"],
 )
 
+
+# ============================================================
+# EXISTING RECOMMENDATION ENDPOINT
+# ============================================================
 
 @router.get("", response_model=RecommendationResponse)
 def read_recommendations(
@@ -42,6 +56,39 @@ def read_recommendations(
             limit=limit,
             sort_by=sort_by,
             include_ineligible=include_ineligible,
+        )
+
+    except FileNotFoundError:
+        raise HTTPException(
+            status_code=503,
+            detail="Recommendation data is currently unavailable.",
+        )
+
+    except ValueError:
+        raise HTTPException(
+            status_code=500,
+            detail="Recommendation data failed validation.",
+        )
+
+
+# ============================================================
+# NEW PERSONALIZED RECOMMENDATION ENDPOINT
+# ============================================================
+
+@router.post(
+    "/personalized",
+    response_model=PersonalizedRecommendationResponse,
+)
+def create_personalized_recommendations(
+    request: PersonalizedRecommendationRequest,
+):
+
+    try:
+        return get_personalized_recommendations(
+            investment_amount=request.investment_amount,
+            risk_profile=request.risk_profile,
+            horizon=request.horizon,
+            asset_classes=request.asset_classes,
         )
 
     except FileNotFoundError:
